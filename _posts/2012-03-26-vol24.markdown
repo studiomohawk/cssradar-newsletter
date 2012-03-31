@@ -1,0 +1,130 @@
+---
+layout: post
+title: "Vol.24"
+date: 2012-03-26
+---
+
+## [About HTML semantics and front-end architecture by Nicolas Gallagher](http://nicolasgallagher.com/about-html-semantics-front-end-architecture/)
+
+Nicolas Gallagher氏によるセマンティックとフロントエンド構造について。
+
+[日本語訳はこちらから](http://enja.studiomohawk.com/2012/03/20/about-html-semantics-and-front-end-architecture/)。
+
+## [JavaScript debugging for beginners by .net magazine](http://www.netmagazine.com/tutorials/javascript-debugging-beginners)
+
+JavaScriptのデバッグ方法。Firebug、Chrome Developer Toolの話。
+
+- alert()とconsole.log()の差異。後者はJSの実行を停止しない。
+- console.group()で関連性をはっきりできる。
+- ブレークポイントの使い方。Continue、Step Over、Step Into、Step Outの違い
+- 条件付きのブレークポイント
+- DOM操作時にブレーク
+- コールスタックの利用法
+
+Firebugは[Firebug Wiki](http://getfirebug.com/wiki/index.php/Main_Page)。Chromeは[Google Chrome Develper Tools Docs](http://code.google.com/chrome/devtools/docs/scripts.html)を参照。
+
+## [Pure CSS Clickable Events Without :target](http://www.ryancollins.me/?p=1041)
+
+:targetを使わずにCSSのみでクリックイベントを再現する方法。  
+:targetではなく、:activeと:hoverを利用する。  
+マークアップもCSSも至ってシンプルなので、実際に書いてみるとよいでしょう。
+
+## [About those vector icons by Pushing Pixels](http://www.pushing-pixels.org/2011/11/04/about-those-vector-icons.html)
+
+アイコンを何故SVGのようなスケーラブルな画像形式を使って1ファイルだけにできないのか？
+
+- 16 x 16から512 x 512まで、アプリのアイコンにはサイズのバリエーションが必要になっている。
+- サイズによってアイコンが持つビジュアル言語の意味が変わってはいけない。
+- ラインの鮮明さ、角丸のアールなどアイコンのサイズによって微調整する必要がある。
+- 場合によってはサイズによってアイコンそのもののデザインを変更する必要すらある。(Mac OS Xの画像フォルダアイコンが好例)
+- アイコンにおいて最も大事なのは明確さ。ユーザにとってもっとも明確な意味を提示できるようにサイズごとに異なる画像が必要。
+
+## [The Definitive Guide to CSS Animations and Transitions by InsertHTML](http://www.inserthtml.com/2012/01/definitive-guide-css-animations-transitions/)
+
+CSSアニメーション、トランジションについてのガイド。
+
+- トランジションには:hoverのようなアクションが必要。疑似クラスだけでなく要素自体をアクティブにすることで発生する、アニメーションはページロード時に発生させることも、インタラクションによって発生させることもできる。
+- アニメーションの文法についてとプロパティについて
+- トランジションの文法についてとプロパティについて
+
+## [Design Changes and Power](http://www.usabilitypost.com/2012/03/15/design-changes-and-power/)
+
+- アプリケーションやウェブサイトのデザイン変更は必ずユーザから使いづらくなったと言われる。
+- どこに何があって、どう動くものなのか覚えたのに、それが変わってしまうとまた覚え直す必要が発生するから。  
+- FacebookやGoogleのようにユーザが気がつかない間に静かに変更がかかることもある。さっきまで開いていたGoogle Docsが別のページを見ている間に新しくなっているということも実際にある。  
+- Twitterは今回のリデザインの以前のバージョンではリリース方法を変更することでこの問題をポジティブな体験に変えた。  
+- ある特定のユーザにだけリデザインを先行して開示することで、新しいデザインになっていることを利点として、他ユーザがその新しいデザインを使いたいと思わせる。  
+- デザインの変更によってユーザから慣れを奪うだけではなく、ユーザに与える利点を考える必要がある。
+
+## [Form Label Proximity: Right Align Labels to Fields by UX Movement](http://uxmovement.com/forms/form-label-proximity-right-align-labels-to-fields/)
+
+- フォームデザイン時のラベルの位置はユーザがどうフォームを入力するかに大きく影響する。
+- 入力フォームの左右にラベルを置かないのがベスト。
+- 入力フォームの左にラベルを置く場合は、ラベルのテキストは右端揃えにするべき。
+- ユーザの視線移動がもっとも少なくなるように配置する。
+
+## [How to write low garbage real-time Javascript by Scirra.com](http://www.scirra.com/blog/76/how-to-write-low-garbage-real-time-javascript)
+
+- JavaScriptを利用したHTML5ゲームにおいてスムースさを維持するためにはガーベージコレクション(GC)ポーズについて知っておく必要がある。
+- JavaScriptには明示的なメモリマネジメント方法がない。
+- ブラウザが自動的にメモリマネジメントをし、その時に実行が一時停止する。
+- 60fpsで動作するゲームはフレームをレンダリングするのに16msしかない。
+- GCには100ms以上かかることがある
+- シンプルな解決はオブジェクト生成をスタート時に行い、同じオブジェクトを可能な限り使い続けること。
+- オブジェクトのリサイクルはオブジェクトからプロパティを削除し、空にする。そして新たにプロパティを追加する。
+- 実際にはオブジェクトからプロパティを削除するほうが、新しいオブジェクトをつくるより時間がかかるが、GCポーズが避けがたいため削除するほうが全体的には利点が多い。
+
+## [Using event capturing to improve Basecamp page load times by 37signals](http://37signals.com/svn/posts/3137-using-event-capturing-to-improve-basecamp-page-load-times)
+
+- Basecampではプロジェクトページで.sortable()というようなメソッドをロード時に呼び出していた。
+- プロジェクトページに訪れるユーザが絶対にto-doリストのソートを行うわけではない。
+- mousedownのイベントに.sortable()をバインドしたほうが早い？
+- イベントバブルによって実際にソートしたい要素にたどり着かないのでNG。
+- mousedownイベントをバブルする前にキャッチする必要がある。
+- DOM Level 2 Events APIにはキャプチャとバブルという2つのイベントフェーズが存在して、addEventListenerメソッドの第三引数でフェーズを指定することが可能。
+- キャプチャを使ってmousedownイベントに.sortable()メソッドをバインドした場合、ページロードは2倍から6倍のスピードになった。
+
+## [Stop solving problems you don’t yet have by this is rachelandrew.co.uk](http://www.rachelandrew.co.uk/archives/2012/03/21/stop-solving-problems-you-dont-yet-have/)
+
+- ボイラープレート、フレームワークは多くの場合様々な問題に対する回答を用意してある。
+- しかし、問題に出会う前からその回答を用意しておくのは無駄が多い。
+- 実際にどんな問題に出会うかも分からないし、それらに対してどう対応するのかも分からない。
+- だから、HTML5 Boilerplateは何もないもっともシンプルなものがベスト。
+- 自分が出会っていない問題を解決するのはやめよう。
+
+## [RWD Calculator v0.2 by a thing from alwaystwisted.com](http://www.alwaystwisted.com/rwdcalc/)
+
+Photoshopなどでレスポンシブデザインのモックアップを制作するのは大変だが、このツールはpxで指定してあるPSDの値を入力して%に変更してくれる。  
+見た目よりも遥かに強力で便利なツール。
+
+### Others
+
+5クリック以下だった記事はリンクと一言だけ紹介しています。  
+サマリが必要な方はお気軽に[Twitter@cssradar](http://twitter.com/#!/cssradar)までリクエストを。
+
+- **[App Icon Template](http://appicontemplate.com/)**
+
+iOSのアプリアイコンテンプレート。PSD + アクション。無料。
+
+- **[Cost Effective Approaches to Iteration in Agile UX](http://www.uie.com/articles/cost_effective_approaches_agile/)**
+
+アジャイル開発におけるUXのイテレーションのコストを効率化する手法について
+
+- **[Mobile Prototyping Essentials](http://www.slideshare.net/Rachel_Hinman/mobile-prototyping-essentials?from=ss_embed)**
+
+モバイルデザインで最も大事なプロトタイプについてのスライド。
+
+## That's it for this week!
+
+[en.ja](http://enja.studiomohawk.com/)という名前のフロントエンダのための翻訳記事/ドキュメントを掲載するブログを始めました。  
+CSS Radarではそういう系統の記事は掲載しないので、せっかく翻訳しても掲載する場所が無かったので。  
+翻訳記事も掲載しますし、翻訳記事へのリンクという場合もあると思います。  
+
+一発目の記事は[HTMLのセマンティックとフロントエンド構造について by Nicolas Gallagher](http://enja.studiomohawk.com/2012/03/20/about-html-semantics-and-front-end-architecture/)です。  
+ 
+en.jaではgithubのissuesを利用して翻訳のリクエスト、質問などを受け付けています。  
+[https://github.com/studiomohawk/en.ja-feedback/issues](https://github.com/studiomohawk/en.ja-feedback/issues)
+
+リクエストは受け付けていますが、原文の作者の了解が得られなければ翻訳することはできませんのであらかじめご了承ください。
+
+

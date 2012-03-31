@@ -1,0 +1,137 @@
+---
+layout: post
+title: "Vol.22"
+date: 2012-03-11 23:02:51
+---
+
+## [JavaScript object creation: Learning to live without "new" by Adobe Developer Connection](http://www.adobe.com/devnet/html5/articles/javascript-object-creation.html)
+
+JavaScriptのチュートリアルでよく見かけるのがClassベースの言語のように継承を行えるようなオブジェクトの生成を行う方法の紹介。  
+しかしJavaScriptはClassベースの言語ではない。プロトタイプベースの言語らしく継承を行うという意味で、JavaScriptらしい書き方を細かく説明。  
+ソースコードは可能な限りシンプルに記述されているし、Canvasを使った実例なので、ぜひ実際に書きながら学んでほしい。
+
+## [Mastering CSS3 Text Shadows by SitePoint](http://www.sitepoint.com/mastering-css3-text-shadows/)
+
+CSS3のText Shadowsは一見地味なプロパティに思えるが、様々な表現をすることを可能にする。  
+ここではそれぞれの値の使い方から、実サイトですぐに利用できるスニペットを紹介している。実例を見ながらのチュートリアルなのでサイトの方を見ながら、やっぱり実際に書いてみてほしい。  
+実例がここだけでは足りない場合は
+[こちらに7例](http://www.sitepoint.com/mastering-css3-7-cool-text-shadow-samples-you-can%E2%80%99t-miss/)あるのであわせてどうぞ。
+
+## [CSS: the cascade, specificity, and inheritance by Nicolas Gallagher](http://nicolasgallagher.com/css-cascade-specificity-inheritance/)
+
+CSSの基本であるカスケード、詳細度、継承についてNicolas Gallagher氏によるまとめ。  
+私がCSSに触れたのはCSSが一般的になる頃だったので、こういうことから勉強したが、イマドキはそうでもないかも知れないなと思うので、振り返り。
+
+## [A Guide To Well Designed Sign-up Forms With 15 Examples by The Usabilla Blog](http://blog.usabilla.com/a-guide-to-well-designed-sign-up-forms-with-15-examples/)
+
+サインアップフォームをよりよくデザインするために知っておきたい15のこと。ケーススタディとともに紹介しているので実例のほうも見ておくことをおすすめします。
+
+1. 最後まで説得力を持ち続ける  
+入力フォームとボタンさえあればいい、わけではない。サービスの紹介、フリートライアルの利点、一言だけでも人の動き方は変わる。
+2. 可能な限り短く  
+最低限必要なことだけを入力してもらう。  
+最低限とはサインアップ時に必要なという意味。後で回収出来る仕組みがあれば充足するなら、そのほうがベター。
+3. ターゲットユーザを誤らないように  
+サインアップはフィルタの役割も果たす。たくさんのユーザを得ることは大事だけど、最終的なゴールにそぐわないユーザをフィルタできるような世界観をつくることも大事。
+4. パーソナリティ、ブランド、エモーション  
+サインアップは多くのユーザにとってサービスの入り口になる。  
+ここでしっかりブランドを伝えられるかも確認しておきたい。
+
+ポイントは4つだけど、ケーススタディはきちんと15あるので、記事の方で確認してほしい。
+
+## [Going Simple with JavaScript by Snook.ca](http://snook.ca/archives/javascript/going-simple-with-javascript)
+
+モバイル時代に飽きるほど見ることになるシンプルという単語。  
+これまではデザインについてのシンプルが多かったが、今回はJavaScript。  
+IE8以上のモダンブラウザであれば利用出来るクラスセレクタの`querySelectorAll`やJSONP、そしてプログレッシブエンハンスメントのスニペットを通じてjQueryなしのJavaScriptの世界を少しだけ紹介している。  
+この手の記事も最近増えてきたので、まとめて[CSS Radar](http://css.studiomohawk.com)のほうのトピックとして書きたい。
+
+## [Pragmatic, practical font sizing in CSS by CSS Wizardry](http://csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/)
+
+Object Oriented CSSに魅せられたCSS WizardryのHarry Robertsが今回提案するのはObject Orientedなタイポグラフィのスタイル。  
+文字サイズのクラス名はオリジナルほうがいいなと思いつつ、オリジナルよりも拡張性が高い点は非常に好感が持てる。  
+ぜひソースコードを一読してほしい。  
+このスタイルをベースにLESSのミックスインを作成中。
+
+## [Everything you always wanted to know about touch icons by Mathias Bynens](http://mathiasbynens.be/notes/touch-icons)
+
+iPhoneやAndroid、iPadなどで利用するタッチアイコンは結構ややこしい仕様になっている。特にiOS用のはずの`apple-touch-icon`系の`meta`タグはAndroid 2.1以上でも同じ用途で利用できたり癖にiPhoneの場合とは若干異なる挙動になったりする。  
+そんなややこしい仕様のベストプラクティスをまとめた素晴らしい記事。
+
+## [Give it five minutes by 37signals](http://37signals.com/svn/posts/3124-give-it-five-minutes)
+
+生まれたばかりのアイデアは壊れ物。だからすぐに批判しないで5分待ってみる。アイデアに限らずすべての提案に言えること。  
+Noというのは簡単。でも5分待つ。
+
+## [Landing Page Optimization for More Profitable Experiences by UX Magazine](http://uxmag.com/articles/landing-page-optimization-for-more-profitable-experiences)
+
+ランディングページ最適化という言葉自体は知っていても、実際には既存のページの効果を落とすリスクはとれないのがほとんど。どう見てもイマイチなページもあってもリスクはリスク。  
+だからこそ、A/Bテストを行い数字を見て、仮説を立て、さらにA/Bテストをして最適化を図ろうという記事。  
+当たり前のことだけどできてないのもまた事実。
+
+## [Social Media Icons by Fontfabric™](http://fontfabric.com/social-media-icons-pack/)
+
+74ものフリーで使えるフォントになってるアイコン集。  
+海外系のサービスはほぼ網羅してる。  
+フォントの形式は.otfなので@font-faceで利用する場合は変換が必要。  
+フォントの変換は[Font Squarrelの@font-face Generator](http://www.fontsquirrel.com/fontface/generator)がおすすめ。
+
+## [Visual Design and Usability Yellow Brick Road by UX Magazine](http://uxmag.com/articles/visual-design-and-usability-yellow-brick-road)
+
+情報のヒエラルキーをデザインを使って明確にする。  
+ビジュアルデザインの役割は、かっこいいとかかわいいとかではなくユーザの道しるべとなること。  
+実際にヒエラルキーに順番をつけて、サイトデザインに当てはめて見て、正しくデザインされているかを見てみるのが近道。
+
+## [5 Ways That Your Crappy Co-Worker Is Like A Crappy UI by Co.Design](http://www.fastcodesign.com/1669194/5-ways-that-your-crappy-co-worker-is-like-a-crappy-ui)
+
+UIデザインには様々なアプローチがあるが、この記事では駄目なUIを駄目な仕事仲間に置き換えて説明している。ユニークなアプローチだけど、分かりやすい。
+
+1. フィードバックがない
+2. 情報の伝達に対する優先順位が不明。支離滅裂
+3. 仕事を終えない内にいなくなる
+4. 間違った場所にリソースを費やす
+5. フォローしない
+
+UIデザインについてでなくても耳が痛い場合もあるかも知れないが、UI二置き換えて考えてみると駄目なUIをいち早く発見できる。
+
+
+### Others
+
+5クリック以下だった記事はリンクと一言だけ紹介しています。  
+サマリが必要な方はお気軽に[Twitter@cssradar](http://twitter.com/#!/cssradar)までリクエストを。
+
+- **[Best Practices for Speeding Up Your Web Site by Yahoo!](http://developer.yahoo.com/performance/rules.html)**
+
+YSlowに出てくるチェック項目の詳細な説明。パフォーマンス改善には欠かせない情報。
+
+- **[Who Says Brainstorming Doesn't Work? by ZURB](http://www.zurb.com/article/920/who-says-brainstorming-doesnt-work)**
+
+ブレーンストームがアイデアを生み出せない理由はブレインストームのルールを守っていないから。
+
+- **[Cognition & The Intrinsic User Experience by UX Magazine](http://uxmag.com/articles/cognition-the-intrinsic-user-experience)**
+
+ユーザ体験は個人差があるからデザインできないと言われるが、認知心理学を応用したデザインを行うことでその差を埋めることはできる。
+
+- **[Using Salience to Guide User Decision-Making by UX Magazine](http://uxmag.com/articles/using-salience-to-guide-user-decision-making)**
+
+意思決定の理由付け。AをしたらBになるからCにつながる。みたいなストーリー性を持たせることでより効果的なデザインができる。
+
+- **[Pinterest's Founding Designer Shares His Dead-Simple Design Philosophy by Co.Design](http://www.fastcodesign.com/1669189/pinterests-founding-designer-shares-his-dead-simple-design-philosophy)**
+
+Pinterestの元ファンディングチーム所属であり現GumloadのCEO曰く、デザインはデザイナだけの仕事ではない。プロダクト全体のデザインはチーム全員で生み出されるもの。
+
+## That's it for this week!
+
+1. ご存知の方もいるかも知れませんが、来週13日、第27回HTML5とか勉強会に登壇させていただくことになりました。  
+今回は珍しく「リッチクライアントをデザインする」といういつもの開発路線ではなくデザイン路線です。  
+私はというとまたLESSの話をしますがSwapSkillsの講演とは異なり、私の趣味が多分に含まれた内容に仕上がっています。
+2. SwapSkillsの講演のフォローアップとしてスクリーンキャストを作成しました。参加いただいた方には公開されていると思います。初スクリーンキャストでしたので慣れない分見苦しい点もありますがご容赦を。  
+プラン、デモページの作成、録画、編集に4人/日は余裕でかかっている割に10分。。意外と大変だということがわかりました。
+3. ものすごくどうでもいいと思いますが、長文を書くためのアプリを[iA Writer](http://www.iawriter.com/)に変更しました。iPhone版もついに発売されて、iOSとMac OSを制覇した素晴らしくシンプルで書くことにだけ集中できるツールです。
+4. **来週からはCSS Radar Newsletterを月曜日に発行します**  
+金曜配信にこだわりがあったわけでもないのですが、その週にあった出来事をその週ごとに振り返ってみられるという観点で金曜配信としてますが、1) 間に合わなくなって来ていてサマリが粗い(申し訳ないです)。2) 金曜に紹介した記事は不利。3) Newsletterのフォーマットやその他の実験的なチャレンジがなくクオリティの向上策を実施できない。  
+ということで週の頭である月曜日、8時30分あたりに発行という方向で考えてます。こちらに関してご意見あればいただければ。
+
+
+
+

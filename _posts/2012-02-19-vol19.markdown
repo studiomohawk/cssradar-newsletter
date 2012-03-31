@@ -1,0 +1,215 @@
+---
+layout: post
+title: "Vol.19"
+date: 2012-02-19 10:12:16
+---
+
+## Web Design, UX, UI
+
+### [Designing Responsively: Fundamental Practices by BuildMobile](http://buildmobile.com/7-things-your-desktop-envies-from-your-mobile-site/)
+
+レスポンシブデザインの基本技術について。Viewportに合わせてレイアウトを変更することだけがレスポンシブデザインではない。  
+ここで紹介している基本は実際には1ソースでのレスポンシブデザインを実践しなくても大事なポイント。  
+
+- **シンプリシティ** / シンプルでクリーンなレイアウトはモバイル端末では必須になる。ではPCはその反対になってもいいのかというとそれは違う。
+
+- **削除する、隠す** / モバイル版で表示しなかった要素は本当にPCで必要なのか。メインの機能でないという判断であればPCではクリックして表示などにするほうがベターではないか。
+
+- **デスクトップブラウザもレスポンシブに** / モニタサイズは予想できない。そしてブラウザをフルスクリーンで開いている人は意外と少ない。
+
+- **inputタグ** / emailを入力させるinputには`type="email"`。モバイルではもちろんのこと、デスクトップユーザにも以前入力したメールアドレスをドロップダウンで選択できるという利点もある。
+
+### [Foursquare Solves A Basic UI Problem That Eludes Google Maps And Yelp by Co.Design: business + innovation + design](http://www.fastcodesign.com/1669015/foursquare-solves-a-basic-ui-problem-that-eluded-google-maps-and-yelp)
+
+Google
+MapやYelpのようなサービス。日本だと食べログなどの地図ベースでお店を探したりするサービスで共通している問題点はなんだかわかるだろうか？  
+多くの地図ベースサービスでは自分がいる地点を使った検索は便利だが、実際にはこれから行く場所の地点を検索する、というユースケースの方が多いのではないだろうか？  
+そうなると途端に不便になってしまうのだ。
+
+Foursquareはこの問題に対しての解決策を提示していた。そしてすばらしい解決だと言える。
+
+- 地図上で検索範囲をドラッグ
+- 検索ワードを入力
+
+たったこれだけのことだけど、実際にGoogle Mapなどと比べてみるとストレスが少ない。  
+場所の範囲 X 検索ワード。
+簡単にできそうなことなのに別個の問題として解決しようとしていると気がつかない。
+
+### [Data Monday: What Are Mobile Users Looking At? by LukeW](http://www.lukew.com/ff/entry.asp?1501)
+
+Luke Wroblewski氏によるモバイル系のデータ集。
+
+- 平均150回/日ほど人はケイタイを見る
+- 68%が1週間で5つ以下のアプリしか開かない
+- ダウンロードしたアプリのうち26%が1度しか使われない。26%は11回以上使われ、のこり48%のうち、13%が2回使われ、9%が3回
+- 425億のFacebookのモバイルユーザからほとんどゼロ円の広告収入
+- GoogleのモバイルサーチもPCに比べると利益が低い
+- 電話よりテキストメッセージ
+- この30日でもっとも利用されているのがゲームアプリ。月に7.8時間平均の利用、iPhoneのみだと14.7時間。Androidでは9.3時間
+- 天気系のアプリは2番目に使われるアプリ
+- iPadでは天気を確認するのが一番のアクティビティ
+
+### [Field Guide to Web Applications](http://www.html5rocks.com/webappfieldguide/toc/index/)
+
+あれって思うくらいリアクションが少なかった記事。。  
+GoogleによるHTML5 RocksにてBert
+Appwardがまとめたすばらしいウェブアプリを作るために知っておきたいこと。  
+リンクも豊富で本当におすすめ。
+
+### [The Noun Project, Insights on Symbol Design, by Jon Hicks](http://blog.thenounproject.com/post/17556534725/insights-on-symbol-design-by-jon-hicks)
+
+アイコン制作の伝道師であるJon Hicksによるアイコンデザインのコツ。  
+サイズ、バランス、グリッド、スタイル、ディテールという5つのコツについて。
+悩んだ結果、Jon Hicksの[The Icon Handbook](http://www.fivesimplesteps.com/products/the-icon-handbook)を購入。  
+ちなみに私はもうビジュアルデザインはしていない。。
+
+### [Simplicity? Complexity? Persuasion by Humanising Technology Blog](http://www.nomensa.com/blog/2012/simplicity-complexity-persuasion/)
+
+単純という言葉も、複雑という言葉も非常に主観的。  
+UXではどちらの条件もユーザアクションを最適化するという意味で大事だが、本当に大事なのは説得力。
+
+### [Mobile Sites vs. Apps: The Coming Strategy Shift by Jakob Nielsen's Alertbox](http://www.useit.com/alertbox/mobile-sites-apps.html)
+
+ユーザビリティの権威であるJakob Nielsen氏によるウェブアプリ vs.
+ネイティブアプリの結論。  
+スピードの面で今現在はネイティブに分があるが、将来的にはウェブアプリが主流になるだろうとしている。
+
+### [Designing for touch by .net magazine](http://www.netmagazine.com/features/designing-touch)
+
+モバイルデザインにかかせないタッチにフォーカスしたデザインのコツ。  
+どこがタッチできるのか。マウスとは異なる点を考慮してデザインを行う必要がある。
+
+## HTML
+
+[Quick Tip: Don't Forget the Viewport Meta Tag by Webdesigntuts+](http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag/)
+
+いろいろと謎が多くベストプラクティスが安定しないViewport
+Metaタグについてのすばらしくよくまとまった記事。
+
+- `meta name="viewport"
+content="width=device-width"`ではviewportをデバイスの幅に合わせる指定
+
+- `meta name="viewport"
+content="initial-scale=1"`はデバイスを開いた際にズームせず一対一になるようにする指定
+
+- `meta name="viewport"
+  content="maximum-scale=1"`はユーザによるズームを行わせない指定。この指定を利用する際は本当にズームが必要ないのかを確認すること
+
+非常に有用な情報なので[CSS
+Radar](http://css.studiomohawk.com)の記事に追加しておく予定だ。
+
+## CSS
+
+### [4 Fun CSS Image Effects You Can Copy and Paste by Design Shack](http://designshack.net/articles/css/4-fun-css-image-effects-you-can-copy-and-paste/)
+
+CSS3を使った画像効果を4つ。どれもコピペで使える面白い効果たちなので何かの折に使ってみてほしい。
+
+- ポラロイド
+- 複数ボーダ
+- 画像の周囲を暗くする(ビネット効果)
+- グランジ効果
+
+画像に限らずすべてのボックス要素で使えるので画像以外で利用するのも面白い。
+
+## JavaScript
+
+### [A Beginner's Guide To jQuery-Based JSON API Clients by Smashing Coding](http://coding.smashingmagazine.com/2012/02/09/beginners-guide-jquery-based-json-api-clients/)
+
+JavaScriptを使ったウェブアプリの開発はそれほど難しいことではない。  
+jQueryでJSON APIを使っての簡単ウェブアプリの作り方のチュートリアル。ここで作るのは10k Apartというたった10kbで動作するウェブアプリのコンテストに提出した作品。  
+たったの10kということは書かなければいけないコードは多くないのに、実際に動作する楽しいウェブアプリ。
+
+JSONはCSSに慣れた人には見慣れたデータ形式と言えるし、jQueryを使えば比較的簡単にJSONを処理することが出来る。 
+ウェブアプリなんて絶対自分には作れないなんて思わず、たった47行でできるので実際に動かすところまでチャレンジしてほしい。  
+実動デモは[こちらから](http://10k.aneventapart.com/2/Uploads/550/)
+
+### [Using JavaScript's Prototype with MVC by Nettuts+](http://net.tutsplus.com/tutorials/javascript-ajax/using-javascripts-prototype-with-mvc/)
+
+MVCと呼ばれるプログラミングデザインパターンは近年JavaScriptの世界でもポピュラーになってきた。  
+Model、View、Controllerという3つの大まかな役割でプログラムを分割することで拡張性、メンテナンス性を上げることができるのが利点。  
+ここではJavaScriptのPrototypeを使ってViewの部分にフォーカスして説明している。  
+
+記事中にあるダイアグラムだけでも見てもらえばMVCの概念について大体どんな風な構造なのかがわかるのでぜひ。
+
+### [Callback Functions in JavaScript by Impressive Webs](http://www.impressivewebs.com/callback-functions-javascript/)
+
+これまで何回もJavaScriptのコールバック関数についての記事を読んできたが基本を踏まえたチュートリアルで非常に理解しやすい。  
+
+- コールバック関数の書き方
+- コールバック関数を必須でない状態にする方法
+- コールバック関数が関数であるかのチェック法
+
+ここではAjaxなど非同期で実行する際のコールバックのタイミングについてはスコープ外。まずは基本を覚えよう。
+
+### [Modernizr Prefixed by AndiSmith.com](http://www.andismith.com/blog/2012/02/modernizr-prefixed/)
+
+[Modernizr](http://www.modernizr.com/download/)という強力なJavaScriptの使い方はまだまだ日本では知られていない。  
+そんなModernizrを利用するいいきっかけになる機能が2.5.1のバージョンアップから利用できるようになった。
+
+この真下にある記事を読んでもらえればわかるが、JavaScriptからブラウザベンダプリフィックスを呼び出すのは面倒だ。  
+Modernizrを使えば`Modernizr.prefixed('transform');`たったこれだけでその問題を解決してくれる。
+そしてそもそもModernizrはブラウザの機能チェックも行ってくれるわけなので、`this.style[Modernizr.prefixed('transform', this.style, false)] = transform;`このようにするとチェックを通した上でベンダプリフィックス問題を解決してくれる。  
+
+記事とは関係ないがModernizrは利用する機能を選択してカスタマイズして使うのがルール。そのママ全部使わないように。
+
+### [Best Practice for Programming with Vendor Prefixes by SitePoint](http://www.sitepoint.com/best-practice-for-programming-with-vendor-prefixes/)
+
+JavaScriptからCSS3のアニメーションなどブラウザベンダプリフィックスを呼び出す、ということは意外とニーズがある。  
+かくいう私も最近そんな仕事が増えたので丁度探していた記事。  
+スニペットが大半の記事なので、ソースコードを読んで欲しい。
+
+## Tool
+
+### [20 @fontface Icon Sets by speckyboy](http://speckyboy.com/2012/02/13/20-fontface-icon-sets/)
+
+最近私はアイコンを@fontfaceから呼び出すようにしている。アクセシビリティに問題があるとよく言われるが読み上げソフトからアイコンを読み上げないようにする方法はあるので解決できる問題。  
+ファイルサイズは大きくならず、フレキシブルでラピッドプロトタイプにも本番サイトでも非常に時短になるテクニックだ。 
+
+今回は珍しくまとめサイトをそのまま紹介。無料、有料を含めて20もの@fontfaceアイコンを紹介している。  
+なお、@fontfaceアイコンを利用する際は合わせて[24 ways: Displaying Icons with Fonts and Data- Attributes](http://24ways.org/2011/displaying-icons-with-fonts-and-data-attributes)を読んでおくとよい。
+
+## Video
+
+### [Everything is a Remix Part 4 by Everything Is a Remix](http://www.everythingisaremix.info/everything-is-a-remix-part-4/)
+
+長きにわたってリリースが遅れていたEverything Is a Remixがついに完結。  
+モノを作る人すべてに見てもらいたい4シリーズのビデオ。残念ながら日本語版はない。字幕系の翻訳をしてみたいがまったくわからない世界なのでどなたか教えてください。。
+
+### [Bret Victor - Inventing on Principle on Vimeo](http://vimeo.com/36579366)
+
+Appleで働くBret
+Victor氏。彼が考える発明とは自分自身に原理を持ってそれを叶える事。  
+自分のプリンシパルに従ってモノを生み出す事が発明につながるというすばらしい講演。こちらもモノを作るすべての人に見てもらいたいビデオの1つ。
+
+## Interview
+
+### [The QoC Interview: Luke Wroblewski, Author of "Mobile First" - Forbes](http://www.forbes.com/sites/anthonykosner/2012/01/30/the-qofc-interview-luke-wroblewski-author-of-mobile-first/)
+
+Luke
+Wroblewski氏へのForbesによるインタビュ。私並みにLukeのファンなら読んでおきたいインタビュー。3ページにも渡るロングインタビュ。
+
+### [The Vendor Prefix Predicament: ALA's Eric Meyer Interviews Tantek Çelik by A List Apart](http://www.alistapart.com/articles/the-vendor-prefix-predicament-alas-eric-meyer-interviews-tantek-celik/)
+
+日本ではあまり話題になっていないベンダープリフィックス問題。  
+MozillaやIEが-webkit-のベンダープリフィックスを導入するかもしれないと言い出して大騒ぎした直後に行われたEric
+Meyer氏とTantek Çelik氏の対談。  
+
+Tantek氏の話を聞けば聞くほどなんでそんな実装なの？と思ってしまう。。  
+とにかく大事なことは我々デベロッパがwebkit以外のベンダプリフィックスをきちんと利用すること。  
+問題の発端はそこにあると私は考えている。
+もちろん、全ブラウザが拡張機能の実験をする際、-v-とか-experiment-とかいうようなプリフィックスに統一すればいいのにというのも思うがそれはブラウザ側の実装スピードが異なるので難しい。。
+
+## That's it for this week!
+
+昨日は[SwapSkills(25) 時短、効率、スピードアップのための はじめての LESS 入門](http://swapskills.info/month/25.html)。  
+80人近くの人の前で講演という機会を初めて体験しました。若干時間が早まってしまったりと慣れなさ加減が出てしまいました。。  
+
+もっと沢山の人と直接話ができるように会場の外で早々と待っていればよかったなぁとか思いつつ、懇親会では多くの方と楽しくお話させていただく機会もあったりと楽しかったです。  
+一緒に登壇させていただいた小久保さんのお話も非常に面白くて勉強になりましたし、初めてお会いさせていただき本当に気さくでいいかただなという印象でした。  
+
+LESS/SassどちらでもCSSが根本的に抱える問題を解決するヘルパツールですから、ワークフローを阻害しないように使う事。  
+CSSが言語的に抱える問題点だけにフォーカスした解決だけに、どうやって管理をしていくか、イニシャルコストを減らしていくのか、何よりも大事な時間を手に入れるために、
+何よりも「めんどくさい」を解決するためにこういった技術を上手く取り込んでいくことは非常に大事なことだと思っています。
+
+改めて、私が日本語訳したLESSのドキュメントは[こちら](http://less-ja.studiomohawk.com/)です。  
+導入のきっかけになってもらえば幸いです。

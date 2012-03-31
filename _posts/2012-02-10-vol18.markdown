@@ -49,6 +49,7 @@ Stop Yelling。叫ぶのを辞めよう。
 ### [Why Design Methods Matter by ZURB](http://www.zurb.com/article/896/why-design-methods-matter)
 
 ZURBで実践しているデザイン方法論達。確立した標準化された方法論は安定したクオリティの成果物を生み出すのに必要。
+
 - 分析
 - ブレインストーム
 - 批評
@@ -58,6 +59,7 @@ ZURBで実践しているデザイン方法論達。確立した標準化され�
 - QAテスト
 - スケッチ
 - ユーザテスト
+
 このようなプロセスを経てUXを確立しデザインに落とし込んでいく。  
 ただPhotoshopを扱う人にならないために知っておきたい方法論達。
 
@@ -96,9 +98,11 @@ IE8にて`max-width`を画像に指定するとたまに画像が表示されな
 Responsive Web Designでは欠かすことの出来ないスタイルなだけに困るバグ。  
 
 筆者によると
+
 - `img`にCSSにて`max-width`が指定されていて
 - `width`の属性を記述していて
 - 幅を指定しないで`float`している場合
+
 に発生するバグだそうだ。  
 解決としては、`width: auto`も`max-width`とともに指定する。
 

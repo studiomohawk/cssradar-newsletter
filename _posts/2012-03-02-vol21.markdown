@@ -1,0 +1,155 @@
+---
+layout: post
+title: "Vol.21"
+date: 2012-03-02 21:01:37
+---
+
+## [Principles for Successful Button Design by Webdesigntuts+](http://webdesign.tutsplus.com/articles/design-theory/principles-for-successful-button-design/)
+
+ユーザにアクションを促すために絶対的に必要なボタン。世に多くのUIキットが出回っているけれど、やはりサイトにあったデザインにするべき。そんなボタンデザインの原則。
+
+1. **ブランドに合わせる**  
+カラースキーム、グラフィックスタイル、ブランドガイドラインやロゴなどに即すように作る。
+
+2.  **コンテキストのスタイルに合わせる**  
+1とほぼ同じながら、ダウンロードしたUIキットを開く前に、あるいはPhotoshopなどのグラデーション、シャドウ、ベベルを開く前にコンテキストのスタイルを見て最適なデザインにすること。
+
+3. **コントラストは十分であるかを確認する**  
+色やサイズ、ホワイトスペース、タイポグラフィを生かしてボタンが十分なコントラストを作れているかを確認すること。
+
+4. **角丸のサイズ、角丸を使わないを考慮してみる**  
+3のコントラストに加えて、ボタン以外のデザインで角丸が多様されているなら大きめの角丸の値でボタンを作る。または角が四角いボタンもあってもいい。大事なことはコントラストを強調すること。
+
+5. **二次的UI要素を控えめのデザインにする**  
+何かを強調するためにはそれに対比する要素がなくてはならない。二次的なUI要素を定義して控えめにデザインすること。
+ 
+6. **ストローク、ボーダの色を合わせる**  
+ボタンよりも背景色が明るい場合はボタンカラーから暗いシェードでボーダを、その反対であれば背景色から暗いシェードでボーダを引く。ボタンに限らず有効なガイドライン。
+
+7. **ドロップシャドウに気をつける**  
+背景色が明るい場合はボタンにつけるドロップシャドウのブラーはなしか限りなくなしに近い状態にする。ボタンの方が明るい場合も薄めにブラーをつけること。
+    
+8. **小さなアイコンはアフォーダンスを与える**  
+例えば小さな右を向いてる矢印はボタンに別ページにいくアフォーダンスを与えるし、下向きならドロップダウンなどのメニュが開くアフォーダンスを与える。
+    
+9. **1次的、2次的、3次的なデザインまで考える**  
+サイト全体のコントラストのバランスを保つためにも3種類のボタンのデザインをしておく。アクションの重要性を基準にサイズ、色、テキストサイズなどを考慮して作っておく。
+    
+10.  **ビジュアルフィードバックを必ず用意すること**  
+デフォルト、ホーバ時、アクティブ時、Ajaxのコールバック待ち、利用不可、などボタンには様々な状態がある。 
+これらの状態をユーザにフィードバックしてあげることがUXの基本。
+
+## [Things You Should Know About JavaScript by 8th Light](http://blog.8thlight.com/steve-kim/2012/02/06/things-you-should-know-about-javascript.html)
+
+知っていると心強いJavaScriptのシンタックスについて。  
+
+1.  **配列、オブジェクトの作成にはショートハンドを使う**  
+`var obj = { key1 : 'value1', key2 : 'value2' }`
+
+2. **ドットノーテーションとブラケットノーテーションの違い**  
+どちらもプロパティ/メソッドを呼び出すが、後者はプロパティ/メソッドを動的に生成もできる。
+
+3. **===と!===**  
+タイプもチェックすること。
+
+4. **ファンクションだけがスコープを作る**  
+
+残り5つについては記事のスニペットを参照。
+
+
+## [Responsive-Enhance by Josh Emerson](https://github.com/joshje/Responsive-Enhance)
+
+たった27行(圧縮なし)で作られたこのJavaScriptは大きな画像が必要な場合にのみ画像を取得。  
+便利というだけではなく、非常に短いのでソースコードリーディングにも最適。  
+`console.log()`が残っているあたりはご愛嬌。
+
+## [The Shocking Truth About How Web Graphics Affect Conversions by KISSmetrics](http://blog.kissmetrics.com/shocking-truth-about-graphics/)
+
+ウェブデザインにおける画像の利用はさけて通れない道。その昔いいブログの書き方のコツ的な記事でたくさん見かけたが画像の利用はプラスにしかならないというような話は嘘。  
+画像は確かに人の注意を引く、がよほど画像を選ばなければ記事を読むという行為には結びつかない。  
+そもそも画像はたいていの場合読者を減らす。しかし使い方さえ間違いなければその反対に読者を増やす機会を与えてくれる。
+
+1. **配置は大事**  
+画像の下にタイトルにあたる要素を入れること。10%ほど読まれる率が上がる。
+
+2. **キャプションは記事本体より4倍は読まれる**  
+なので必ずいれること。
+
+3. **画像を左寄せにしない**  
+記事幅に対して画像の横幅が半分に満たない場合には右寄せにすること。  
+左に配置してしまうと記事の頭が遠ざかるだけ。
+
+4. **関連性の見えない画像は場所の無駄**  
+選ぶべきはストーリ性のある画像、またはデモンストレーションする画像のみ。
+
+## [Mission Transition by Smashing UX Design](http://uxdesign.smashingmagazine.com/2012/02/28/mission-transition/)
+
+CSS3でアニメーションできるようになったからといって妙なアニメーションを使っていたりはしないだろうか？  
+派手なアニメーションは人の目を引くが、サイト全体の流れを遮断する邪魔なものにもなり得る。  
+アニメーションの一種であるトランジションは自然界にも溢れているありふれた事象だからこそ、アニメーションがあるかどうか気がつかないくらいがちょうどいい。
+
+## [About normalize.css by Nicolas Gallagher](http://nicolasgallagher.com/about-normalize-css/)
+
+reset.cssに成り代わって新しいスタンダードになりつつあるnomalize.css。その作者の一人であるNicolas Gallagher氏による解説。  
+
+- ブラウザの便利なデフォルトを全削除しない
+- HTMLの要素を平均化
+- バグの修正
+- 微細な改善によるユーザビリティの向上
+- コメントとドキュメントによるソースコードの解説
+
+この5つの点をゴールにnormalize.cssは制作されている。  
+デベロッパツールなどでreset.cssを使っていると出てくる無用な上書きがないところが気に入っている。  
+コメント付きのソースコードは必見。
+
+## [Which One: Responsive Design, Device Experiences, or RESS? by LukeW](http://www.lukew.com/ff/entry.asp?1509)
+
+Luke Wroblewski氏によるレスポンシブデザイン、デバイスエクスペリアンス、レスポンシブウェブデザインとサーバーサイドコンポーネント(RESS)の異なるアプローチから最適なものを選択するコツ。
+
+１つ目はさておき、後半2つは日本ではあまり知られていないレスポンシブウェブデザインのアプローチ。  
+
+この手の記事のサマリは非常に難しいので、全訳しようと思っています。    
+リクエストがあれば。
+
+## [Designing Perceptual Persuasion by Johnny Holland](http://johnnyholland.org/2012/02/designing-perceptual-persuasion/)
+
+説得力のあるデザイン。知覚に訴えるデザイン。行動心理学に基づいたデザインこそがゲーミフィケーションという大きな意味を持つワードに欠かせないコンポーネント。
+
+例えば人間は人が見ている方向に視線がいく、とかシーケンス、つまり順番に見えるデザインは人間の完遂したいという思いに訴えることができたり、日本では一般的ではないが引用文はやたら読まれる傾向にあるとか、オーバーラップした、つまり視覚的に知覚に感じる要素は注意を引くなど様々な知覚に訴えるデザインができる。  
+
+いくらゲーミフィケーションの概念を覚えても、もっと人間のベースにある知覚を知らなければ役割は半分にも満たない。
+
+### Others
+
+5クリック以下だった記事はリンクと一言だけ紹介しています。  
+サマリが必要な方はお気軽に[Twitter@cssradar](http://twitter.com/#!/cssradar)までリクエストを。
+
+- **[Creative Thinking Hacks: Video by Scott Berkun](http://www.scottberkun.com/blog/2012/creative-thinking-hacks-video/)**  
+クリエイティブな人というのは次から次へとアイデアがわき上がってくる人ではなく、アイデアを生み出すための努力を惜しまない人。
+
+- **[Redefining Hick's Law by Smashing UX Design](http://uxdesign.smashingmagazine.com/2012/02/23/redefining-hicks-law/)**  
+日本のWikipediaにはエントリすらないHickの法則はウェブデザインでよく使われる法則。選択肢が多ければ多いほど、人は選択するのに時間がかかる、という法則。この法則はナビゲーションの数を減らすことなどに応用されているが、コンテンツファーストという概念には欠かせないのでデザインの終盤ではなく序盤のプロセスから考慮するべき。
+
+- **[Building Decoupled Large-scale Applications Using JavaScript (And jQuery) by Addy Osmani](http://speakerdeck.com/u/addyosmani/p/building-decoupled-large-scale-applications-using-javascript-and-jquery)**  
+Addy Osmani氏によるjQueryを使った大規模アプリの作り方のスライド。
+
+- **[Super Sweet CSS 3D Text Effects With Sass and LESS by Design Shack](http://designshack.net/articles/css/3dsasstext/)**  
+CSS3で3Dなテキスト効果の作り方をSassとLESSを使って紹介。両方あるのは珍しいのでぜひ参考に。
+
+- **[Responsive Navigation Patterns by Brad Frost Web](http://bradfrostweb.com/blog/web/responsive-nav-patterns/)**
+レスポンシブなナビゲーションのパターンの利点、欠点。とても便利。全訳したいほど。
+
+- **[Understanding Information Architecture by Peter Morville on Prezi](http://prezi.com/aafmvya6bk7t/understanding-information-architecture/)**  
+Peter Morville氏によるIAについてのスライド。UXの基礎になる部分なので最近見直し記事がたくさんあるので、まずはここから。
+
+- **[Future-Ready Content by A List Apart](http://www.alistapart.com/articles/future-ready-content/)**  
+未来志向のデザインがトレンドだが、そこにたどり着くには未来志向のコンテンツが必要。ここでもIAの役割についての言及がある。
+
+## That's it for this week!
+
+そろそろ[CSS Radar](http://css.studiomohawk.com)の記事もアップデートが滞っているのでテコ入れしないといけない記事が増えてきました。
+新しい記事も書きたいなと思っているし、翻訳したい記事もたまってきて、翻訳記事用のブログの制作もしないといけないというなかなか厳しい状況の中、先日行った[SwapSkills](http://swapskills.info/month/25.html)での講演のフローアップも架橋に差し掛かって、さらに近々もう1つ勉強会にて登壇させていただける機会をいただいています。  
+
+時間を創る。今年最大の課題は間違いなくこれです。いや、毎年そうな気がしますが。
+
+

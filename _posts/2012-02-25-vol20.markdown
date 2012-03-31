@@ -1,0 +1,168 @@
+---
+layout: post
+title: "Vol.20"
+date: 2012-02-25 15:33:16
+---
+
+### [Stop paying your jQuery tax by Sam Saffron](http://samsaffron.com/archive/2012/02/17/stop-paying-your-jquery-tax)
+
+jQueryをheadで呼び出すと3つの税金を払うことになる。Stack OverflowのSam
+Saffronによる記事。
+
+- イニシャル
+
+ページロードの際に支払うのがこれ。最新のブラウザであってもStack Overflowの20%ほどページビューがキャッシュではなく実際のJavaScriptをCDNから取りにいっている。  
+いくらブラウザが賢くなってもレンダリングが始まる前にCSSが必要でヘッダに入れたjQueryのロードを待つことになる。
+
+- リフレッシュ
+
+ユーザは意外と更新ボタンを押す。更新されるとサーバはローカルにあるファイル群が最新であるかを確認する。  
+150msもjQueryが正しいバージョンであるかを確認するのにかかる。
+
+- コンスタント
+
+jQueryをレンダリングするのには最大で100msもかかる。ブラウザによって異なるが特にスマートフォンでGoogle
+Chromeに比べて約8倍(80ms。iPhone 4Sの場合)もレンダリングにかかる。  
+ページのレンダリングごとに必要になるのがこの税金。
+
+### [Html5 page preloader by Gianluca Guarini's Blog](http://www.gianlucaguarini.com/blog/?p=22)
+
+大きな画像や動画はページのレンダリングの妨げになる。しかしサイトのゴールがそういったリソースを表示する場合はさけることは難しい。  
+このjQueryのプラグインはそういったリソースをJSONファイルからプリロードしてくれる。  
+実際にデモを見てもらうほうが説明するより早いので[こちらから](http://www.gianlucaguarini.com/canvas-experiments/jQuery-html5Loader/examples/demo-circular.html)どうぞ。
+
+### [Your homepage Call to Action by Yoast](http://yoast.com/call-to-action/)
+
+トップページにすべてのユーザのためにサイトのすべての構造を表示する必要がある。という考え方はどういうわけか一般的。  
+あまりにも情報があふれすぎているページは単にユーザから選択のマインドを奪うだけ。  
+だから1つのアクションボタンだけに集中することが大事。
+
+記事ではそんな観点から3つの駄目なサイトをケーススタディにしてなぜ1つのアクションだけに集中するべきかを紹介している。
+
+### [What’s Your CSS Style? by Web Standards Sherpa](http://webstandardssherpa.com/reviews/whats-your-css-style/)
+
+このニュースレター中に何度も書いたがIE6なんてなくなればいいのに、と思っているならIE6がなくなった世界でのCSSの書き方を知っておく必要がある。  
+セレクタはCSSの中でもっとも重要な部分であり、何はなくともセレクタについては最小になるように最大の努力をするべき。
+
+類似の記事はたくさんあるが、かなり細かいところまでセレクタについての説明があるので非常におすすめ。  
+この記事をベースにセレクタについての記事を[CSS Radar](http://css.studiomohawk.com)に書こうかどうか思案中。  
+リクエストがあれば書きます。
+
+### [Character Entities Cheat Sheet for HTML, CSS & Javascript](http://brajeshwar.github.com/entities/)
+
+さぞかしまとめるのが面倒だっただろう便利なチートシート。HTML、CSS、JavaScriptの実体参照を1つにまとめた希有なサイト。  
+なんだかんだでよく調べるのでブックマークしておくことをおすすめします。
+
+### [the Performance Golden Rule by High Performance Web Sites](http://www.stevesouders.com/blog/2012/02/10/the-performance-golden-rule/)
+
+2007年にSteve
+Soudersがプレゼンしたページロードにかかる時間の80-90%はフロントエンド。  
+2012年の今も同じことがいえるのか？  
+答えはYES。  
+記事では様々なサイトのロード時間のダイアグラムもあるので懐疑的な方はどうぞ。
+
+### [Prototypes and Inheritance in JavaScript by Script Junkie ](http://msdn.microsoft.com/en-us/scriptjunkie/ff852808)
+
+JavaScriptにおける継承、プロトタイプの概念はなかなかに理解が難しい。  
+筆者であるScott
+Allenはプロトタイプの継承をルマンやF1の車に例えていたのが印象的。  
+一般的な車はそれらルマンやF1で培った技術、知見を継承しているといえる。それを前提にJavaSript特有のプロトタイプベースの継承について説明している。
+
+### [How Basecamp Next got to be so damn fast without using much client-side UI by 37signals](http://37signals.com/svn/posts/3112-how-basecamp-next-got-to-be-so-damn-fast-without-using-much-client-side-ui) 
+
+Basecampの次バージョンを開発している37signals。先日その[プレビューが動画](http://37signals.com/svn/posts/3111-basecamp-next-ui-preview)で紹介されたがそれがものすごいレスポンス速度。  
+この記事ではどうやってその速度を達成したかを紹介。  
+簡単にいうとHTML5のHistory APIであるpushStateを利用したpushState
+Ajax(pjax)を利用してリンクを先読みし、きちんとキャッシュして、そのキャッシュをページ間、ユーザ間で利用できるようにしているそう。  
+pjaxは非常に面白い概念でかつシンプルな実装になるので、興味がある方は[こちら](https://github.com/defunkt/jquery-pjax)もjQueryを使ったpjaxの実装があるのでソースを読んでほしい。
+
+### [The De-Evolution of UX Design by Elisabeth Hubert](http://www.elisabethhubert.com/2012/02/the-de-evolution-of-ux-design/)
+
+UXがIAより偉い、なんて思っていないだろうか？UXなんかただの総称にすぎない。  
+プロトタイプを作ることより、ワイヤフレームを作ることより、サイトマップを書く。コンテンツの棚卸しをする。IAの世界では当たり前の事をできなければUXはただの名前だけの存在になってしまう。  
+UXをよくするためにはまずコンテンツを知る必要がある、IAにはそのためのタスクがたくさん用意されている。  
+UXというトレンディなワードに流されずIAをきちんとしよう。
+
+### [Responsive Design: Why You're Doing It Wrong by Design Shack](http://designshack.net/articles/css/responsive-design-why-youre-doing-it-wrong/)
+
+レスポンシブデザインでよく見かける失敗はmedia queriesを使って様々なサイズのモニタやデバイスに対応すること。  
+できる、ということとやっていいことは別だ。  
+記事はレイアウトに絞っての話として書いているが、大事なことはコンテンツにあった万能なレイアウトを生み出すこと。  
+media queriesで行うのは調整くらいにとどめるのがいい。
+
+### [The Ghost of Decisions Past by 52 Weeks of UX](http://52weeksofux.com/post/18016578806/the-ghost-of-decisions-past)
+
+どんなサイトにも制限事項はある。優れたデザイナであればあるほどこの制限事項を武器に最大の効果を発揮できる。  
+しかしよくあるのがその制限事項を忘れてしまう事。  
+制限を決断することは制限事項があると認識するのより難しい。しかしその決断は多くの場合口伝によってのみ伝達される。  
+記事ではその決断をDecision
+Noteという形式でソース上に書き残していくことを例示している。  
+このDecition
+Noteはすばらしいアイデア。私もこれからそういうオペレーションをするようにしたいと思っている。
+
+## TOOLS
+
+### [Base64 Image Mass Encoder for CSS](http://ippa.se/base64-image-encoder/)
+
+Data
+URIを画像のドラッグ&ドロップで生成してくれる便利ツール。以前使っていたツールがなくなってしまったのでその代わりに。
+
+### [Colllor - Turn one color into many alternative ones](http://colllor.com/)
+
+1色からティント、シェード、トーン、ミックス、類似の色をしてくれるツール。  
+カラースキームの構築には欠かせない矛盾のない色選択をサポートする。
+
+### Other
+
+5クリック以下だった記事はリンクと一言だけ紹介しています。  
+サマリが必要な方はお気軽に[Twitter@cssradar](http://twitter.com/#!/cssradar)までリクエストを。
+
+### [Tracking JavaScript execution during startup by don't code today](http://ariya.ofilabs.com/2012/02/tracking-javascript-execution-during-startup.html)
+
+JavaScriptの実行時間をPhantomJSとEprimaで計測する方法の紹介。
+
+### [Playing with Ember.js](http://ngauthier.com/2012/02/playing-with-ember.html)
+
+Ember.jsを使ったサンプルアプリケーションの実装を通した感想。今のところはbackbone.jsのほうが優勢とのこと。
+
+### [Fluid & fixed columns playing together nicely thanks to display: table](http://moople.co.uk/likeatable.html)
+
+固定とフレキシブルのコラムが同居するグリッドを構築するのは難しいがdisplay:
+tableをつかって解決方法を提示。CSSフレームワークを作る人は必見。
+
+### [Building the new AJAX mail UI part 2: Better than templates, building highly dynamic web pages by FastMail.FM Weblog](http://blog.fastmail.fm/2012/02/20/building-the-new-ajax-mail-ui-part-2-better-than-templates-building-highly-dynamic-web-pages/)
+
+意外な事実。テンプレートエンジンよりもJavaScriptで直接DOMを作った方が速度が速い。とくにモダンブラウザではその傾向が顕著。
+
+### [Optimizing Textured Artwork for PNG Export by Method & Craft](http://methodandcraft.com/videos/optimizing-textured-artwork-for-png-export)
+
+複数色の背景、そしてテクスチャを使ったアートワークをPNG8で出力するコツ。非常にプリミティブだけど効果的な方法なのでぜひ。Fireworksだから大丈夫とか思わない。クオリティと画像サイズの共存のためには知っておきたいコツ。
+
+### [I don't believe in UX Design. by Too Big to Tweet](http://toobigtotweet.tumblr.com/post/18023531982/i-dont-believe-in-ux-design)
+
+UXはその言葉がメジャーになるまえから存在して、デザイナーという肩書きの人がキチンと実行してきた。でも言葉だけが先行してしまった今、UXデザインなんか信じないという記事。
+
+## That's it for this week!
+
+新しくメールマガジンに登録していただいた方、初めまして。  
+Vol. 20になってなおメールマガジンのフォーマットを模索している[CSS Radar](http://css.studiomohawk.com)の斉藤祐也です。  
+
+今回から紹介している記事のジャンルわけをやめて純粋に[Twitter@cssradar](http://twitter.com/#!/cssradar)でつぶやいた記事のうち、クリック数が多かった順に並べています。  
+(ツールやスニペットは別セクションにしてます)  
+6クリック以上の記事についてはサマリかそれに準じた記事の紹介を、それ以下の記事については1行紹介としました。  
+ご意見などありましたらぜひ聞かせてください。
+
+ようやくというかもうというかVol. 20まで続いたCSS Radar Newsletterですが少し制作の裏側について紹介しましょう。  
+
+- メルマガ1号につき4〜5時間ほど
+- 毎日[Twitter@cssradar](http://twitter.com/#!/cssradar)で紹介する記事を読んで、5記事以内にまとめるのに1日だいたい2〜3時間ほど
+- 現在102名の登録者
+- もちろん作っているのは私1名(コラボレータはいつでも募集中です)
+- MailChimpを使ってのメルマガ配信は現状の規模ではフリー
+- Twitterは[Buffer](http://bufferapp.com/r/a01f9)という予約ツールを使って配信(BufferはクリックのカウントやRetweetの回数も教えてくれます)
+
+どんなモチベーションでこのメルマガを続けられるかというと、メールの開封率、登録者の数、Twitterでのクリック数、Retweetの数など目に見える数字と皆様からのフィードバック。  
+広告収入などは一切ありませんので、何よりも皆さんにああ、便利だなと思ってもらえる事だけです。
+
+次の登録者数の目標は200名。  
+TwitterでもFacebookでもブログでもなんでもかまいません、少しでも便利だと思ってもらえたら紹介いただければうれしいです。

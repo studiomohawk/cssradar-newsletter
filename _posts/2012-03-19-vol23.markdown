@@ -1,0 +1,155 @@
+---
+layout: post
+title: "Vol.23"
+date: 2012-03-19
+---
+
+## [Fashionably flexible responsive web design (full day workshop) by Andy Clarke](http://speakerdeck.com/u/malarkey/p/fashionably-flexible-responsive-web-design-full-day-workshop-1) 
+
+このワークショップでAndy Clarkeはレスポンシブウェブデザインが単にmedia queriesを利用したレイアウト変換ではないことを実践。  
+デザインからレイアウトを切り離し、Photoshopで制作したデザインを、カラー、テクスチャ、タイポグラフィをデスクトップ、モバイル端末など様に再構築できるコンポーネントとして分離する方法を紹介。
+
+## [Responsive Design & ROI – observations from the coalface by cxpartners](http://www.cxpartners.co.uk/cxblog/responsive-design-roi-observations-from-the-coalface/)
+
+1. ワイヤフレームだけではもはや十分とは言えない  
+レスポンシブサイトはいくつかの“ブレークポイント”を中心に作られる。  
+ワイヤフレームは初期行程における大まかな理解を生み出すのには効果的だが、ブレークポイントのギャップを埋めるのには向かない。
+そのため、ワイヤフレームを元にHTMLでのプロトタイプを利用して早い段階で正しい意思決定を行えるようにする。
+
+2. デバイスタイプに合わせてレイアウトをデザインする  
+ユーザテストの結果、ほとんどのユーザはウェブサイトを閲覧するのにスマートフォンをポートレイトモード(縦)で持ち、タブレットではランドスケープモードで閲覧した。  
+ワイヤフレームもプロトタイプも一般的なユースケースに合わせて最適化するべき。
+
+3. 960pxグリッドはもはや最適とはいえない  
+パーセントでのグリッドシステムを構築する場合960pxは効率的な数字ではない。1000pxや1140pxのようなパーセンテージ計算しやすいスタートポイントが必要。
+
+4. インブラウザデザインよりもPhotoshopデザイン  
+ビジュアル的な方向性が確定するまではPhotoshopなどのAdobe Suitesを利用し、確定次第インブラウザデザインに移行する方が効率的
+
+5. アジャイルアプローチ  
+様々なデバイスに向けてデザインするためにはある程度の実験性、またはコンセプトのテストをリアルタイムで行う必要がありそれらのイテレーションが常に必要になる。  
+ウォーターフォールのアプローチよりもアジャイルのほうが向いている。
+
+## [Understanding em Units in CSS by Impressive Webs](http://www.impressivewebs.com/understanding-em-units-css/)
+
+emユニットについての詳細。  
+emとはエレメント内のfont-sizeプロパティに対してイコールになる値。  
+`font-size: 20px`と定義した場合、1emは20pxとなる。  
+`font-size: 20px; width: 4em; height: 4em;`とした場合、4emは20pxの4倍、つまり80pxとなる。  
+remはroot em。つまりemの値は常にroot(html)で設定した`font-size`をベースに計算される。  
+remとemの違いは[こちらのjsfiddleで](http://jsfiddle.net/pepelsbey/TDSUw/)
+
+## [Use Pseudo Elements to Create an Image Stack Illusion by Design Shack](http://designshack.net/articles/css/use-pseudo-elements-to-create-an-image-stack-illusion/)
+
+このチュートリアルでは画像が複数重なり合って見えるデザインを疑似要素を使ったCSSのみで再現する。  
+元になっているデザインは[こちら](http://pixelsdaily.com/resources/photoshop/psds/stacks/)。  
+ステップごとに丁寧に解説されているので、実際に追いながらやってみるといいだろう。  
+1度作成したコードをDRYの原則に沿ってリファクタしたり、別バージョンを作成したりもしているので参考になるはず。  
+ちなみに私も同じような、なんとなく作ってしまってからリファクタする、というアプローチをどんな制作でも行う。面倒と思えるかもしれないが、インスピレーションと整理整頓は別のプロセスで行う方がいい。
+
+## [Multi-Device Layout Patterns by LukeW](http://www.lukew.com/ff/entry.asp?1514)
+
+レスポンシブデザインにおけるレイアウトパターン。  
+
+1. Mostly Fluid
+2. Column Drop
+3. Layout Shifter
+4. Tiny Tweaks
+5. Off Canvas
+
+Lukeはこの5つに分類。名前も秀逸。  
+ビジュアルで確認できる記事なので元記事を参照してくださいね。
+
+## [A Simple Device Diagram for Responsive Design Planning by Metal Toad Media](http://www.metaltoad.com/blog/simple-device-diagram-responsive-design-planning)
+
+レスポンシブデザインでは特定のデバイスに特化してデザインするべきではないと言われながらも開始のポイントも分からないと困るのも事実。  
+この記事では2012/3現在の主要デバイスの幅をダイアグラム化(PSDファイルをダウンロードできる)。  
+そしてそのダイアグラムから、3レイアウト、４レイアウト、5レイアウト、6レイアウトのパターンで対応のデバイス幅のレンジをどう分離するかのパターンを紹介している。  
+レスポンシブと言われても、どうプランニングしていいのか分からないディレクタは必見。もちろん言うまでもなく、フロントエンドもデザイナにとっても有用。
+
+## [Future Friendly Style Guides by Luke Brooker Creative](http://blog.lukebrooker.com/future-friendly-style-guides)
+
+Twitter Bootstrapを契機にスタイルガイド、しかもHTML、CSSで作られたライブスタイルガイドが脚光を浴びている。  
+そのスタイルガイドのレスポンシブ版。  
+この記事をベースにしたLuke Brookerの発表のスライドは[こちら](http://speakerdeck.com/u/lukebrooker/p/future-friendly-style-guides)  
+その彼のレスポンシブスタイルガイドの実例は[こちら](https://github.com/lukebrooker/pattern-response)  
+レスポンシブであろうと無かろうと、このスタイルガイドは自分が作成する際に参考になる。
+
+## [It’s time to look at animated gifs again by Boagworld](http://boagworld.com/design/its-time-to-look-at-animated-gifs-again/)
+
+黎明期からデザイナをやっている人には珍しくもないアニメートGIF。  
+この2010年代になぜ故またか、と思うかもしれないが、最近のアニメートGIFはすごい。  
+単にすごいだけで終わらせず、この手法はECや記事コンテンツにも活用できるだろう。256色しか使えないので若干粗いのは仕方がないが、CSS3アニメーションとPNGの組み合わせでも可能なので、プロセスや商品画像の360度紹介などに使えるのではないだろうか。
+
+## [In defense of localStorage by NCZOnline](http://www.nczonline.net/blog/2012/03/07/in-defense-of-localstorage/)
+
+localStorageは遅い、とかパフォーマンスが悪いと言われているが、実際にそうなのか。何と比べて遅いのか。  
+
+- localStorageとcookieとのパフォーマンスの差異のテストでは、FireFox、Opera以外ではlocalStorageの方が早い。  
+- データを取り出すAPIに問題がある。
+
+localStorageを利用するべきではない、とするのはバカバカしい、APIに問題があるのは事実でもやはり利用しないという選択肢はおかしい。
+
+## [In-Browser Prototyping ... Or How We Rapidly Rebooted ZURBword by ZURB](http://www.zurb.com/article/923/in-browser-prototyping-or-how-we-rapidly-)
+
+Zurbが実際にZurb Worldというコンテンツでインブラウザ・プロトタイプを行った際のケーススタディ。  
+実際のキャプチャこみでの解説なので参考になる。
+
+## [Creating Effective Landing Pages](http://muddylemon.com/2012/03/creating-effective-landing-pages/)
+
+例えば車のディーラーに出かけて、「この車は足下は広いのかな？」と聞いたとする。セールスの人の回答は「ええ、見た目以上に広いですよ」と言って立ち去っていく。  
+車のセールスの方に限ってそんな事はしないだろうと、思っただろうか？  
+では自分が作成した、作成しているランディングページを見てほしい。  
+いいところだけ強調してアクションがない。なんてことはないだろうか？
+
+あるいはせっかく興味を持ってくれたのに、ストーリーが続かない、ということにはなっていないだろうか？  
+きちんとした流れを作って、アクションに導く。デザインとは一見関係ないように見えるが、優秀な車のセールスの方には当たり前のことをまだまだデザインできていないのではないだろうか？
+
+## [Hacking is Important by Rands In Repose](http://www.randsinrepose.com/archives/2012/03/13/hacking_is_important.html)
+
+ハッキングこそ、FacebookやTwitterやGoogleやApple、それどころかFordすら生み出した原動力。  
+もっといい方法がある、動かなければ意味が無い、新しいものを恐れない、カオスをカオスのまま処理できる。  
+大事なことはプロセスじゃない。
+ハッカーの精神はもの作りにおいてもっとも大事な精神。  
+本当に素晴らしい記事なので、ぜひ原文を読んでほしい。
+
+## [Disruptive Workflow Design by Jakob Nielsen's Alertbox](http://www.useit.com/alertbox/disrupting-users.html)
+
+ワークフローのデザインはアプリケーションデザインにおいてもっとも大事な要素と言える。  
+この記事でJakob NielsenはiTunesを悪い例としてケーススタディをしている。  
+
+Appleですら長い間このミスを放置しているのだから、自分たちはなおさらだろう。記事ではアプリケーションデザインに限定しているが、ウェブデザインにおいてもワークフローのデザインは見落としがちな要素なのできちんとフローを見直すとよいでしょう。
+
+## [Say Hello to the HTML Email Boilerplate by Webdesigntuts+](http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/say-hello-to-the-html-email-boilerplate/)
+
+[HTML Email Boilerplate](http://htmlemailboilerplate.com/)はHTMLメールを作る際に知っておきたいティップス、スニペット、ベストプラクティスの集合。  
+言わずもがなHTML5 Boilerplateを意識して作成されている。  
+知っている人も多いだろうが、HTMLメールはなかなかダークで深い世界。そのイマドキからかけ離れたHTMLメールに一縷の望みを生み出しているプロジェクトと言ってもいいだろう。  
+ちなみ私はまだ適応していない。。
+
+### Others
+
+5クリック以下だった記事はリンクと一言だけ紹介しています。  
+サマリが必要な方はお気軽に[Twitter@cssradar](http://twitter.com/#!/cssradar)までリクエストを。
+
+- **[Luke Wroblewski – Examining Mobile User Input by UIE Brain Sparks](http://www.uie.com/brainsparks/2012/03/09/luke-wroblewski-examining-mobile-user-input/)**
+
+Luke WroblewskiとJared Spoolのインタラクションに関するインタビュー。
+
+- **[Making Use of HTML5 Storage by Developer Drive](http://www.developerdrive.com/2012/03/making-use-of-html5-storage/)**
+
+HTML5 Storageの使い方。localStorageとsessionStorageの話。
+
+## That's it for this week!
+
+HTML5とか勉強会にて登壇させていただきました。  
+そのうちオフィシャルなレポートも上がると思いますが、私個人のまとめについては[こちら](https://gist.github.com/2029828)に。  
+スライドとスライド内で紹介したリンクをつけていますのでまだ見ていないかたはぜひ。
+
+これで少し落ち着いたと思いきや、会社業務外の仕事がたまって来ております。  
+また趣味である写真も少し再開し、[500px](http://500px.com/studiomohawk/photos)にアカウントを作りました。  
+撮影にも行きたいけれど、天気が悪いので今週もデザイン、コーディングの土日でした。
+
+
+
+
