@@ -1,0 +1,191 @@
+---
+layout: post
+title: "Vol.28"
+date: 2012-04-23
+---
+
+## [Scope and this in JavaScript by The JavaScript Playground](http://javascriptplayground.com/blog/2012/04/javascript-variable-scope-this)
+
+いまさら聞けないJavaScriptのスコープと`this`について。  
+記事の半分ほどはスニペットなので、jsfiddleなどにコピペして実践してみると理解がしやすいだろう。
+
+- スコープにはglobalとlocalの2種類がある。変数だけではなく関数にも当てはまる
+- varをつけずに変数を定義するとグローバルになる
+- イベント、Ajaxを利用する場合の`this`に注意すること
+
+## [What Does it Mean to be Simple? by 52 Weeks of UX](http://52weeksofux.com/post/21026021557/what-does-it-mean-to-be-simple)
+
+シンプルを実践するために知っておきたい本当のシンプルの意味。
+
+- シンプルとは「理解するために、目的に達し、完遂するためにぴったり必要」な状態
+- **単体のコアアイデアを持つ**
+- ユーザがYes/Noだけで答えられるようなステップを用意する
+- 単純な言語を使う。明確で明瞭な問題、あるいは機会を与えられるように
+- 繰り返す
+- 問題と機会の最終目的はいつでも目で見られるように
+- **明晰さを徐々によくしていく**
+- 明晰さ、明確さはタイミングと場所が大切
+- 開始点と最終目的地を明確に。やり遂げる価値があることをインターフェイス場で表示すること
+- ユーザが今行うべきタスクに対して詳細度をあげる
+- 進むべき次のステップは明確に
+- **一貫性を利用する**
+- よく似たプロセスにはよく似たアプローチ
+- パターンをつくる。ユーザが勘だけで行動できるように
+- UIが本当に独自性を持つべきタイミングを知る
+
+## [Mobile Game Primer by Build New Games](http://buildnewgames.com/mobile-game-primer/)
+
+モバイルにおけるゲーム開発のまとめ。
+
+- **CSS SpriteとCanvasのパフォーマンスの差異**
+- iOS5においては基本的にはCanvasのパフォーマンスが上
+- AndroidではまだまだCSS Spriteの方が上
+- ページ全体でたくさんの要素を動かす場合はどちらのプラットフォームでもCanvasのほうがパフォーマンスがいい
+- ただしハードウェアアクセレレーションが利用出来る場合のみ
+- CanvasではiPhone4、iPad2、Galaxy Nexusにおいて1000のスプライトを30fpsで処理できる
+- テストは[こちら](http://cykod.github.com/mobile-html5-tests/)
+- **Viewportについて**
+- **タッチコントロールについて**
+- **サウンドについて**
+- **アイコンについて**
+
+## [5 Tips to Make Your jQuery Plugins Awesome by Joe Zim's JavaScript Blog](http://www.joezimjs.com/javascript/5-tips-to-make-your-jquery-plugins-awesome/)
+
+jQueryのプラグインを作る際に知っておきたい5つのTips。
+
+1. Self-Invoking Anonymous Functionを使う
+
+	(function($, undefined) {
+		// Your Plugin Code Goes Here
+	}(jQuery));
+
+2. デフォルトオプションを作り、`$.extend`する
+3. 静的な変数は関数外に書く。例: デフォルトオプションなど
+4. jQueryをリターンする。チェーンするため。
+5. jQueryの`attr`関数のような標準的なゲッター、セッターパターンを使う
+
+## [A New Front-End Methodology: BEM by Smashing Coding](http://coding.smashingmagazine.com/2012/04/16/a-new-front-end-methodology-bem/)
+
+BEMという新しいフロントエンド実装手法について。
+非常に複雑なので私が参考にしている部分を抜粋。
+
+- OOCSSの拡張
+
+ブロックとエレメント。前者はラッパモジュールで、後者が最小構成単位のモジュール。
+
+- 命名規則
+
+CSSというよりはクラス名の命名規則は参考になる
+
+BEMは単純な概念ではなく、BEMというシステムなので非常によく考えられ作られているもののすぐに利用出来るというものではないので、概念部分だけを拾って参考にするのが現実的。
+
+## [Design Principles for Complex, Unpredictable, People Oriented Systems by Irving Wladawsky-Berger](http://blog.irvingwb.com/blog/2012/04/design-principles-for-complex-unpredictable-people-oriented-systems.html)
+
+人中心で予測できない複雑なシステムを作るためのデザイン原則。
+
+1. 柔軟性と適応性
+2. 体験のクオリティ
+3. マーケティングとコミニケーション
+
+もっとも大切なことは複雑な問題をシンプルにしすぎないこと。  
+複雑な問題を複雑だと認識することが大事。
+
+## [Not Just Pretty: Building Emotion Into Your Websites by Smashing UX Design](http://uxdesign.smashingmagazine.com/2012/04/12/building-emotion-into-your-websites/)
+
+エモーションをウェブデザインに反映するために知っておきたいこと。
+
+- まずはよいデザインの基礎。1) 内部的なデザインのゴールの設定、2) 誰のためのデザインなのかを明確に、3) ユーザがそのサイトをどんな時に、どんな状況で便利だと感じるかを知ること
+
+- **5つのエモーショナルデザインアプローチ**
+- ユーモア / [MailChimp](http://mailchimp.com/)で実践されるようなユーモアはユーザに快適さを与えるアプローチ
+- 認知 / 人は無意識に見たものを経験や認知と関連づけを行う。黄金律(人間の体のプロポーションは黄金律)や人の顔など人間に近い関連のあるものを利用する
+- 認知不協和 / 人はパターンが大好きで、パターンを見ると安心できる。しかしそれを逆手に最低限のパターンを保証しつつ、それを裏切る、という手法はユーザに気持ちのいい驚きをあたえることができる
+- 口調 / ウェブサイト上で利用する口調
+- エンターテイメント / よいユーザビリティは当たり前、探している情報が見つかるのは当たり前。だからより楽しく、エンターテイメント性の高いコンテンツをつくる
+
+## [User Experience Is The Heart Of Any Company. How Do You Make It Top Priority? by Co.Design](http://www.fastcodesign.com/1669503/user-experience-is-the-heart-of-any-company-how-do-you-make-it-top-priority)
+
+UXはどんなサイトでも大事。UXを最優先事項にするためには？
+
+1. 使いやすさはすべての場面でユーザ体験を考えることが最短の道
+2. 完璧なプロダクトを作ることよりも、ユーザの利用シーンに最適化する手法を取る
+3. ユーザだけに聞かない
+
+[Game Changers](http://gamechangers.wolffolins.com/)というレポートの一部だそうです。全部読んだようが良さそうです。
+
+## [The 10 principles of mobile interface design by .net magazine](http://www.netmagazine.com/features/10-principles-mobile-interface-design)
+
+モバイルUIデザインにおける10の原則。
+
+1. モバイルはデスクトップとは違うという認識をすること
+2. モバイルが利用されるシーンを知ること
+3. モバイルのグローバルなガイドラインについて
+4. ナビゲーションモデルについて
+5. ユーザインプットについて
+6. ジェスチャーについて
+7. オリエンテーション(向き)について
+8. コミュニケーションの手法について
+9. スタート画面について
+10. 初対面の印象
+
+### Tools
+
+- **[twitter/recess](https://github.com/twitter/recess)**
+
+Twitter内部で利用されているCSSのスタイルガイドチェッカー。node.jsを利用したコマンドラインツールとして使用可能。
+
+- **[CSS Selectors Level 3 - A Quick Reference](http://vogtjosh.com/selectors/)**
+
+CSSのセレクタチートシート。
+
+- **[Screenqueri.es / Pixel Perfect Responsive Design Testing Tool](http://screenqueri.es/)**
+
+ピクセルパーフェクトなレスポンシブウェブデザインチェックツール。デザインインスピレーションも開始。
+
+### Snippets
+
+- **[Triangle With Shadow by CSS-Tricks](http://css-tricks.com/triangle-with-shadow/)**
+
+CSSで作る三角形にシャドウをつける方法。
+1) 文字を使う。2) box-shadowで片面だけにシャドウを入れる。 3) 画像にする。
+
+- **[CSS pointer-events and a pure CSS3 animating tooltip by Viget](http://viget.com/inspire/css-pointer-events-and-a-pure-css3-animating-tooltip#When:17:42:56Z)**
+
+`pointer-events: none`を使ったCSSのみで作るツールチップ。
+
+## Slide / Video
+
+- **[Optimize Your CSS With RequireJS by Nettuts+](http://net.tutsplus.com/tutorials/html-css-techniques/optimize-your-css-with-require-js/)**
+
+Require.jsを使ってCSSを最適化する方法。node_moduleの使い方を含めて12分ほどの分かりやすい動画チュートリアル。
+
+### Others
+
+- **[Chrome Developer Tools: Breakpoints by Google Developers](https://developers.google.com/chrome-developer-tools/docs/scripts-breakpoints)**
+
+Chrome デベロッパツール、ブレークポイントの使い方。説明だけを読んでいてもわからない部分もあると思うので、実際に読みながらやってみるといいでしょう。
+
+- **[Making a Speedy HTML5 Game by Facebook Developers](https://developers.facebook.com/html5/blog/post/2012/04/17/making-a-speedy-html5-game/)**
+
+GamzeeのデベロッパによるHTML5ゲームのオプティマイズについて。短いけれど多くのTipsがあり参考になる。
+
+- **[Saving the Day with Scoped CSS by CSS-Tricks](http://css-tricks.com/saving-the-day-with-scoped-css/)**
+
+Scoped CSSって知ってますか？ まだGoogle ChromeのCanaryでしかサポートされていないCSSにスコープという概念をもたらす仕様。便利に使えそうながらメンテナンスしきれる自信なし。
+
+## That's it for this week!
+
+個人的な作業ができず、やりたいことだけが溜まって来ています。
+14人/日くらい分あります。  
+コラボレートしたい人のために、そして公開することで忘れないように。
+
+- [en.ja](http://enja.studiomohawk.com/)に追加する記事の翻訳
+- [CSS Radar](http://css.studiomohawk.com)のリニューアル
+- CSS Radarの英語、Jekyll、レスポンシブデザイン、Rubyについてのトピックをアップデート
+- [Fakebrain](https://github.com/studiomohawk/fakebrain/wiki)のウェブサイト移行 / Jekyllでなんとかしたい
+- [Public Draft](http://publicdraft.calepin.co/)をリデザイン、自ドメイン移行
+- CSS Radar Newsletterの再編 / もう少しコミュニティの要素を追加したい
+
+どのプロジェクトでもコラボレータを募集してます。  
+私のプロジェクト全部ひっくるめてフロントエンドなコミュニティを生み出したい、という思いを持ってやっているので、お気軽にコラボレートしてあげてくださいませ。
+

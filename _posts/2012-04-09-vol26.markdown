@@ -1,0 +1,151 @@
+---
+layout: post
+title: "Vol.26"
+date: 2012-04-09
+---
+
+## [Startups, This Is How Design Works by Wells Riley](http://startupsthisishowdesignworks.com/)
+
+Wells Riley氏によるスタートアップのためのデザインの基本。
+
+- デザインとは問題解決のための手段である
+- いいデザインとは、そのことに全く気がつかないこと
+- Dieter Ram氏のよいデザインのための10原則
+- デザインがプロダクトの革新性に寄与しているか。プロダクトを使いやすくしているか、長持ちさせることができるか。このような制限の中、ユーザはプロダクトを愛することができるか
+- 様々なデザイン: グラフィック、インタラクション、工業デザイン、etc…
+- デザイナーがco-founderに必要な時代
+- デザイナをどこで見つけるか
+
+## [Publish What You Learn by Smashing Magazine](http://www.smashingmagazine.com/2012/03/30/publish-what-you-learn/)
+
+学んだ事を公開する。  
+
+- [CSS-Tricks](http://css-tricks.com/)、[Smashing Magazine](http://www.smashingmagazine.com/)ですら、そうやってスタートした
+- 失敗することを恐れない。失敗して、それを修正していくことが一番の近道。
+- 人に教えることは学びの近道
+- Githubなどのコラボレーションツールを活用する
+
+[CSS Radar](http://css.studiomohawk.com/)も、[fakebrain](https://github.com/studiomohawk/fakebrain/wiki)も、[en.ja](http://enja.studiomohawk.com/)も誰かに見てもらうのが一義ではなく、この考えに沿った結果です。  
+[Public Draft](http://publicdraft.calepin.co/)というブログで、もっと粗い下書きを公開していくことにもしました。
+
+## [The EMs have it: Proportional Media Queries FTW! by Cloud Four Blog](http://blog.cloudfour.com/the-ems-have-it-proportional-media-queries-ftw/)
+
+Media Queriesはpxではなくemで指定する。
+
+- レスポンシブデザインの強みは流動性と割合
+- コンテントファーストではコラムはフォントサイズと1行の文字数で幅を決めるのがベスト
+- 100% = 1 em ~= 16px ~= 14pt
+- ベースラインが16pxなら`@media all and (min-width: 400px)`は`@media all and (min-width: 25em)`とできる
+- ケーススタディ: [Cloud Four Blog](http://blog.cloudfour.com/)
+
+## [Designing For Mobile - Best Practices for Superior User Experiences by Canadian Marketing Association](http://www.the-cma.org/about/blog/designing-for-mobile)
+
+モバイルのためのデザイン。よりよいUXのためのベストプラクティス。
+
+- ゴール、目的を知る
+- 小さく考える。縮小することとは違う
+- 様々なシェープ、サイズについて考慮する
+- パフォーマンスは最重要
+- タッチデバイスの弱点は入力。利点は実際にふれることができる事。これらを活かす
+- モバイルユーザがどうサービスを利用するか考慮する
+
+## [An Ajax-Include Pattern for Modular Content by Filament Group](http://filamentgroup.com/lab/ajax_includes_modular_content/)
+
+Filament Groupが手がけたbostonglobe.comで実践したAjax-includeパターンについて。
+
+- 様々なデバイス、接続スピードに対応するため、最も重要なコンテントを可能な限り早く利用できるように
+- そのためには最低限必要なJavaScriptだけを先に読んだり、広告を動的に挿入したり、セカンダリなコンテンツをJavaScriptから呼び出す必要がある
+- コンテンツをLazy-loadする際に`<a href=”fullpage.html” data-include=”fullpage-fragment.html”>Full Page</a>`のような手法はHTTPリクエストを増やすだけ
+- その解決が[filamentgroup/Ajax-Include-Pattern](https://github.com/filamentgroup/Ajax-Include-Pattern/)。
+
+フロントエンドだけでは解決できないので、バックエンド側で必要なファイルについては[こちら](https://github.com/filamentgroup/quickconcat)のPHPを参照。
+
+## [8 Reasons Users Don’t Fill Out Sign Up Forms by UX Movement](http://uxmovement.com/forms/8-reasons-users-arent-filling-out-your-sign-up-form/)
+
+ユーザがサインアップフォームを入力しない8つの理由。
+
+- スパムされるかも / E-mailのフィールドには何に利用するか明記する
+- Facebook、Twitterのスパム / Facebook、Twitterを利用する際には自動でメッセージを出さない
+- アカウント削除ができないかも / 退会処理がいつでもできることを明記する
+- 個人情報の扱い / SSLなどのセキュアな手法を利用していることを明記する
+- 入力項目が得られる利点に対して多すぎる
+- ユーザが必要と感じない情報を得ようとする
+- フリートライアル時にクレジットカードの情報を入力させる
+- プロダクト/サービスの内容が不明
+
+## [7 rules for great mobile UX by Small Surfaces](http://smallsurfaces.com/2012/04/7-rules-for-great-mobile-ux/)
+
+モバイルUXにおいて知っておきたい7つのルール。  
+
+- 各プラットフォームについて特性を理解してデザインする
+- デバイスのためのデザイン / サイズが違うだけではない
+- 体験をデザインする / デバイスに最適な体験
+- ファーストインプレッションをデザインする /ユーザは30秒以内でアプリを評価する
+- ユーザビリティ / モバイルでもっとも無視されがちなファクタ
+- プロモーション
+
+例が豊富なので目を通しておくとよいでしょう。
+
+## [Information Surfacing: Communicating through Design by UX Booth](http://www.uxbooth.com/blog/information-surfacing-communicating-through-design/)
+
+インフォーメーションサーフェシングについて
+
+- コンセプトモデルの一種 / デザインプロセスの中で忘れられがち
+- 情報階層と近いが、異なる点は情報の視覚表現に特化している
+- どの情報が表層に現れるか？
+- ユーザのアクティビティを特定 / どんな種類のアクションをユーザにしてもらいたいか。例: ユーザには他のユーザに対してメールを送信して欲しい
+- どの情報がユーザに決定を促すかを考える
+- 優先順位 / インフォーメーションサーフェシングにおいてもっとも重要なファクタ
+- プロトタイプ / ウェブサイトのコンテキストから離れた場合にユーザはどう解釈するか、UI要素からサイトがどう理解されるか、インターフェイスだけからユーザがどんなコンセプトを得られるかを確かめる
+
+### Tools
+
+- **[Layer Cake - Magic with PSDs by MacRabbit](http://macrabbit.com/layercake/)**
+
+特定の命名規則で(レイヤ名.pngなど)レイヤを作成して、Layer Cakeにドラッグ&ドロップ。ウェブ用に保存をそのレイヤ名で自動で処理するアプリ。  
+1,700円くらい。Mac App Storeから購入できる。
+
+### Snippets
+
+- **[Paperfold CSS by Demo Studio](https://developer.mozilla.org/en-US/demos/detail/paperfold-css/launch)**
+
+折りたたみのデザインとCSS3アニメーションの例。  
+開く、閉じるというアニメーションはこういう形のほうがアフォーダンスが高いと思う。
+
+- [CSS3 Responsive Slider / Carousel Using Radio Buttons by CSScience](http://csscience.com/responsiveslidercss3/)
+
+CSS3を使ってJavaScriptなしでレスポンシブなスライダを実装。
+
+- [Comma-separated values in LESS mixins by Deep Thoughts](http://www.markdotto.com/2012/04/05/comma-separated-values-in-less-mixins/)
+
+LESSのミックスインにて`box-shadow`や`text-shadow`などのカンマ区切りの値を使う方法。  
+非常にシンプルなワークアラウンド。
+
+### Others
+
+- **[iOS.js](http://www.iosjs.com/)**
+
+たった5kbでiOSの様々な微妙なバグ修正+便利ツールJSライブラリ。
+
+- **[It's About More Than Just Solving The Problem by ZURB](http://www.zurb.com/article/943/its-about-more-than-just-solving-the-prob)**
+
+Dropboxのハックウィークから学ぶ、問題を解決する以上の正しいハックの仕方。
+
+- [The Mobile Omnivore: A Taste Test of Mobile Website Development](http://speakerdeck.com/u/grigs/p/the-mobile-omnivore-a-taste-test-of-mobile-website-development)
+
+レスポンシブウェブデザインの開発についてのまとめ。O'Reillyのウェブキャストがベースなだけあってよくまとまっている。 
+
+## That's it for this week!
+
+CSS Radar NewsletterがVol.26に。ということはもう始めてから半年が経過したことになります。パイロット版から読んでくれた11人の皆様にはこの場を借りて御礼申し上げます。
+
+本当は1年プロジェクトの予定だったのですが、思いのほか多くの方に指示され、今では150を超える登録者がいらっしゃいます。
+4桁の大台を狙っておりますので、早々に時間をつくって大きくリニューアルを計画しております。  
+
+その一環として[Twitter@cssradar](http://twitter.com/#!/cssradar)でも引き続き毎日発信しつづけますし、Twitterのフォロワーの方々は内容が重複しますが、
+[Facebook](https://www.facebook.com/studiomohawk)のほうも実験的に活動を増やしていますので、よろしければ。
+
+皆様の声と、後押しが最大のモチベーションですので引き続きよろしくお願いいたします。
+
+
+

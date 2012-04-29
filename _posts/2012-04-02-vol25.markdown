@@ -1,0 +1,165 @@
+---
+layout: post
+title: "Vol.25"
+date: 2012-04-02
+---
+
+## [Do We Really Need a New Web Design App? by Shaping the Page](http://shapingthepage.com/journal/do-we-really-need-a-new-web-design-app)
+
+インブラウザ・デザインのワークフロー。PhotoshopやFireworksはフローの最後でいい。私とほぼ同じワークフローの持ち主に感動した。(と思ったらTwitterで日本の方で同じフローの持ち主にも出会えた)
+
+- [Project Meteor](http://projectmeteor.org/)で提案されている新しいウェブ開発用ツールの提案は素晴らしい。
+- 新しいツールが必要なのではなく、新しい戦略、新しいワークフローが必要なのではないか?
+- [Twitter Bootstrap](http://twitter.github.com/bootstrap/)、[Skeleton](http://getskeleton.com/)、[Foundation](http://foundation.zurb.com/)などのフロントエンドフレームワークを使えば、レイアウト、タイポグラフィなどをかなりのスピードで組み上げられる。
+- もうHTML + CSS + JavaScriptでのデザインはそれほど大変ではない。
+- PhotoshopやFireworksが必要なくなったのではなく、フローの最後に使う。
+- [Sketch](http://bohemiancoding.com/sketch/overview/)や[Acorn](http://flyingmeat.com/acorn/)をPhotoshop、Illustratorライクに使うのは難しいが、このフローなら十分に活用できるアプリとなる。
+
+## [Story-centered design: Hacking your brain to think like a user by Design Staff](http://www.designstaff.org/articles/story-centered-design-2012-03-22.html)
+
+スクリーンをデザインするのではなく、ストーリーをデザインするためのワークフロー。  
+
+- 小規模なサイトを作っている分には問題がないが、中大規模となるとインタラクションは複雑になっていき、ツールもチームコミュニケーションにも歪みが生まれ始める
+- アプリのデザインをポスターや本のカバーなどと同じ手法でデザインしてきた。スクリーンセンターなデザイン。
+- いくつものスクリーンに数多のステートをデザインし始めると、チームは個別のスクリーンについて話、スクリーンに名前を付け始める。
+- ユーザはアプリをスクリーンのセットとして体験しない。
+- プロダクトはスクリーンのセットではなく、スクリーンが生み出すストーリそのもの。
+- ストーリセンターデザイン
+- スケッチの前にストーリーボードを作る
+- Fireworksでハイフィディリティなコンプを作る
+- ストーリーをプリントアウトしてレビュー
+- クライアントにはモックアップを送るのではなく、ストーリをスクリーンキャストにしてみせる。
+
+## [The End of Pagination by Coding Horror](http://www.codinghorror.com/blog/2012/03/the-end-of-pagination.html)
+
+- ページネーションは何年も形を変えていない。1のスキームで見た目が違うだけ
+- ページが数千に及んだら、ページネーションの問題ではなく、検索とフィルタの問題に切り替わる。
+- 世界が完璧だったら、どんな検索もたった1つの検索結果、自分が探している何かを出力する。
+- 最適化された並び順、関連するサブセットアイテムを選んだら、ページネーションは必要ない
+- Twitterのタイムライン、Google画像検索などで利用されているエンドレスページネーションの登場
+- しかしエンドレスページネーションに落とし穴がないわけでもない。
+- スクロールバーが提示するあと、どれくらいあるか、に答えるヴィジュアルフィードバックは必要
+- [pushState](http://diveintohtml5.info/history.html)を使ったディープリンクのサポート
+- 新しいアイテムをロードしていることを伝えるビジュアルフィードバック
+- フッタやヘッダへのアクセスは困難になるので、固定にするか、アイテムのロードをボタンなどを使って行う
+
+## [Understanding design patterns in your everyday work by Ryan Singer](http://feltpresence.com/articles/15-understanding-design-patterns-in-your-everyday-work)
+
+デザインパターンのコンセプトは大概きちんと理解されていない。
+
+- 間違った例: パターンは例を集めて見た目をフォーマット化するだけでパターンそのものがどう使われるのかを説明しない。
+- 正しい例: パターンはシンプル。デザインするときにどんな人でも利用している。
+- 問題に対する解決へのリスト。
+- パターンには名前は要らない。
+- 自分の好みのパターンを手書きでも書き始めたら数ページに及ぶ。
+- パターンがどのシチュエーションに最適なのか？何がパターンの問題解決の適合性を決めるのか？
+- パターンを問題の解決への手段としてだけではなく、問題そのものの定義として考えるべき
+- 問題がどんな方向性を持っているかを考えてパターンを作る
+- このパターンを毎日のデザインで気がつき始めることができればかなり強力なツールとなる。
+- いつもそうしているから、ではなく問題の解決に最適な方法を考える。
+
+## [Shrink To Fit: Designing Scalable User Interfaces by Punchcut](http://punchcut.com/perspectives/scalable-user-interfaces)
+
+UXはもはやシングルデバイスだけにとどまることができない。
+
+- デザインを1度、どのデバイスへもデプロイ、なんてボタンは存在しない。
+- しかしスケーラブルな解決は存在する。
+- 特定のデバイスがマルチデバイスサービスで、複数の接触点でどんな役割をもつのかを考える。
+- 全体のUXをデザインして、それぞれのデバイスがサービスやプロダクトにたいしてどんな風に価値を追加できるかを考える。
+- ピクセスを変換するのではなく、原則を変換する。
+- 200以上も存在するスクリーンサイズ全部に対してディテールをつめてはいけない。
+- ディスプレイサイズのプロポーションと解像度の違いを理解することは大事
+- プロポーションの差によって別の画像などのアセットを用意する必要はない
+- フレキシブルである必要がある部分を確定する。パディング、マージンをフレキシブルにする。
+- モニターとターゲットデバイスは違う
+
+## [Style Tiles and How They Work by A List Apart](http://www.alistapart.com/articles/style-tiles-and-how-they-work/)
+
+スタイルタイルはウェブサイトのインターフェイス要素をフォント、色、スタイルコレクション。
+
+- インテリアデザイナが部屋をリデザインする際、複数のパターンを実際に作らない。
+- スタイルタイルはウェブインターフェイスのカラーパレットや塗料サンプル。どのデバイスでも利用出来るレスポンシブな解決方法
+- スタイルタイルを作るための最初のステップは質問すること。ステークフォルダから形容詞を引き出す質問をする。例えば、「もし御社のウェブサイトが乗り物だったらとしてはそれは何か、そしてそれはなぜか？」
+- デザインにはゴールがあり、スタイルには好みがある。スタイルタイルは後者の問題解決のためのツールとして最適。
+- ウェブデザイナはユーザのための体験をデザインについては考えるが、ステークフォルダとのデザインプロセスについての体験については忘れがち。
+- [Style Tiles](http://styletil.es/)
+
+## [Finding memory leaks by Fastersite](http://gent.ilcore.com/2011/08/finding-memory-leaks.html)
+
+JavaScriptのメモリリークの見つけ方。Google Chrome Developer Toolsの使い方。  
+
+[Chrome Developer Tools: Heap Profiling](http://code.google.com/chrome/devtools/docs/heap-profiling.html)ここに書いてある事のサマリです。
+
+## [Responsive Layouts, Responsively Wireframed](http://www.thismanslife.co.uk/projects/lab/responsivewireframes/#desktop)
+
+レスポンシブウェブデザイン時代のレスポンシブワイヤフレーム。HTMLとCSSで作られたシンプルなワイヤフレーム。ブラウザでのデザインに違和感を感じている人への架け橋。
+
+## [ESPI at work: The power of Keynote by Edenspiekermann](http://edenspiekermann.com/en/blog/espi-at-work-the-power-of-keynote)
+
+Keynoteを使ってデザインをする理由。  
+[Red Bull Music Academy](http://www.redbullmusicacademy.com/)をアイコンやイラスト以外はすべてKeynoteでデザイン。
+
+- 画像や動画はドキュメントに埋め込まれるので、管理の手間が省ける。
+- 画像も、動画も、ベクターも、サウンドすらドラッグ&ドロップできる上、サイズの変更も元のファイルを変更するわけではない。
+- グリッド、マージンなど自動でスナップしてくれる。
+- アニメーションツールは強力なプロトタイプツールになる。
+- [Glyphish](http://glyphish.com/)、[MockApp](http://mockapp.com/m/Home.html)、[Keynote Kung-Fu](http://keynotekungfu.com/)、[Keynotopia](http://keynotopia.com/)などのリソースでより素早くデザインできる。
+
+### Tools
+
+## [CSS Gradient Editor](http://glan.github.com/CSS-Patterns-Workbench/)
+
+かなり強力なCSS3グラデーションツール。いつも使うというよりは複雑なグラデーションを作りたい人向け。  
+[CSS3 Patterns Gallery](http://lea.verou.me/css3patterns/)のソースを入れてみると面白いです。
+
+### Snippets
+
+## [Pull Down for Navigation by Inspect Element](http://inspectelement.com/tutorials/pull-down-for-navigation-a-responsive-solution/)
+
+iPhoneでよく見るPull to Refresh、ではなく、Pull to Navigationの実装方法。ソースは[Github](https://github.com/tkenny/Pull-down-for-Navigation)に。デモは[こちら](http://inspectelement.com/demos/responsive/mobilenav/)
+
+## [Introducing Mobile Javascript Events and Creating an Interactive Experience by InsertHTML](http://www.inserthtml.com/2012/02/creating-interactive-mobile-experience/)
+
+touchstart、touchend、touchendなどモバイルには欠かせないJavaScriptのイベントについて。  
+デモは[こちら](http://inserthtml.com/demo/mobile-touch/)
+
+## [Off Canvas](http://jasonweaver.name/lab/offcanvas/)
+
+Luke Wroblewskiが収集したマルチデバイスレイアウトのパターンの1つ。Off Canvasの図解と実装について。
+実装については[こちら](http://jasonweaver.name/lab/offcanvas/technical/)
+
+### Others
+
+- **[A New Make Mantra: A Statement of Design Intent | Mark Boulton](http://www.markboulton.co.uk/journal/comments/a-new-make-mantra-a-statement-of-design-intent)**
+
+デザインステートメントという概念について。CERNのサイトをデザインする際に利用したそう。
+
+- **[Cache them if you can by High Performance Web Sites](http://www.stevesouders.com/blog/2012/03/22/cache-them-if-you-can/)**
+
+Steve Soudersによるキャッシュについての話。Gzipすることの大切さ。
+
+- **[Taking “Content First” Very Seriously by Cloud Four Blog](http://blog.cloudfour.com/taking-content-first-very-seriously/)**
+
+CMSを使ったコンテントファーストアプローチ。Could Fourブログのケーススタディ。
+
+- **[How I built the Hacker News mobile web app, Part 2 by Lim Chee Aun](http://cheeaun.com/blog/2012/03/how-i-built-hacker-news-mobile-web-app_26)**
+
+Hacker Newsのモバイルウェブアプリの制作に置ける発見。ソースコードは必見。
+
+- **[Raising the Bar for Mobile Standards by UX Magazine](http://uxmag.com/articles/raising-the-bar-for-mobile-standards)**
+
+モバイルデザインのスタンダードについて。
+
+- **[Optimising animations and transitions by Daniel Eden](http://daneden.me/2012/03/optimising-animations-and-transitions/)**
+
+アニメーション、トランジションの最適化について。
+
+## That's it for this week!
+
+今週末は[Sublime Text 2](http://www.sublimetext.com/2)を試してみています。Vimを使い始めて1年と少し。やや半端に使いこなしている私でもVimの強力さには舌を巻きますが、Sublime Text 2も素晴らしいテキストエディタ。
+
+我ながらライティングスタイルがイマイチですが、まとめを制作しながら使ってみています。  
+現時点までのまとめは[gist](https://gist.github.com/3f430d09855b54ae32ee)にあるので参考になれば幸いです。
+
+仕事で使えるかどうかは、設定の同期をどう取るかにかかっていますので、これからその方法を探してみます。  
+いい方法をご存知でしたら、教えてやってくださいね。

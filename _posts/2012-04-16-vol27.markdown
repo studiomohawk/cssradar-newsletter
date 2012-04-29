@@ -1,0 +1,159 @@
+---
+layout: post
+title: "Vol.27"
+date: 2012-04-17
+---
+
+## [How to Ask a Question by The Chronicle](http://chronicle.com/blogs/innovations/how-to-ask-a-question/32095)
+
+失われたアート。“正しい”質問の仕方。  
+議論の最中にする質問たちのレベルは下がり続けている。
+
+- いい質問は行われてる議論のクオリティをあげるのに貢献できる
+- ポイントは1つ。そしてそのポイントは主張ではないように
+- 議論における質問は事実のディテールを確認するためにしない
+- 誰が、何が、どこで、何故、いつから始まる質問はすでに半分正しい
+- 質問の際は質問だけをする
+- もっとも優れた質問はすでにスピーカが話したことへの注意力と議論を深めることの狭間にある質問
+- 簡潔と退屈は決断力の違い。正しいタイミングで正しい質問をすること。その差が分からないのであれば、質問しないほうがいい
+
+## [Object-orientation and inheritance in JavaScript: a comprehensive explanation by The Log Book of Manuel Kiessling](http://manuel.kiessling.net/2012/03/23/object-orientation-and-inheritance-in-javascript-a-comprehensive-explanation/)
+
+JavaScriptにおけるオブジェクト指向と継承について。  
+
+- プロトタイプベースとクラスベースのオブジェクト指向の違い
+- JSではオブジェクト生成も行う。非常に強力ではあるが、注意するべき点は多い
+- 単純な関数を利用したオブジェクト生成
+- コンストラクタ / `this`、`new`
+- プロトタイプを使って挙動を共有する
+- プロトタイプを通しての継承
+
+非常にシンプルなスニペットで段階を追いながら説明しているので、スニペットだけでも眺めてみると理解が深まるはずだ。
+
+## [Perfection kills by Optimizing HTML](http://perfectionkills.com/optimizing-html/)
+
+HTMLそのものの最適化についての2009年の記事。  
+JS、CSS、画像の最適化についてはたくさんの記事があるがHTMLの最適化の記事は実は貴重。
+
+- ネットスケープ時代からある`script`タグの中のコメントは必要ない
+- おなじく、`<![CDATA[ … ]>`も
+- HTMLに`onClick`や`style`は書くべきではない
+- `script`タグには必須の属性はない(だから何も書かない)
+- `style media=”all”`は必要ない
+- `form method=”get”`はデフォルトなので書く必要がない
+- `input type=”text”`もデフォルト
+- `meta http-equiv=”Content-type”`のキャラクタエンコーディングはHTTPヘッダに指定してあれば重複していることになる
+- `<!doctype html>`はIE6でも正しく認識される
+- ツールのベストオプションは[htmlcompressor](http://code.google.com/p/htmlcompressor/)
+
+## [Colour: User Experience (UX) And Psychology by Usability Geek](http://usabilitygeek.com/colour-user-experience-psychology/)
+
+有名なサイトのロゴのベースカラーを通して色が人の心理に与える影響について説明している。  
+色の心理学は文化によって異なるものなので、必ずしも日本でも全く同じにはならないが、色が人の心理に与える影響はUXを考える上で知っておくべき。
+
+## [The Art Of Launching An App: A Case Study by Smashing UX Design](http://uxdesign.smashingmagazine.com/2012/04/05/art-of-launching-app-case-study/)
+
+アプリの正しいローンチの仕方。David and Goliathというアプリをケーススタディに。
+
+- 可能な限りパートナーシップを見つける。単純にプレゼント、ではなくアプリの強みが活かせるように
+- ニュースになるには時事性かローカル。季節に合わせるのも1つの手
+- ターゲット。特定のターゲット。意味のあるターゲット
+
+## [UX primer for startups by Ghost in the Pixel](http://www.ghostinthepixel.com/?p=714)
+
+Uday GajendarによるUX primerシリーズ第二弾。スタートアップのためのUX。
+
+今回もオーバービュー、[基礎](http://www.ghostinthepixel.com/?p=719)、そして[応用編](http://www.ghostinthepixel.com/?p=729)に分けてのまとめ。  
+
+サマリを書くのが難しいタイプの記事なので、[en.jaプロジェクトにリクエスト](https://github.com/studiomohawk/en.ja-feedback/issues/new)が集まれば翻訳します。
+
+## [Third-Party Front-end Performance: Part 1 by Bazaarvoice's Developer Program](http://developer.bazaarvoice.com/third-party-front-end-performance-part-1)
+
+第三者配信系のフロントエンドパフォーマンスについて。  
+人様のサイトで使われるためのパフォーマンスチューニングをしてきた経験を公開している。パート1で今回はネットワーク。キャッシュについて。
+
+コーポレートブログなだけに翻訳の許可が下りなそうなところが残念。
+
+### Tools
+
+- **[Basehold.it - quick, painless, javascript-free baseline overlays](http://basehold.it/)**
+
+バーティカルグリッド用のベースラインの線を追加するツール。  
+`<link rel="stylesheet" href="http://basehold.it/24">`  
+とすると、24pxのベースライングリッドが引かれる。  
+レイアウト用のグリッドツールはたくさんあるけれど、バーティカル用は初。
+
+- **[csso](https://github.com/css/csso)**
+
+CSSの最適化ツール。node.jsを使ってコマンドラインからも、オンラインでも利用可能。かなり細かい[ドキュメント](https://github.com/css/csso/blob/master/MANUAL.en.md)もあるので一読しておくとよいでしょう。
+
+### Snippets
+
+- **[CSS Sprites Revisited by Smashing Coding](http://coding.smashingmagazine.com/2012/04/11/css-sprites-revisited/)**
+
+LESS、SaSSを使ったCSS スプライトへの新しいアプローチ。  
+Photoshopの自動的にガイドを生成する.jsxも公開。
+
+- **[Writing a Node Module by The Tapir's Tale](http://anders.janmyr.com/2012/04/writing-node-module.html)**
+
+node.jsのモジュールの作り方。  
+スニペットだらけのチュートリアルで非常に参考になる。  
+ついでにTravis-CIとのインテグレーションについても触れている。
+
+- **[The JavaScript Module Pattern by The JavaScript Playground](http://javascriptplayground.com/blog/2012/04/javascript-module-pattern)**
+
+JavaScriptnのデザインパターンの1つである、モジュールパターンについての説明。スニペットを見るだけでも十分に理解できるはずなのでぜひ。
+
+- **[Understanding MVVM – A Guide For JavaScript Developers](http://addyosmani.com/blog/understanding-mvvm-a-guide-for-javascript-developers/)**
+
+Addy OsmaniによるJavaScriptのMVVMパターンの解説。  
+Model View ViewModelの略。  
+スニペットが豊富なのでbackbone.jsなどで実践できるMVCとknockout.jsなどで実践でくるMVVCの差を見極めて、チームに最適なアプローチを選定してください。
+
+- **[An introduction to Underscore.js by Developer Drive](http://www.developerdrive.com/2012/04/an-introduction-to-underscore-js-%E2%80%93-part-1-arrays/)**
+
+underscore.jsの配列系メソッドについての詳細な解説。  
+RubyやPythonなどの言語に慣れた人なら確実に欲しいメソッド達がJavaScriptでも簡単に出来る様になる。
+
+- **[A basic jQuery Pub Sub Implementation by The JavaScript Playground](http://javascriptplayground.com/blog/2012/04/jquery-pub-sub-implementation)**
+
+JavaScriptのデザインパターンである、Pub/Subパターンについての解説。  
+JavaScript Playgroundはいつもスニペットをたくさん用意しているので、非常に分かりやすい。  
+jQueryを利用したpub/subパターン。
+
+## Slide
+
+- [Browser performance](http://static.trygve-lie.com/doc/browser_performance/)
+
+Reflow、Redraw、Repaintについて、JSのDOM操作、スタイル、トラバースの最適化、CSS3アニメーション、イベント、CSSの最適化など幅広い範囲の最適化について非常によくまとまっているスライド。
+
+### Others
+
+- [The Elements of JavaScript Style](http://javascript.crockford.com/style1.html)
+
+Douglas Crockford氏によるJavaScriptのスタイルについて。2005年。
+
+- [Dive into Responsive Prototyping with Foundation by A List Apart](http://www.alistapart.com/articles/dive-into-responsive-prototyping-with-foundation/)
+
+Zurbが作成して公開しているラピッドプロトタイプフレームワークのFoundationについて。TwitterのBootstrapより、デザイナ、フロントエンダ向きじゃないかと。
+
+- [Apple breaks web storage in iOS 5.1, does not care about web apps? by Tim Anderson’s ITWriting](http://www.itwriting.com/blog/5656-apple-breaks-web-storage-in-ios-5-1-does-not-care-about-web-apps.html)
+
+iOSの5.1にてlocalStorageが正しく動作しなくなったとのこと。  
+ついにウェブアプリ対策かと思うばかりのAppleの謎の行動について。
+
+- [States and Layer Comps by Method & Craft](http://methodandcraft.com/videos/states-and-layer-comps)
+
+PhotoshopのLayer Compを使ったクリックなどのステートの保持の仕方。
+
+## That's it for this week!
+
+6月の話ですがSwapSkillsのOne Webというイベントにて登壇させていただくことになりました。  
+[Webサイトもスマホアプリも！One Web](http://swapskills.info/doubbble/05.html)  
+私を含めて5名のスピーカが多様化するデバイスへのアプローチについて紹介していきます。  
+
+このイベントまでにもまだお話できない諸々がありますので、タイミングが来たら告知させていただきたいと思います。
+
+CSS Radar / CSS Radar NewsletterでFacebookにて非公開のグループを作りたいなぁとずっと思っているのですが、パイロット版に参加してもいい、という方いらっしゃいましたら[Twitter@cssradar](http://twitter.com/#!/cssradar)か[Facebook](https://www.facebook.com/studiomohawk)にてご連絡くださいませ。  
+何をするのかはこれから考えるんですけど。。
+
