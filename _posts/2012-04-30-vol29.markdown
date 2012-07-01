@@ -1,0 +1,169 @@
+---
+layout: post
+title: "Vol.29"
+date: 2012-04-30
+---
+
+## [9 jQuery Mistakes you Shouldn’t Commit by Web Design Ledger](http://webdesignledger.com/tips/9-jquery-mistakes-you-shouldnt-commit)
+
+jQueryで陥りやすい9つの失敗。
+
+- 最新のjQueryを使っていない。jQueryのアップデートのたびにサイトをアップデートする必要はないが、新しいプロジェクトの際は最新を使おう。
+- CDNでホストされたjQueryを使っていない。Googleのサーバよりもアクセスされる回数が多ければ話は別。
+- CDNバージョンのフォールバックを利用しない。Googleだってたまには落ちるのでローカルでフォールバックしておこう。
+- チェーンを利用していない。DOMセレクタは同じものならチェーンすること。
+- DOMセレクタをキャッシュする。変数に代入しておくこと。
+- ネイティブJSを利用していない。特に属性変更はほぼjQueryと同じようなシンタックスでかける。
+- プラグインを確認しないで利用する。プラグインはブラックボックスになってはいけない。
+- jQueryを使わない選択をしない。jQueryでできること、CSSでできること、ネイティブJSでできること。キチンと理解して、適材適所を。
+
+## [Decoupling HTML From CSS by Smashing Coding](http://coding.smashingmagazine.com/2012/04/20/decoupling-html-from-css/)
+
+HTMLとCSSの分離法について。  
+
+- 適応性の深度を減らす
+
+CSSの頭痛のタネの多くはSpecificityを管理すること。  
+適応性が深くなるほどHTMLとCSSの関連性も深くなる。可能な限り緩やかな関連性に保てるようにするべき。
+
+- 柔軟性の高いモジュールの作り方
+
+ヘッダ+コンテントというよくあるデザインパターンなどでは、`h2`、`p`をそのまま`div`内にいれるより、`.hd`、`.bd`、`.ft`というようなヘッダ、ボディ、フッタのような役割分担をしたタグ内に格納する方が柔軟性が高い。
+
+## [Javascript - only three "bad" parts by blog @johnkpaul](http://johnkpaul.tumblr.com/post/20720951024/javascript-only-three-bad-parts)
+
+JavaScriptにおける3つのバッドパート。
+
+- `this`
+- プロトタイプ継承
+- Named Function Expression、Function Declaration、Hoisting
+
+この3つがJavaScriptにおける理解が難しいパートとして、それぞれに対して説明しているリンクを紹介しているので、そちらをぜひ。
+
+## [Creating a Mobile-First Responsive Web Design by HTML5 Rocks](http://www.html5rocks.com/en/mobile/responsivedesign/)
+
+モバイルファーストのレスポンシブウェブデザインの作り方。  
+実際のデモを作りながらの解説。
+
+- 構造
+	- Viewport
+	- コンテントの断片
+	- 単純なシェープはHTMLのキャラクタを利用
+
+- スタイル
+-	大きなスクリーン用の別スタイルシートを用意
+	- モバイルファーストスタイルについて
+	- メディアクエリの利用法
+	- %やemの利用法
+	- CSS、DataURIを使ってリクエスト数を減らす
+
+- 動作、機能
+	- ナビゲーション
+	- 画像ギャラリー
+	- 関連コンテンツ
+	- Geolocation 
+
+## [The Art of Structuring Information Effectively by Webdesigntuts+](http://webdesign.tutsplus.com/articles/user-experience-articles/the-art-of-structuring-information-effectively/)
+
+IAの基本。情報を効果的に構造化する手法
+
+- カテゴリは同一基準で分割できること
+- 種を定義する。例えば「動物」が類であれば「人間」が種
+- ユーザは同時に1つの種を見ているようにする
+- 複数メンバーシステム、単数メンバーシステム。子になるジャンルが複数の親を持てるか
+- ユーザがどう情報を手に入れたいと思っているかが情報の構造に影響する
+
+## [Modernize your HTML5 Canvas Game by SitePoint](http://www.sitepoint.com/modernize-your-html5-canvas-game/#fbid=qH6F8FgkBau)
+
+最新の技術を使ったHTML5 Canvasゲームの作り方 パート1
+
+- 様々なデバイスサイズに対応する
+	- ストレッチ / アンチエイリアス
+	- 比率のコントロール
+	- CSS3 Grid Layoutを使ってゲームをセンタリングする
+- CSS3アニメーション
+
+## [Unleash the power of HTML 5 Canvas for gaming by Eternal Coding](http://blogs.msdn.com/b/eternalcoding/archive/2012/03/22/unleash-the-power-of-html-5-canvas-for-gaming-part-1.aspx)
+
+HTML5 Canvasをゲームで使う際のパフォーマンスTips
+
+- 画像のデータをCanvasで読み込む
+- GPU、ハードウェア側のスケールを利用する
+- `requestAnimationFrame`を使ってレンダリング用ループを最適化する
+- DOMへのアクセス方法
+- `Math.round`、`Math.floor` そして `parseInt`の利用をなるべく避ける
+
+### Tools
+
+- **[50 fantastic tools for responsive web design by .net magazine](http://www.netmagazine.com/features/50-fantastic-tools-responsive-web-design)**
+
+レスポンシブウェブデザインに便利な50のツール。  
+自分のワークフローで活用出来るツールを見つけて利用しよう。  
+特に複雑な計算が必要な割合などの算出ツールは便利。
+
+- **[Grunt, a JS Command Line Tool by The JavaScript Playground](http://javascriptplayground.com/blog/2012/04/grunt-js-command-line-tutorial)**
+
+JavaScriptのビルドツール、Gruntについて。  
+JavaScriptを日々書く人には欠かせないツールになりそう。
+
+- **[Image2CSS](https://github.com/mhuckaby/image2cssConverter/tree/master/Image2CSS)**
+
+画像をDataURIに変換するBashスクリプト。ディレクトリ丸ごとDataURIに変換できる上、カタログすら生成してくれる。
+
+### Snippets
+
+- **[Google Analytics tracker in an ajax application by Gianluca Guarini's Blog](http://www.gianlucaguarini.com/blog/?p=333)**
+
+Google AnelyticのトラッカーをAjax内で利用する方法。
+意外にシンプル。
+
+- **[CSS3 Structural Pseudo-class Expressions Explained by Impressive Webs](http://www.impressivewebs.com/css3-pseudo-class-expressions/)**
+
+CSS3の構造的疑似クラスで利用出来る式について。  
+使いどころはまれかもしれないけれど覚えておくと便利でしょう。
+
+### Others
+
+- [Andy Clarke on the new 320 and Up by .net magazine](http://www.netmagazine.com/interviews/andy-clarke-new-320-and)
+
+Andy Clarkeのモバイルファーストボイラープレート 320 and up のリニューアルについてのインタビュー。
+
+- [Agile UX vs Lean UX – How they’re different and why it matters for UX designers by Anders Ramsay.com](http://www.andersramsay.com/2012/04/24/agile-ux-vs-lean-ux)
+
+Agile UXとLean UXの違いとその差異が与えるUXデザイナへの影響。
+
+- [Content Modelling: A Master Skill by A List Apart](http://www.alistapart.com/articles/content-modelling-a-master-skill/)
+
+コンテントストラテジにおける最も有効なツールであるコンテントモデリングについての解説。
+
+- [Rut-Roh! I’m in a Design Rut by Cognition](http://cognition.happycog.com/article/rut-roh-im-in-a-design-rut)
+
+デザインのマンネリに対する対応策について。
+
+- [Buttons were an inspired UI hack, but now we've got better options by O'Reilly Radar](http://radar.oreilly.com/2012/03/touch-interface-user-experience-toc.html)
+
+Tapworthyの作者によるタッチデバイス時代のUIについてのインタビュー。
+
+- [Testing with QUnit: Part 1 by The JavaScript Playground](http://javascriptplayground.com/blog/2012/04/javascript-testing-qunit-1)
+
+jQueryプロジェクトでも採用されているJavaScriptのテストツールQUnitの使い方。
+
+## That's it for this week!
+
+仕事と趣味がまったく同じの私ですが、仕事でも趣味でも調べものをする事が非常に多く、リサーチログをどう管理していくかは長年の課題でした。  
+
+[Public Draft / Just writing down what I've found](http://publicdraft.studiomohawk.com/)
+
+というわけで、そんなリサーチログを公開していくサイトを作りました。  
+近くFake Brainに掲載している内容についても再編集をしてこちらに移動します。CSS Radarと同じく内容はちょこちょこ編集されていきます。
+
+例によってコラボレータを募集していますが、本プロジェクトはリサーチ内容のリクエストです。私自身の興味関心と合致すれば調べますので、[リクエストください](https://github.com/studiomohawk/publicdraft/issues/new)。
+
+Public Draftを作るにあたって[JI](https://github.com/studiomohawk/ji)と名付けたJekyllのInitial Packageも作成しました。  
+私個人としてのJekyllにおけるベストプラクティスを集約していくつもりです。
+やや放置気味の[IIT](https://github.com/studiomohawk/IIT)の派生プロジェクトでもあったりします。
+
+次のTODOはCSS Radarのリデザイン。JIを使って構造レベルから作り直します。リデザインの様子をScreenFlowで撮っておこうと思ってます。  
+うまくいったら[こんな](http://www.youtube.com/watch?v=iiRNT3-Mly0)感じで公開します。
+
+

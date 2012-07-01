@@ -1,0 +1,129 @@
+---
+layout: post
+title: "Vol.33"
+date: 2012-05-27
+---
+
+## UX / UI / Design
+
+### [Building The Flickr Web Uploadr: The Grid by Flickr Developer Blog](http://code.flickr.com/blog/2012/05/11/building-the-flickr-web-uploadr-the-grid/)
+
+Flickrが新たに導入したウェブ画像アップローダの実装についての解説。  
+柔軟なグリッドレイアウト制作のためのプロトタイプ作成、選択、ドラッグ&ドロップの実装、ドラッグとリアレンジの実装。パフォーマンス改善などそれ自体だけでも小さなウェブサービスになりそうな複雑なUI制作についてのフロー、実装、tipsなどについて詳しく解説されていて非常に参考になる。
+
+### [Designing With Metaphors & Skeuomorphs by Baymard Institute](http://baymard.com/blog/metaphors-and-skeuomorphs) 
+
+メタファーと模造を使ったデザインについて。  
+
+- メタファーも模造もユーザが持つ概念的な理解に訴えることができ、結果即時で認識を得ることができる
+- デジタルの世界における模造は現実世界の物体を見た目上の複製
+- 模造における注意点: 実在する物体とデジタルでは異なるデザインを行う必要があるがあまりに模造が近すぎると返ってユーザを混乱させる
+- 何事もバランスが大事
+
+## [Designing for Touch by GIANT ROBOTS SMASHING INTO OTHER GIANT ROBOTS](http://robots.thoughtbot.com/post/23288959017/designing-for-touch)
+
+タッチデバイスにおけるデザイン上の注意点について。  
+
+- `:hover`は存在しないため、重要なインタラクションに利用しない
+- マウスポインタより指は大きい: Appleのガイドラインよりも大きめに
+- クリッカブルエリアのスペースも重要: 最低でも3-6px(72dpi)
+- `click`イベントは300msの遅延を発生させる
+
+## Responsive Web Design
+
+### [The real conflict behind <picture> and @srcset by Cloud Four Blog](http://blog.cloudfour.com/the-real-conflict-behind-picture-and-srcset/)
+
+最近何かと話題の`picture`要素と`@srcset`について、この手の話題では完全にオーソリティになっているCloud Fourから実際に解決しなければならないのはその仕様の話ではなくモダンブラウザに実装されている画像の先読みを行うプリパーサという仕様との衝突である、という話。
+
+## Snippet / Demo
+
+### [Detecting the ‘Tap’ event on a Mobile touch device using javascript by Gianluca Guarini's Blog](http://www.gianlucaguarini.com/blog/?p=366)
+
+モバイルタッチデバイスにおけるタップイベントをjQueryを使って実装する。
+
+ここでは`tap`イベントを`touchstart`イベントから200ms経過してから発生させている。シンプルかつ参考になるスニペット。
+
+### [JS101: Prototypes by DailyJS](http://dailyjs.com/2012/05/21/js101-prototype/)
+
+DailyJSによるJavaScript初級シリーズ。今回はprototypeについて。  
+他にも類似の解説記事はあるけれど、このシリーズでは1つのトピックについてのみ解説しているだけあって記事も短く、スニペットがほとんどなので、jsfiddleやjsbinを使って実際に試してみると理解が早まるはずだ。
+
+### [JavaScript Design Patterns: Singleton by Joe Zim's JavaScript Blog](http://www.joezimjs.com/javascript/javascript-design-patterns-singleton/)
+
+Joe Zim氏によるJavaScriptのデザインパターンシリーズより、singletonパターンについて。
+
+singletonパターンのオブジェクトリテラルや名前空間など実装についての解説。JavaScriptではグローバル変数の利用のリスクが高いため非常に有用なパターンの1つ。
+
+### [SSH: What and How by Nettuts+](http://net.tutsplus.com/tutorials/tools-and-tips/ssh-what-and-how/)
+
+今更聞けないSSHについての基本。  
+スニペットのカテゴリにいれるべきか悩んだけれども、コマンド例が豊富なので。  
+インフラ、サーバサイド系についてはまったく詳しくないのでチートシートにぴったり。
+
+### [Put Users in Control With Confirmation Feedback Buttons by Webdesigntuts+](http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/put-users-in-control-with-confirmation-feedback-buttons/)
+
+Mac App Storeなどでおなじみのクリックすると確認状態に変化するボタンの実装方法に着いて。結構思いもよらないクリエイティブな解決方法の提示。
+
+- [The CSS Source Code Behind Our Manifesto by ZURB](http://www.zurb.com/article/983/the-css-source-code-behind-our-manifesto)
+
+ZurbのManifestoページのCSSソース。リアルに動作しているページのCSSソースの解説。こういうケーススタディは最近増えてきていて非常に参考になる。
+
+- [The CSS3 Flex Box Specification by InsertHTML](http://www.inserthtml.com/2012/05/css3-flex-box-specification-change-layout-design/)
+
+なんでこんなに仕様が揺れるのかわからないflexboxについて。プロパティに知らないものあったりするかも。
+
+- [Self-updating scripts by High Performance Web Sites](http://www.stevesouders.com/blog/2012/05/22/self-updating-scripts/)
+
+サードパーティのいわゆるウィジェットと呼ばれるようなJSでキャッシュを有効活用するための研究と実装。
+
+## Plugin / Library
+
+- [jQuery throttle / debounce: Sometimes, less is more! by Ben Alman](http://benalman.com/projects/jquery-throttle-debounce-plugin/)
+
+少し古いけれどちょうど探していたので。debounceとthrottleを実装するjQueryのプラグイン(依存はしていないそう)。
+
+- [Lo-Dash](http://lodash.com/)
+
+underscore.jsのかわりに使えるライブラリ。パフォーマンス改善、バグ修正、機能追加などが行われている。
+
+## Slide / Video
+
+### [Building a faster web: tools, tips, and lessons](http://www.igvita.com/slides/2012/html5devconf/#1)
+
+Google AnalyticsチームのIlya Grigrik氏によるより早いウェブサイトを作るためについてのスライド。
+
+1. どんな項目を計測するべきかを知ることが大事
+2. ユーザに認知されるレイテンシを計測する
+3. ユーザ視点に立って最適化を行う
+4. モバイルウェブは1.5倍平均より遅い
+5. 計測するためのツールは存在する
+6. よりよい計測ツールはまだまだ必要
+7. mod_pagespeedを利用して最適化を自動化しよう
+
+- [For a Future-Friendly Web: Mobilism 2012 by Brad Frost Web](http://bradfrostweb.com/blog/mobile/for-a-future-friendly-web-mobilism-2012/)
+
+Brad FrostのMobilism 2012のスライド、動画、サマリー。フューチャーフレンドリーなウェブについて。素晴らしいの一言。
+
+## Other
+
+- [Data Monday: E-commerce Performance by LukeW](http://www.lukew.com/ff/entry.asp?1553)
+
+Eコマースサイトにおけるページパフォーマンスと売り上げの関係についてのデータ。
+
+- [Making, Using, & Bulletproofing Icon Fonts by Viget](http://viget.com/inspire/icon-fonts#When:13:33:43Z)
+
+アイコンフォントの作り方、使い方について。現時点までで提案されている方法を良くまとめてあるし、その上で新しい提案をしている素晴らしい記事。
+
+- [Separate mobile site vs. responsive design by Boagworld](http://boagworld.com/mobile-web/separate-mobile-site-vs-responsive-design/)
+
+Jakob Nielsen氏とレスポンシブデザインは相性が悪い。大きな議論に発展したが、結局彼があげている問題点は正当なケースでもある。
+
+- [10 reasons why I switched to Spine.js by Destroy Today](http://destroytoday.com/blog/reasons-for-spinejs/)
+
+backbone.jsからspine.jsに以降した10の理由。spine.appというのは確かに便利そう。
+
+## That's it for this week!
+
+6/30 ベルサール九段にて開催される[CSS Nite LP Disk 23 「表示速度最適化」](http://lp23.cssnite.jp/)にてモバイルWebパフォーマンス最適化というトピックで登壇させていただくことになりました。
+
+5月30日15時まで早期割引ということなのでお早めにどうぞ。

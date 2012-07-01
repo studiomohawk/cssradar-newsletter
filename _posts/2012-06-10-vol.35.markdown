@@ -1,0 +1,154 @@
+---
+layout: post
+title: "Vol.35"
+date: 2012-06-10  9:53:30
+---
+
+## UX / UI / IA /Design
+
+### [Design Patterns: When Breaking The Rules Is OK by Smashing UX Design](http://uxdesign.smashingmagazine.com/2012/06/06/design-patterns-when-breaking-rules-ok/)
+
+デザインパターンについて。
+
+- 他者をふくめて、築き上げてきたパターンをいつ壊すべきなのか
+- パターンが持つ利点、欠点をきちんと理解することが大事
+- ユーザがいつでもすべての答えを持っているということはない
+- テストを通じ、ユーザのwantsに答える
+- デザインパターンのルールはいつでも壊すチャンスがあるが、きちんとしたテストを行うべき
+
+### [Can We Please Move Past Apple's Silly, Faux-Real UIs? via Co.Design](http://www.fastcodesign.com/1669879/can-we-please-move-past-apples-silly-faux-real-uis)
+
+最近はUIの見た目が現実社会のものと限りなく同じになるような模倣の手法が主流になっている。Appleのカレンダーやメモアプリなどを見てみると分かるだろう。  
+果たしてこのアプローチがUIデザインが向かうべき正しい方向なのだろうか？  
+答えはNo。  
+なぜなら現実社会に存在するもののデザインには重力や(ページなどの)エッジなどの制限を受けた上でのデザインで、ウェブ上には存在しない制限。ウェブにはウェブの制限があり、現実社会には現実社会のそれがある。  
+現実社会のものの模倣はユーザのメンタルモデルに近いという利点があるが、どんなイノベーションでもユーザが使えるもの、ではなく、ユーザが求めるものへの探求から生まれている。  
+iOSという制限、Androidという制限、ウェブブラウザという制限とテクノロジーの制限と十分な制限があるのだから、現実社会の制限をわざわざ追加する必要はない。
+
+### [Style Tiles: An Alternative to Full Design Comps via Webdesigntuts+](http://webdesign.tutsplus.com/tutorials/workflow-tutorials/style-tiles-an-alternative-to-full-design-comps/)
+
+まずモックアップをつくる、というワークフローを見直そう。  
+まずはStyle Tiles。  
+家のインテリアを依頼する際、インテリアデザイナはわざわざ完成品を見せたりしないでサンプルを持って提案に来るのと同じく、ウェブデザインのエッセンスを詰め込んだStyle Tilesを作成する。  
+ワークフローとして健全というだけではなく、本当に大事な部分がどこなのかを明確にできるし、サイトデザイン全体を通した指針にもなり得るので活用してほしい。
+
+### [Dealing with design by Boagworld](http://boagworld.com/season/3/episode/s03e05/)
+
+デザインのOKが通らない理由。
+
+- コミュニケーションの欠落
+- 個人の意見に依存する
+- 不明瞭な役割分担
+- 教えることをしない
+- 不明瞭なゴール
+- スコープの不在
+
+ポッドキャストもあるので、英語に自信があるかたはそちらもおすすめ。
+
+### [A. Ames & A. Riley on info experience models at STC12 via Kai's Tech Writing Blog](http://kaiweber.wordpress.com/2012/05/27/a-ames-a-riley-on-info-experience-models-at-stc12/)
+
+大規模サイトにおけるIAモデルについての解説。  
+
+- Use Model = Content Model + Access Model + Information Model
+- Use Model / ユーザがどのように情報とインタラクトするか
+- Content Model / 情報が効果的に構造化されているか
+- Access Model / ユーザが効率的に情報と接しているか
+- Information Model / ユーザがあるステージからどう次のステージに進むか
+
+IAという巨大な概念を分割して見ることでどこが欠けているかを理解しやすくなる。
+
+### [MUD: Minimum Usable Design via Smashing Magazine](http://www.smashingmagazine.com/2012/05/29/mud-minimum-usable-design/)
+
+- MUD = Minimum Usable Design = 最低限のデザイン
+- スタートアップ系でよくあるMinimum Viable Product、最低限の機能でデプロイするという意味、の概念をデザインにも。
+- 出来損ないのサイトを世に出す、という意味ではなく、本当に必要な部分がどこなのか、を考えるべきという意味。
+- コアの部分を理解せずにデザインしてもなんの意味がない。大事な部分だけでもきちんとデザインしておくことがMUD。
+
+関連して[Diminishing Returns](http://www.usabilitypost.com/2012/05/30/diminishing-returns/)も同意する記事。経済学における収穫逓減になぞらえて概念を上手に説明している。
+
+## Slide / Video
+
+### [The State of HTML5 Games via Fluent JS](http://www.slideshare.net/robhawkes/the-state-of-html5-games-fluent-js)
+
+HTML5で作るゲームについて。スライドノート付きでかつ数多くのHTML5 APIの解説付き。 
+
+#### [Fluent 2012: Paul Irish, "Javascript Development Workflow of 2013"](http://www.youtube.com/watch?v=f7AU2Ozu8eo)
+
+Paul Irish氏によるJavaScript開発ワークフローのビデオ。Fluent 2012より。色々なツールの紹介。
+
+## Demo / Snippet
+
+### [How to Center Anything With CSS by Design Shack](http://designshack.net/articles/css/how-to-center-anything-with-css/)
+
+CSSでセンタリングは意外と大変。そんなの知ってるという方もそうでない方も基本なのできちんと覚えておくべき。
+
+### [Introduction to JavaScript Objects by The JavaScript Playground](http://javascriptplayground.com/blog/2012/06/introduction-to-javascript-objects)
+
+JavaScriptのObjectについて。  
+なんとなくもやもやしていたことをjQueryを使った抽象化の例できちんと理解できるようになった。こういうアプローチはありだなと思った記事。
+
+### [Dependency management with RequireJS by Adobe Developer Connection](http://www.adobe.com/devnet/html5/articles/javascript-architecture-requirejs-dependency-management.html)
+
+AMDってなんだと理解することももちろん大事。でもRequire.jsの使い方を覚えてしまってからでも遅くはない。  
+大規模JS開発には欠かすことができないライブラリになりつつあるので基本をしっかり抑えておこう。
+
+### [50 jQuery Function Demos for Aspiring Web Developers - Smashing Coding by Smashing Coding](http://coding.smashingmagazine.com/2012/05/31/50-jquery-function-demos-for-aspiring-web-developers/)
+
+ウェブ開発の道に進む方。確実にjQueryと出会う機会があるので、この50のFunctionは確実に覚えておきましょう。  
+もう長年この道にいる方。いまさらjQueryと言わずにもう1度振り返っておきましょう。
+
+### [Exceptional Exception Handling in JavaScript](http://www.sitepoint.com/exceptional-exception-handling-in-javascript/)
+
+意外と見過ごしがちなJavaScriptのエラー処理。  
+壊れそうなものは必ず壊れる。きちんとエラー処理について知っておくことで壊れたときのダメージを最小限にしておくことが大事。
+
+### [Manipulating HTML5's native audio with JavaScript via Developer Drive](http://www.developerdrive.com/2012/06/manipulating-html5s-native-audio-with-javascript/)
+
+HTML5にて扱える様になってきた音声の操作をJSで行う。  
+思っている以上にシンプルかつ簡単。
+
+### [Fullscreen Slit Slider with jQuery and CSS3 via Codrops](http://tympanus.net/codrops/2012/06/05/fullscreen-slit-slider-with-jquery-and-css3/)
+
+百聞は一見に如かず。まず[デモ](http://tympanus.net/Tutorials/FullscreenSlitSlider/)をみてほしい。  
+jQueryとCSS3で一風変わった効果のスライダーを実装する。毎度Codropsは面白い。
+
+#### [addEventListener all the way back to IE 6 via FunctionSource ](http://functionsource.com/post/addeventlistener-all-the-way-back-to-ie-6)
+
+addEventlistenerをIE6でも利用出来るようにするスニペット。polyfill系のスクリプトは何かと参考になるケースが多い。
+
+#### [JS101: Object.create via DailyJS](http://dailyjs.com/2012/06/04/js101-object-create/)
+ECMAScript5から利用出来る新しいJavaScriptのオブジェクト生成方法であるObject.createについて。
+
+#### [Third-Party JavaScript Development The Future via Bocoup](http://weblog.bocoup.com/third-party-javascript-development-future/)
+
+第三者配信系のJavaScriptの開発に便利な少し未来のJavaScriptの新仕様。参考になる意見もあっていい記事。  
+iframe系で追加の仕様が多く興味深い。
+
+## Other
+
+### [Creating Passionate Users: How to create a non-fiction bestseller](http://headrush.typepad.com/creating_passionate_users/2005/02/how_to_create_a.html)
+
+Head Firstシリーズを執筆している著者より売れる技術書の作り方について。
+
+- お金を稼ぐために本を書くのではなく、自分の名刺としてなら書いてもいい、というアプローチは誰も幸せにしない
+- 著者はやっぱりすごいエキスパートだなと読者に感じてもらうのではなく、読者がエキスパートになるための手助けをするべき
+
+技術をどう多くの人に伝えるのか、というのがメインタスクの私にとっては非常に参考になる記事。
+
+#### [Bunyip: client-side unit testing made easy via The CSS Ninja - All things CSS, JavaScript & HTML](http://www.thecssninja.com/javascript/bunyip)
+
+Bunyip: JavaScriptのユニットテストをより手軽に行うための知っておきたいTips。  
+[BrowserStack](http://www.browserstack.com/)、[Pagekite](https://pagekite.net/support/quickstart/)はそれぞれ単体でもおすすめ。
+
+#### [All About Unicode, UTF8 & Character Sets via Smashing Coding](http://coding.smashingmagazine.com/2012/06/06/all-about-unicode-utf8-character-sets/)
+
+unicode、charsetの話。リファレンスとして持っておくと便利。
+
+## That's it for this week!
+
+昨日はSwapSkillsのOneWebというSwapSkillsにとって記念碑的な意味合いをもつ大事なセミナーにて登壇、そして長谷川恭久さん、白石俊平さん、菊池崇さん、佐々木朋美さんという素晴らしいスピーカー陣。  
+非常に勉強になることが多い会でした。  
+250名近くの前で話をするのはもちろん初めて。100枚に近いスライドで、少し駆け足になった部分はあるけれど、ウェブが変革期のただ中にいて、自分自身がその変革そのものに参画しているんだという思いを持ってもらえれば何よりもありがたいことです。
+
+次はCSS Nite。  
+スマートフォンにおけるサイトパフォーマンスについてです。  

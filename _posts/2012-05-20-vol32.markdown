@@ -1,0 +1,155 @@
+---
+layout: post
+title: "Vol.32"
+date: 2012-05-20 10:45:19
+---
+
+## [Here’s why the Facebook iOS app is so bad (UIWebViews and no Nitro) by Mobtest blog](http://blog.mobtest.com/2012/05/heres-why-the-facebook-ios-app-is-so-bad-uiwebviews-and-no-nitro/)
+
+FacebookのiOSアプリがどうしてクオリティが低いのか？
+
+**Facebookアプリの悪い点**
+
+- モバイルウェブサイトよりもアプリの方が遅い
+- ノーティフィケーションでは新しいメッセージやレスポンスがあるとお知らせしているのに、実際のウィンドウでは何も表示されていない
+- バグが多い。(というよりは出来ないことが多い)
+
+**これらの問題点の原因**
+
+1. HTMLとUIWebView
+
+	- UIWebView上ではキャッシュのコントロールが出来ない。  
+	- UIWebViewはNitro JavaScriptエンジンを利用していない。
+
+2. 類似した情報を別のリクエストで取得して、同期できない
+
+ノーティフィケーションとコンテンツは別のリクエストで取得しているため、ノーティフィケーションに表示される情報が実際のコンテンツと異なるケースがありえる。
+
+FacebookがHTMLをiOSアプリで利用している理由: 1) HTMLは流動的なコンテンツを表示するのに最適で、2) iOS、Android、BlackBerry、Windows Phoneと様々なプラットフォームで共用でき、3) Facebook本体の開発との乖離を最低限に抑えることが出来る。
+
+## [Responsive Images and Web Standards at the Turning Point by A List Apart](http://www.alistapart.com/articles/responsive-images-and-web-standards-at-the-turning-point/)
+
+レスポンシブイメージとウェブスタンダードは今ターニングポイントを迎えている。
+
+様々なハックが毎週の様に生み出されているレスポンシブウェブデザインにおける画像の扱いはどのハックも一長一短で、レスポンシブイメージが抱える様々な問題を解決するには新しいスタンダードが必要だ。  
+
+デベロッパ間では`picture`という新しいタグ内にmedia queriesと同じようなシンタックスでViewportに合わせて最適な画像(サイズ的にも、アートディレクション的にも)を呼び出す仕様が定着しつつあるなか、WHATWGが提案したスタンダードは`img`内に`set`という新しい属性を作りその中で画像を指定する形式だった。
+
+この`set`を使ったシンタックスはホワイトスペースに依存し過ぎる複雑なシンタックスであるというだけではなく、レガシーブラウザへのpolyfill対応も複雑になってしまう懸念がある。
+
+新しい要素を追加するより属性を追加するほうがブラウザベンダにとって負荷が低いと思われるが、ブラウザベンダ側のイニシャル工数よりもそれに対応をし続けなければいけないデベロッパ側の工数を下げることのほうがよいのではないかというような意見記事。
+
+## [Improving the Performance of your HTML5 App by HTML5 Rocks](http://www.html5rocks.com/en/tutorials/speed/html5/)
+
+HTML5アプリのパフォーマンスを向上させる手法。
+
+**表層の高速化**
+
+- ハードウェアアクセレーションの利用
+- CSS3 TransitionsとTranslate
+- requestAnimationFrame
+
+**計測**
+
+- JavaScriptプロファイリング / 個別の関数ごとに実行速度を確認できる
+- DOMプロファイリング / DOMに対する操作のパフォーマンスを確認できる
+
+**最適化**
+
+- DOM操作を減らす
+- 初期ロードで行う作業を減らす / 後で実行していいものは後で
+- イベントハンドラの最適化
+
+## [Getting started with RESS by .net magazine](http://www.netmagazine.com/tutorials/getting-started-ress)
+
+レスポンシブウェブデザインへの別のアプローチ。Responsive Design + Server Side Components(RESS)について。
+
+フロントエンドだけで解決できない問題がレスポンシブウェブには数多くあるので、そのギャップを埋めるためにもRESSというアプローチは考慮しておいてもいい。
+
+別の著者により[スライド](http://www.slideshare.net/dmolsenwvu/ress-an-evolution-of-responsive-web-desig)もあったので、合わせてどうぞ。
+
+## [Five Quick Web Design Tips From Team Envato by Webdesigntuts+](http://webdesign.tutsplus.com/tutorials/workflow-tutorials/five-quick-web-design-tips-from-team-envato/)
+
+Nettuts+などを運営するEnvatoチームによるTips。
+
+1. Stuart Richardson: Sass、Compassを利用した複数種類のテーマの管理
+2. Cameron Jones: Responsive Design Test Bookmarkletを使ったレスポンシブウェブデザインの確認
+3. Rodney Blackney: Gimmbarを使ったインスピレーションの管理
+4. Jeffrey Way: HTML5で閉じる必要のないタグについて
+
+## [Style Guides, Mood Boards, And Style Tiles: 3 Tools To Keep Design Projects On Track by Van SEO Design](http://www.vanseodesign.com/web-design/style-guides-mood-boards-style-tiles/)
+
+スタイルガイド、ムードボード、スタイルタイルの3つのツールを使ってプロジェクトを管理する。
+
+高速な開発を求められる時代にデザイナに必要な3つのツールを駆使してプロジェクトのスケジュールを保持する方法。  
+3つとも比較的新しいコンセプトのツールなので、ケーススタディに則した利用方法の紹介は参考になる。
+
+## Snippet / Demo
+
+- **[Your own jQuery Deferreds by The JavaScript Playground](http://javascriptplayground.com/blog/2012/05/your-own-jquery-deferreds)**
+
+jQueryのDeferredsについて。    
+Ajaxだけではなく、`$.Deferred()`を利用して他の操作にも利用できる。
+
+- **[Web Design, Northern Ireland, Bangor, Freelance by Jordan Moore](http://www.jordanm.co.uk/post/22964442013/source-shuffling-responsive-images-based-on-media)**
+
+レスポンシブイメージについての問題の解決方法。  
+リクエスト数、画像のサイズ、アートでレクションの問題を同時に解決する実装方法。
+
+- **[An Overview of the Web Storage API by SitePoint](http://www.sitepoint.com/an-overview-of-the-web-storage-api/#fbid=qH6F8FgkBau)**
+
+Web Storage(localStrageとsessionStorage)についてのまとめ。
+
+- [Building a modern grid system by .net magazine](http://www.netmagazine.com/tutorials/building-modern-grid-system)
+
+ZurbのFoundationというフレームワークのバージョン3で採用されるフレキシブルなグリッドについての詳しい解説。
+
+- [Keep your CSS selectors short by CSS Wizardry](http://csswizardry.com/2012/05/keep-your-css-selectors-short/)
+
+CSSのセレクタは可能な限り短く。ポータビリティが向上し、スペシフィシティをシンプルできる。適合性の高いシステムを構築するために気をつけるべき点をカバーできる。
+
+## Other
+
+- [Shortening the build-measure-learn cycle with clickable mockups by Design Staff](http://www.designstaff.org/articles/shortening-the-build-measure-learn-cycle-2012-02-06.html)
+
+制作-計測-理解のサイクルをより早く行うために知っておきたいケーススタディ。ユーザーテストを１区切りにしたかなりスピーディなイテレーション例。
+
+- [Designing for an infinite number of devices by .net magazine](http://www.netmagazine.com/opinions/designing-infinite-number-devices)
+
+スマートフォンやタブレットも無限とも言えるほどデバイスがあるがそれはまだまだ序章。様々なデバイスに対応するために必要なこと。とてもいいオピニオン記事。
+
+- [Design Your App's User Interface Using Basic Widgets in Android's GUI Tooklit by BuildMobile](http://buildmobile.com/design-your-apps-user-interface-using-basic-widgets-in-androids-gui-toolkit/#fbid=Vl-csA6Wz5W)
+
+Androidアプリのデザインをすでに用意されているGUIツールキットを利用して作る。
+
+- [The A/B Test: Inside the Technology That's Changing the Rules of Business by Wired.com](http://www.wired.com/wiredenterprise/2012/04/ff_abtesting/all/1)
+
+Obamaのキャンペーンを支えたA/Bテストの物語。OptimizelyというウェブテストファームのCEOの物語でもあったりする。 
+
+- [html5shiv and Serving Content From Code Repositories by Zoompf](http://zoompf.com/blog/2012/05/html5shiv-and-serving-content-from-code-repositories)
+
+githubやgoogle codeのレポジトリからのリンクをプロダクションで使ってはいけない、という話だけど、よく読むとパフォーマンスの基本についての記事。
+
+- [Luke Wroblewski on Mobile Inputs by Will Hacker](http://willhacker.net/2012/04/27/luke-wroblewski-on-mobile-inputs/)
+
+UX ImmersionでのLukeのワークショップについてのまとめ。モバイルの入力について。
+
+- [Please Learn to Write by Rands In Repose](http://www.randsinrepose.com/archives/2012/05/16/please_learn_to_write.html)
+
+書くということを学ぶ。実はライティングはプログラミングに通じる部分もある上、エラーに対して寛容。コミュニケーションが大事な仕事だからこそ書くことを学ぼう。
+
+## That's it for this week!
+
+以前にも告知しましたが、改めて。  
+6/9(土)にSwapSkills主催の「Webサイトもスマホアプリも！One Web」というイベントにて登壇させていただくことになりました。
+
+長谷川 恭久さん、菊池 崇さん、白石 俊平さん、佐々木 朋美さんと私。  
+(私はさておき)そうそうたるメンバーによる多種多様なデバイスにどうアプローチしていくかについてかの紹介になります。
+
+私はマルチデバイス対応に最適な手法「デザインニング・イン・ ブラウザ」というタイトルで実践的なブラウザでのデザイン手法の紹介をしていきます。  
+
+他の登壇者の皆様の登壇内容も公開されましたので、[くわしくはこちらから](http://swapskills.info/doubbble/05.html)。
+
+[SwapSkills doubbble vol.05 / One Web 2012](http://swapskills.info/doubbble/05.html)
+
+同じ会社から2名以上参加いただくと1名あたり1000円の割引があり、講演の内容はディレクタにとってもフロントエンドデベロッパにとってもデザイナにとっても有益なものなので、チーム全員で聞いていただくとよいかなと。

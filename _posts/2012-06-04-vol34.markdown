@@ -1,0 +1,133 @@
+---
+layout: post
+title: "Vol.34"
+date: 2012-06-04
+---
+
+## UX / UI / Design
+
+### [10 pro tips for updating your web designs via .net magazine](http://www.netmagazine.com/features/10-pro-tips-updating-your-web-designs)
+
+ウェブデザインをアップデートする10のTips。  
+
+- プロトタイプは絶対に必要
+- 予算が少なくてもプロトタイプ制作は可能
+- 背景画像とHTMLを使った簡易プロトタイプ
+- Sencha TouchやjQuery Mobile、Twitter Bootstrapのようなフレームワークを使ったプロトタイプも可能
+- 思い込みをテストする
+- フィードバックを得ることは大事
+- インタラクティブなサイト、モバイルサイトを制作するために必要な知識を得る
+- 様々な制作ツールを使いこなす
+- どんなプロダクトも終わりがない。イテレーションによる改善
+
+### [How a few lines of code greatly improved a crucial part of UX via self.li](http://blog.self.li/post/23668063348/few-lines-of-code-improved-ux)
+
+本の数行のJavaScriptを変更することでUXにおけるクリティカルな部分を改善できたというケーススタディ。  
+ケーススタディそのものも参考になるけれど、UXを改善する大きな役割を担う機会の多いJavaScriptを学ぶことということはよりよいウェブサイトを作る上で必須の能力であることがよくわかる。  
+なんでJSなんかややこしい言語を覚えなければならないのか、に疑問を持ったら思い出してほしい。
+
+### [Hack the Cover via Craig Mod](http://craigmod.com/journal/hack_the_cover/)
+
+E-bookの時代に本のカバーにあたる要素はどんな役割を持つべきか。  
+そもそも本のカバーには見た目をデザインするという役割の他に大事な役割、本を守るという役割、を持っているがE-bookにはそれは必要ない。  
+デジタル時代の本のデザインについての素晴らしいエッセイ。  
+
+### [Quick Tip: Rounded Corners Done Right by Webdesigntuts+](http://webdesign.tutsplus.com/tutorials/visuals/quick-tip-rounded-corners-done-right/)
+
+角丸が2重になるようなデザインを作る際に知っておかなければならない内側と外側のアールの違い。  
+パイプを曲げるのと同じで外側のアールのほうが内側より大きな数字にならなければならない。  
+内側のアール + 外側までの距離 = 外側のアール
+非常にシンプルな計算で導きだせるので覚えておいてほしい。
+
+- [Content strategy in 600 words by Teagarden-tech](http://www.teagarden-tech.com/2012/05/20/content-strategy-in-600-words/)
+
+コンテントストラテジについて600語でまとめた記事。非常にわかりやすい。
+
+- [(Re)consider the Source by Contents Magazine](http://contentsmagazine.com/articles/reconsider-the-source/#first)
+
+信頼性をあげるために知っておきたいソース(情報源)について。  
+コンテンツの信頼度はウェブサイトにおいて重要になってくるはずなのでそのノウハウの基礎であるソースについてはしっかり知っておく必要がある。
+
+## Responsive Web Design
+
+### [Design Process In The Responsive Age by Smashing UX Design](http://uxdesign.smashingmagazine.com/2012/05/30/design-process-responsive-age/)
+
+レスポンシブで、コンテンツ中心で、モバイルファーストのウェブサイトはこれまでのウェブサイト制作の設計とは異なる。
+その新しい時代の設計で大切になるプライオリティガイドというツールについての解説。
+
+### [Has adaptive design failed? Of course it bloody hasn’t. via Elliot Jay Stocks](http://elliotjaystocks.com/blog/has-adaptive-design-failed-of-course-it-bloody-hasnt/)
+
+アダプティブ(レスポンシブ) デザインが失敗である、という記事に対してElliot Jay Stocks氏による反対意見。  
+さすがにElliot Jay Stocksだけあって素晴らしい見解。コメント欄でも彼の意見に反対する人もいてそれぞれの意見は参考になる。
+
+### [Designing (and converting) for multiple mobile densities via Teehan+Lax](http://www.teehanlax.com/blog/density-converter/)
+
+解像度の異なる複数デバイスに対するデザインアプローチとその変換。  
+Readability for iOSを開発したTeehan+Laxによる貴重なノウハウ。そして解像度変換計算ツールも提供。
+
+## Performance
+
+### [Caching Tutorial for Web Authors and Webmasters](http://www.mnot.net/cache_docs/)
+
+ウェブサイトのパフォーマンスにおいて非常に重要な役割を持っているキャッシュについて非常によくまとまった記事。  
+チュートリアル + リファレンスとなっているの一気に読まずにすこしずつ読んで、いつでも参照出来る様にしておくといい。
+
+## Snippet / Demo
+
+### [Favicons Next To External Links by CSS-Tricks](http://css-tricks.com/favicons-next-to-external-links/)
+
+外部リンクにFaviconを表示させる方法。  
+Chris Coyier氏はCSSだけでの解決を狙ったもののjQueryを使った解に行き着いた。  
+スニペットそのものも素晴らしいが、その紆余曲折も掲載されているのでハックを考えるプロセスそのものも非常に参考になる。
+
+- [Safer event handling with jQuery namespaced events by 456 Berea Street](http://www.456bereastreet.com/archive/201205/safer_event_handling_with_jquery_namespaced_events/)
+
+jQueryを使ってイベントに名前空間を適応する方法。プラグインを作成する際などにはとても大事な話。
+
+- [Walking Through jQuery Plugin Boilerplate by Joe Zim's JavaScript Blog](http://www.joezimjs.com/javascript/walking-jquery-plugin-boilerplate/
+
+jQuery Plugin Boilerplateのソース解説。  
+jQueryのプラグインを作りたいと思っていてなかなか手が出ない方の足がかりとして優れたソースなので参考になるはず。
+
+- [Your first node.js module by Connor Montgomery](http://cnnr.me/b/2012/05/your-first-node-dot-js-module/)
+
+node.jsのモジュールの作り方。  
+これを覚えておくとender.jsのパッケージも作成できるようになるので、きちんと言語化できるようにメモ。
+
+- [JS101: Inheritance by DailyJS](http://dailyjs.com/2012/05/28/js101-prototype-chains/)
+
+JavaScriptの開発を行う上で知っておかなければならない基礎についての解説シリーズ。今回は継承について。スニペットを実際に動かしてみると理解がしやすいはずなのでぜひ挑戦してほしい。
+
+## Slide / Video
+
+### [Stephen Woods: “Creating Responsive HTML5 Touch Interfaces”  via Yahoo! User Interface Blog](http://www.yuiblog.com/blog/2012/02/23/video-stephen-woods-html5-touch/)
+
+FlickrのフロントエンドデベロッパStephen Woods氏によるHTML5でつくるレスポンシブなスマフォ向けタッチインターフェイスについての動画。
+
+- [Ryan Singer – Ep. 79 by Unmatched Style](http://unmatchedstyle.com/podcast/ryan-singer-ep-79.php)
+
+37signalsのRyan Singer氏のインタビュー。5分という短さながらいい事ばかり言う。  
+私が尊敬してやまないUIデザイナの内の１人。
+
+## Other
+
+### [Eliminating Web Development Waste by Nefarious Designs](http://nefariousdesigns.co.uk/eliminating-web-development-waste.html)
+
+アジャイル開発はいまや単なるエンジニアのための開発手法ではない。レスポンシブワークフローの中でも息づくアジャイルにおいて大事なポイントが無駄を省くこと。  
+そのためには何が無駄になるのか、そしてそれが何故生み出されるのかを知っておく必要がある。　　
+Toyotaが持っている改善プロセスを通じてソフトウェア開発における無駄についてを解説した素晴らしい記事。
+
+- [Design Interrupted: Design-time Versus Meeting-time by Adaptive Path](http://www.adaptivepath.com/ideas/design-interrupted-design-time-versus-meeting-time)
+
+デザイナ、デベロッパが持っている時間に対するリズム感とマネージャのそれは圧倒的に異なる。  
+デザイナ、デベロッパは睡眠のリズムと同じく一定の期間をおいて深い集中時間を形成するのに対してマネージャは1時間単位で動く。  
+よりよいものを作るためにお互いの時間の違いを知っておこう。
+
+## That's it for this week!
+
+来週はSwapSkillsにてOne Webというイベントで登壇させていただくことになっております。おかげさまで満席という状態らしく240名ほどの方の前でお話をさせてもらいます。  
+つい先日も会社主催の外部向けセミナーFrontrendを開催し、そこでも登壇してきました。  
+また先週も告知した通り、今月末はCSS Niteにて登壇させていただくことになっています。  
+さすがに異なるテーマで1ヶ月に3つのセミナーは初体験。  
+これを乗り越えればまた成長出来るかなと思いつつ必死で資料を作成中。  
+参加いただける方が満足出来るようなお話ができればなによりです。

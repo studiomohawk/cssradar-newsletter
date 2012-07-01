@@ -1,0 +1,110 @@
+---
+layout: post
+title: "vol36"
+date: 2012-06-17 11:07:26
+---
+
+## UX / UI / IA /Design
+
+### [A Primer on Responsive Design by UX Magazine](http://uxmag.com/articles/a-primer-on-responsive-design)
+
+満を持してのUX Magazineからのレスポンシブデザインのまとめ。  
+コンテントストラテジ観点からのレスポンシブデザインについて。  
+フロントエンドとバックエンドとのコミュニケーションや、モバイルファースト、プロトタイプの重要性について短く分かりやすい記事。
+
+### [Setting Breakpoints in Responsive Design via Web Designer Wall](http://webdesignerwall.com/tutorials/setting-breakpoints-in-responsive-design)
+
+レスポンシブウェブデザインにおけるブレークポイント。もちろんターゲットユーザによって、ビジネルゴールによってブレークポイントは変わるものだけど、よく使うポイントはある。そんなポイントのパターンを2つ紹介している。
+
+#### [Notes from my "Web Designer's Workflow" Workshop at Interlink 2012 via CSS-Tricks](http://css-tricks.com/notes-from-my-web-designers-workflow-workshop-at-interlink-2012/)
+
+Chris Coyier氏によるウェブデザイナワークフローのワークショップのノート。3.5時間でウェブサイトをデプロイする話。  
+ツールの話やCSSの話、オンラインサービスと実際にChris Coyier氏が利用したものばかりなので参考になる。
+
+#### [Flow, Mastery and Ease-of-Use via Boxes and Arrows](http://www.boxesandarrows.com/view/flow-mastery-and)
+
+Flow、Mastery、Ease-of-Useのゲーミフィケーションのコアの部分の概念をウェブデザインにも活かす。
+
+#### [Creating a complete online user experience via Boagworld](http://boagworld.com/tumblog/creating-a-complete-online-user-experience/)
+
+ソーシャル体験もふまえた上でのユーザエクスペリエンスをデザインすることについて。
+
+#### [Creating a Shared Understanding vua Johnny Holland](http://johnnyholland.org/2012/06/creating-a-shared-understanding/)
+
+共通理解を得るためにUXデザイナがやらなければならないこと。答えは簡単。動くものを見せること。
+
+## Style Guide
+
+### [Create a website style guide via .net magazine](http://www.netmagazine.com/features/create-website-style-guide)
+
+ウェブサイトのスタイルガイドの作り方。コードのことだけではなく全体のスタイルガイド。  
+最近非常に話題に上がることが多いスタイルガイド。こちらはBBCのGELくらいの規模感のスタイルガイドの作成について。
+
+### [Single-direction margin declarations via CSS Wizardry](http://csswizardry.com/2012/06/single-direction-margin-declarations/)
+
+Margin(特に上下)を一定方向だけ指定する。バーティカルリズムを容易にするだけではなく、モジュールの使い勝手をよくする小さいけれど参考になるTips。私もmarginについては一定方向だけを指定するケースが多い。  
+特にセンタリングにつかう`margin: 0 auto`の指定は意外にモジュールを不便にするので使わないことにしている。
+
+### [一貫性のあるCSSらしいCSSを書くための原則](https://github.com/necolas/idiomatic-css/tree/master/translations/ja-JP)
+
+Nicolas Gallagher氏による[idiomatic-css](https://github.com/necolas/idiomatic-css/)の日本語訳。  
+すべてのスタイルを踏襲するべきとは思わないが多くの点で納得できるスタイルガイドなので参考に。
+
+### [How I write CSS via Daniel Eden](http://daneden.me/2012/06/how-i-write-css/)
+
+Animate.cssなどを作ったDaniel Eden氏のCSS スタイル。  
+人がどのようなスタイルを持っているかを知ることはスタンダードを作る際に参考になる。
+
+## Demo / Snippet
+
+### [Function Declarations vs. Function Expressions via JavaScript, JavaScript…](http://javascriptweblog.wordpress.com/2010/07/06/function-declarations-vs-function-expressions/)
+
+JavaScriptのFunction DeclarationsとFunction Expressionsの話。  
+Hoistingと呼ばれる現象について。  
+HoistingはJavaScriptのスコープをマスターする上で欠かせない知識なので、実際にスニペットを動作させて覚えてしまうのがよい。
+
+### [The Module Pattern, A Little More Detail via macwright.org](http://macwright.org/2012/06/04/the-module-pattern.html)
+
+JavaScriptのデザインパターンであるModule パターンについての詳しい解説。Moduleパターンが持つ弱点にも言及していて、スニペットも分かりやすいし、スニペット内のコメントが詳しく参考になる。
+
+### [Why Aren’t You Using SVG? by Nettuts+](http://net.tutsplus.com/tutorials/why-arent-you-using-svg/)
+
+ブラウザサポートの問題というだけでSVGをきちんと見てこなかったが、改めて見直してみると思った以上に便利で簡単。  
+シンプルなものであればパフォーマンスも悪くなさそうだし何かの機会に使ってみよう。
+
+#### [Understanding the CSS Transforms Matrix by Dev.Opera](http://dev.opera.com/articles/view/understanding-the-css-transforms-matrix/)
+
+CSS3のtransforms matrixについて理解しよう。  
+そもそも論からしっかりと説明されていて、数字の羅列にしか見えなかった値をきちんと理解できたので、おすすめ。
+
+#### [Flame on! A beginner's guide to Ember.js by Adobe Developer Connection](http://www.adobe.com/devnet/html5/articles/flame-on-a-beginners-guide-to-emberjs.html)
+
+JavaScript MVCフレームワークとしてbackbone.jsの次に注目しているember.jsについて。スニペットが豊富だし、サンプルファイルもついているので勉強用に。
+
+#### [Foundation 3.0 Typography and Modular Scale Collide via ZURB](http://www.zurb.com/article/1000/foundation-30-typography-and-modular-scal)
+
+ZurbのFoundation 3.0のちょい出しシリーズ。タイポグラフィについて。
+
+## Tool
+
+### [PixelPerc - A simple tool to help build responsive websites](http://pixelperc.com/)
+
+レスポンシブなサイトを作る際に何かと便利なピクセルをパーセントに変換してくれるツール。
+
+## Other
+
+#### [7 handy text manipulation tricks in Sublime Text 2 via josh earl](http://whiletruecode.com/post/7-handy-text-manipulation-tricks-sublime-text-2)
+
+Sublime Text 2で使える7つのテキスト操作系ショートカット。  
+行の結合、行の交換、行の削除、コピー、コメントトグル、ソート、キャピタルレター。
+
+#### [JavaScript Profiling With The Chrome Developer Tools via Smashing Coding](http://coding.smashingmagazine.com/2012/06/12/javascript-profiling-chrome-developer-tools/)
+
+Chrome Developer ToolのJavaScript Profilingを使ったJavaScriptパフォーマンスの調査について。
+
+#### [Building Books with CSS3 via A List Apart](http://www.alistapart.com/articles/building-books-with-css3/)
+
+CSS3を使ってebookをスタイルする。PrinceっていうPDFプロセッサがあるそうだ。相変わらずALAは面白い。
+
+## That's it for this week!
+

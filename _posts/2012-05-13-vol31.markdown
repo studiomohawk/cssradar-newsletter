@@ -1,0 +1,205 @@
+---
+layout: post
+title: "Vol.31"
+date: 2012-05-13 11:29:12
+---
+
+## [Principles of User Interface Design](http://bokardo.com/principles-of-user-interface-design/)
+
+ Joshua Porter氏によるUIの原則。
+
+1. インターフェイスはインタラクションを可能にするために存在する
+2. 明瞭であることがもっとも大事
+3. フォーカスを守ることはどんなことにも優先されるべき
+4. ユーザにコントロールをゆだねる
+5. インターフェイスが必要ない操作がもっとも優れたインターフェイス
+6. 1スクリーンにつき1つのプライマリーアクション
+7. セカンダリーアクションは2次的であるように
+8. 自然なステップを用意すること
+9. 見た目は挙動に従うこと
+10. 一貫性は大切
+11. 強力なビジュアルヒエラルキーがベスト
+12. 賢く構成は認知的負荷を下げる
+13. 色はハイライトのために使う
+14. 段階を追った情報の開示。少しずつ説明を追加していくこと
+15. ヘルプが必要であればその場でおこなうこと
+16. インターフェイスに触れる1番はじめの瞬間は大事
+17. 未来や仮定の問題ではなく現在存在する問題こそもっとも大事
+18. すぐれたデザインは目に見えない
+19. インターフェイスは他のデザイン領域をベースにして作ること
+20. インターフェイスは使われるために存在する
+
+## [Introducing Grunt by Bocoup](http://weblog.bocoup.com/introducing-grunt/)
+
+HTML5 Boilerplateのjake版ビルドプロセスにも採用されているJavaScriptのためのビルドツールGrunt。初の作者自身による紹介。  
+結合、カスタマイズできるテンプレート、JSHintによるlint、UglifyJSを使ったミニファイ、QunitをPhantomJSを利用してテストなどJavaScriptの制作に欠かすことができないツール群をまとめたコマンドラインツール。  
+
+自分のワークフローに合うかどうかも大事だが、世の中的なスタンダードを集約し、それを自動化できる素晴らしいツール。
+
+## [Modularity and Style Guides by David Bushell](http://dbushell.com/2012/04/23/modularity-and-style-guides/)
+
+CSSにおけるモジュールとは何か、そしてスタイルガイドを作る理由とはを解説する記事。  
+
+スタイルガイドを作る利点:
+
+- どんなデザイン要素を持っているかを目視できる
+- どんなデザイン要素が存在しないかを目視できる
+- ウェブサイト全体のHTML/CSSのモジュールを定義する
+- 新しい要素を作成する際のベースラインを持てる
+- ブラウザ、デバイス上でコードを早くテストできる
+- 次回の開発用のブループリントを作成できる
+
+最後のポイントこそ、私がスタイルガイドを作る理由の最も大事な1つ。目に見えない経験ではなく、目に見える経験がフロントエンドでデベロッパとしての価値につながる。
+
+## [A framework for discussing responsive images solutions by Cloud Four Blog](http://blog.cloudfour.com/a-framework-for-discussing-responsive-images-solutions/)
+
+レスポンシブデザインにおける画像の扱いについての問題ならCould Four。というほど多くの示唆を提示してきている。その中でももっとも優れた示唆である今回の記事。
+
+レスポンシブデザインでの画像の扱いには大きく2つの考えがある。そして多くの場合その2つは同時に解決できる問題ではない。
+1つはサイズとリクエスト数。`image-set`はこの問題を解決するために提案されている方法で、もう1つアートディレクション、つまりレスポンシブなデザイン上で大きなモニタと小さなモニタの両方できちんと意味が伝わる画像を使い分ける必要があるわけだが、この問題を解決しようとしているのが`picture`という新しい要素の提案。
+
+両者の重要性は変わらないからこそ、問題の解決の際はどちらの問題を解決するための手法なのかを知る必要がある。
+
+## [Cross-Browser Debugging CSS by Stubbornella](http://www.stubbornella.org/content/2012/05/02/cross-browser-debugging-css/)
+
+OOCSSの作者であるNicole Sullivan氏によるクロスブラウザのCSSデバッグについて。  
+基本を押さえて、正確に記述すること。  
+バグだと思っているバグのほとんどは仕様だったりすることが多い。  
+ブラウザがどうCSSに対して対応するかよりもCSSがどう動作するものかを知るべき。
+
+## [A view’s responsibility — a lesson on JavaScript and the DOM by BEKK Open](http://open.bekk.no/a-views-responsibility/)
+
+backbone.jsやspine.jsに見られるJavaScriptによるMV*パターンの実装がトレンドだが、まずはこの記事を読んでほしい。  
+MV*パターンのVであるViewsについて解説していて、backbone.jsやspine.jsを採用しなくてもViewsのような概念をどう制作に活かしていくかについて解説している。
+
+## [Applying Macrotypography For A More Readable Web Page by Smashing Magazine](http://www.smashingmagazine.com/2012/05/02/applying-macrotypography-for-readable-web-page/)
+
+タイポグラフィーと書くと、日本語には関係ないと思う人も多いだろうが、それは間違い。この記事ではバーティカルリズムや書体の選び方などではなくマクロ視点のタイポグラフィーについて解説している。
+
+ページ左右のマージン、長文のテキストが入るエリアのマージン、行間の効果など、実際のページに適応しながら解説しているので、キャプチャを見ながら効果を確認してほしい。
+
+## [Responsive Web Design or Separate Mobile Site? Eh. It Depends. by Global Moxie](http://globalmoxie.com/blog/mobile-web-responsive-design.shtml)
+
+レスポンシブウェブデザインを採用するべきか、モバイルサイト専用サイトを作るべきか。  
+答えは「場合による」が正解。  
+レスポンシブウェブデザインはツールであり、異なるスクリーンに対して適応するレイアウトをつくるのには最適なツールだ。だがそれだけ。  
+では「場合による」の場合とは何か？  
+ユーザとビジネスゴール。  
+デザインが常に考えるべき2つの要因が決めるべきこと。  
+レスポンシブウェブデザインであろうと、そうでなかろうといつだってその点を忘れてはいけない。
+
+## [LinkedIn for iPad: 5 techniques for smooth infinite scrolling in HTML5 by LinkedIn Engineering](http://engineering.linkedin.com/linkedin-ipad-5-techniques-smooth-infinite-scrolling-html5)
+
+LinkedInのiPadアプリはほぼHTML5で作成されたアプリだそう。  
+そんな中ネイティブアプリと同等のスムースさをインフィニティスクロールで実装するための5つのテクニックについて。
+
+1. テクニック1: 画像をアンロードする
+
+UIWebView/Mobile Safariには画像を多く呼び出せない制限があり、
+imgタグのsrc属性を空にするとバグが発生するので、画面上に表示されていない画像をすべて小さな画像に置き換える。
+
+2. テクニック2: ページを隠す
+
+表示していない各ページにあたる表示のvisibilityをhiddenに変更する。  
+こうすることでメモリを確保できる上に初期ロード時間を短縮できる。
+
+3. テクニック3: ページを削除する
+
+ページを隠すだけでも80%ほどのユースケースでブラウザのクラッシュを免れることができるが、十分とは言えないため、表示しているページから3ページ以上前のページを削除する。
+
+4. テクニック4: 画像のスケールとbox-shadowを回避
+
+imgタグによる画像のスケールはパフォーマンスに影響を与えるため、1つずつきちんと画像の縦横を指定。さらにbox-shadowの描画はwebkitが苦手としているため削除。
+
+5. DOMノードを可能な限り最小限に
+
+もはや説明不要。DOMは少なくしておこう。
+
+## [JS Inheritance in 15mins or Less by Bearded Octo](http://beardedocto.tumblr.com/post/22380807033/js-inheritance-in-15mins-or-less)
+
+JavaScriptの継承について15分で学ぶ。  
+
+クラスの作成、そしてそのクラスの拡張、encapsulationの実装について、分かりやすくコンパクトに紹介。スニペットはどれも分かりやすいので参考になる。
+
+## [Primitive Values and Objects by DailyJS](http://dailyjs.com/2012/05/07/js101-object/)
+
+JavaScriptのオブジェクト指向を学ぶ上でどうしても難しいのがオブジェクトという概念そのもの。ここではそのオブジェクトについてどう作るのか、コンストラクタをどう書くのかの2点に集中して解説。  
+この記事を読んでからオブジェクト指向の記事を読んでおくと理解が早まるだろう。
+
+## [Effective Presentation of a Website’s Navigation by UX Booth](http://www.uxbooth.com/blog/effective-presentation-of-a-websites-navigation/)
+
+ウェブサイトのナビゲーションをどう効果的にみせることができるかについての記事。
+
+ナビゲーションの効果的なデザインについてはもちろんのこと、IAの基本概念についてもうまく説明されている。  
+
+様々なアプリケーションやウェブサイトを例に悪いナビゲーションとよいナビゲーション両方をケーススタディしているので非常に参考になる。
+
+## [Useful, Saleable, Buildable: The Role Of UX In Defining Requirements by The Usabilla Blog](http://blog.usabilla.com/useful-saleable-buildable-the-role-of-ux-in-defining-requirements/)
+
+UXのタスクの1つである要求定義をどう行うべきかについて。  
+UXを紹介する記事はどうしても概念的になってしまうところを自分の体験を通して要求定義についてフォーカスした記事なのでとても参考になる。
+
+- UXドキュメントそのものを要求定義書にしてしまうことで、
+- ステークスホルダーに対して要求を確認できるばかりか、デベロッパに対して技術的に可能なのか、どのくらい工数がかかるのかを確認することができる。
+- ワイヤフレームは問題定義のために作成し、
+- プロトタイプを要求仕様として作成していく。
+- 問題がどこにあるのかを発見し、それらに対してどう対応していくのかの具体例を提示してサイトを制作していく手法。
+
+### Snippet / Demo
+
+- **[An introduction to Underscore.js by Developer Drive](http://www.developerdrive.com/2012/05/an-introduction-to-underscore-js-%E2%80%93-part-2-array-like-collections/)**
+
+ファンクショナルJavaScriptの小さなライブラリであるunderscore.jsで追加できる機能を見ていくシリーズのパート2。今回はArray-like collectionsというカテゴリに入るメソッド達について[パート1はこちらから](http://www.developerdrive.com/2012/04/an-introduction-to-underscore-js-%E2%80%93-part-1-arrays/)
+
+- **[The Lazy Man's URL Parsing in JavaScript by Joe Zim's JavaScript Blog](http://www.joezimjs.com/javascript/the-lazy-mans-url-parsing/)**
+
+JavaScript側でURLをパースする機会は意外にも多い。そこで覚えておきたいのがこのスニペット。このスニペット以上の機能が必要な場合は、[URI.js](http://medialize.github.com/URI.js/)がおすすめ。
+
+- **[Experimental Page Layout Inspired by Flipboard by Codrops](http://tympanus.net/codrops/2012/05/07/experimental-page-layout-inspired-by-flipboard/)**
+
+FlipboadのiPad版で見ることができる雑誌風レイアウトとページのアニメーションをCSSとJavaScriptで再現したデモ。ソースコードもあるのでぜひ見てみてほしい。
+
+### Other
+
+- **[JavaScript Templating with Handlebars by The JavaScript Playground](http://javascriptplayground.com/blog/2012/05/javascript-templating-handlebars-tutorial)**
+
+handlebar.jsの使い方。Ajaxで取得したデータをパースするための高速JavaScriptテンプレート。
+
+- **[JavaScript Style Guides And Beautifiers](http://addyosmani.com/blog/javascript-style-guides-and-beautifiers/)**
+
+Addy Osmani氏によるJavaScriptのスタイルガイドの紹介とフォーマットツールの紹介。idiomatic.jsのスタイルガイドの実践チュートリアルは必見。
+
+- **[LinkedIn For iPad: using local storage for snappy mobile apps by LinkedIn Engineering](http://engineering.linkedin.com/mobile/linkedin-ipad-using-local-storage-snappy-mobile-apps)**
+
+LinkedInのiPadアプリにおけるlocal storageの利用法。基本的なところを押さえつつ、backbone.jsとの連携など実践利用の箇所は参考になる。
+
+- **[Decoding jQuery – Callbacks Object by Shi Chuan's blog](http://www.blog.highub.com/javascript/decoding-jquery-callbacks-object/)**
+
+jQueryのコアを解説しているシリーズ。今回はjQuery.Callbacks()について。使い方まで解説してくれていてとても親切。
+
+- **[Application Cache is a Douchebag by A List Apart](http://www.alistapart.com/articles/application-cache-is-a-douchebag/)**
+
+モバイルサイト開発で一見便利に見えるApplication キャッシュについて。たくさんの落とし穴が紹介されているので、要チェック。
+
+- **[Applying Fitts’ Law To Mobile Interface Design by Webdesigntuts+](http://webdesign.tutsplus.com/articles/design-theory/applying-fitts-law-to-mobile-interface-design/)**
+
+モバイルインターフェイスデザインにフィッツの法則を適応。デバイスの向き、指が届く範囲を考慮して要素を配置する。
+
+- **[Rewarding Failure? Actually, We're Fostering Success by ZURB](http://www.zurb.com/article/977/rewarding-failure-actually-were-fostering)**
+
+Fail Fast。失敗を恐れない。プロダクティブな失敗をおかすこと。失敗とは成功に近づくための大事なプロセス。
+
+## That's it for this week!
+
+この週末を使って新しく「Seven」というサイトを作っていました。  
+Sevenはこのメルマガが抱えている問題であるストック性を補完するために作りました。メルマガは時系列のまとめで1週間という単位を起点にしてまとめを行っていますが、Sevenでは特定のトピックに対するまとめを行います。
+  
+1トピックに対して7つのリンクを紹介していくのでSevenと名付けました。
+7という数字は短期記憶の最大数と言われる数で、多くもなければ少なくもないという数です。7つ集まらなければトピックとして成立しないし、7以上ある場合には慎重に7つを選ぶという作業が発生します。  
+
+もちろんSevenでもコラボレータを募集しています。7つのリンクを添えたトピックを提案していただいてもかまいませんし、トピックそのものの提案も受け付けます。
+
+実は昔から英語をメインにしたプロジェクトを1つ始めたくて、今回Sevenは英語ばかりです。元々紹介する記事も英語がメインになります。タイトルの翻訳というのは結構大変な作業なので、英語が苦手な方は若干入り込みづらいと思いますが、読んでほしい記事ばかりを紹介していきますので、1週間に1記事づつでもかまいません。読んで慣れていくのに活用ください。
+
+もうそろそろ完成させて公開出来る予定なので、楽しみにしていていただれば。
+

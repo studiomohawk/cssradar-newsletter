@@ -1,0 +1,116 @@
+---
+layout: post
+title: "Vol.30"
+date: 2012-05-06  9:40:49
+---
+
+## [Scalable Navigation Patterns in Responsive Web Design by Palantir.net](http://www.palantir.net/blog/scalable-navigation-patterns-responsive-web-design)
+
+レスポンシブウェブデザインにおける1つの未開地、中規模以上のサイトのナビゲーションについてのケーススタディ。
+
+- 柔軟性の高いIAでどんなレスポンシブナビゲーションパターンを作れるか。
+- まずはコンテンツインベントリ。どんなページがあるか、それらページ群の中でどんなエッジケースがあるかを調べる。
+	- 4レベルのナビゲーション、広いレンジの子アイテムを持つシステム
+- コンテンツからナビゲーションパターンを割り出す代わりにナビゲーションを、1次、2次、3次そして子アイテムというパターンに分割した。
+- エッジケースとナビゲーションパターンの割り出しの次はモバイルとタブレットのビューポートにおいてそれらがどう展開されるかを確認。
+- ワイヤフレーム上でナビゲーションパターンを配置。
+- 各ナビゲーションパターンの対応方法をロジカルに展開していく例。
+
+## [A non-responsive approach to building cross-device webapps by HTML5 Rocks](http://www.html5rocks.com/en/mobile/cross-device/)
+
+クロスデバイスのウェブアプリをレスポンシブではないアプローチで作る。
+
+- UIがより複雑に、シングルページウェブアプリに重きをおきはじめると、それぞれのタイプのデバイス用のUIを作る必要性は発生する。→ レスポンシブデザインでは対応できない状況になる。
+- このカスタマイズをもっとも楽に行うために知っておきたいことを紹介。
+- まずはターゲットとするデバイスをクラス分けする。
+- 知っておかなければいけないことは対応するクラスが多ければ多いほど、それらクラスに対するUXは向上するが、デザイン、実装、メンテナンスの工数は増える。
+- 考えられる解決として、1) スモールスクリーン + タッチ、2) ラージスクリーン + タッチ、3) ラージスクリーン + キーボード/マウス というクラス分けを行う。もちろんブレークダウンの方法はこれだけではない。
+- では、これらクラスをどう判定するか？
+ - サーバーサイドで判定
+ - クライアントで判定
+ - [device.js](https://github.com/borismus/device.js)、メディアクエリを利用したデバイス判定方法
+- それぞれのクラスに対して完全に別のコードベースを生み出すのではなく、可能な限りコードを共有すること。
+- そのためにおすすめのアプローチはMVC。Bachbone.jsやEmberなどのMV*アプローチを可能にするJavaScriptを利用することでコードの共用をより簡単に行う事ができる。
+
+## [Content strategy is not always UX by Tendo Communications](http://www.tendocom.com/view/content-strategy-not-always-ux-320)
+
+コンテントストラテジはいつだってUXの仕事ではない。
+コンテントストラテジとUXの違いをレストランをアナロジにして説明。
+
+- 店内の飾り付けは素晴らしく、ホストはフレンドリで暖かい、ウェイタはしつこくもないがよく気がつく。ファーストコース。見た目は最高。では一口。  
+まずい。。
+- ほとんどの人はレストランにおいしい食事を楽しみにいく。見た目や雰囲気ももちろん大事な要素であり素晴らしい体験には欠かす事ができない。しかし終局的にはおいしいものを食べにいく。
+- ウェブサイトも同じ。おいしい食べ物 = コンテンツ。コンテンツがユーザにとって魅力的でなければ、どれだけ素晴らしいデザインでもユーザは2度とそのサイトには訪れない。
+- コンテントストラテジの専門家が手配できないのであれば、マーケティングから人を見つけてこよう。
+
+## [The masochism of implementing CSS baseline by 8 Gram Gorilla](http://8gramgorilla.com/the-masochism-of-implementing-css-baseline/)
+
+CSSでのバーティカルリズムの実装はとても大変だが、不可能ではない。
+
+- ベースラインが24pxであれば、全ての要素は最低でも24pxなければならず、かつ24pxの倍数である必要がある。テキストだけではなく、画像、動画、テーブルなども含めて。
+- 24pxをベースラインとするより、その半分、12pxや11pxをベースラインとして、ダブルベースライン(倍)を利用するほうが柔軟性が高い。
+
+記事ではベースラインガイドとして[Baseliner](https://github.com/jkeyes/baseline)の利用するように書いているが、[Basehold.it](http://basehold.it/)のほうが便利かもしれないので試してみてほしい。
+
+## [Front End Performance Case Study: GitHub by JP's blog](http://blog.jphpsf.com/2012/04/28/front-end-performance-case-study-github/)
+
+Githubをケーススタディにフロントエンドのパフォーマンス改善を一巡り紹介。  
+解析ツールの紹介、見方、問題点と解決方法について、基本的なことばかりだが知っておくべきことばかりを紹介しているので、ぜひ。
+
+## Code / Snippets
+
+### [requestAnimationFrame by CreativeJS](http://creativejs.com/resources/requestanimationframe/)
+
+setTimeoutやsetIntervalに代わるアニメーションに利用出来るrequestAnimationFrameについて。  
+ブラウザ実装状況は[こちら](http://caniuse.com/#search=requestAnimationFrame)から。
+
+### [OO JS in 15mins or Less by Bearded Octo](http://beardedocto.tumblr.com/post/21920818233/oo-js-in-15mins-or-less)
+
+JavaScriptにおけるオブジェクト指向について15分で学ぶ。  
+Literal NotationとConstructor Notationのアプローチについて簡潔にまとめてある。
+
+### [Closures: Front to Back by Nettuts+](http://net.tutsplus.com/tutorials/javascript-ajax/closures-front-to-back/)
+
+JavaScriptの強敵Clouresについて。  
+非常にややこしいコンセプトながら非常に強力なのできっちり理解しておこう。
+
+### [The Essentials of Zepto.js by Nettuts+](http://net.tutsplus.com/tutorials/javascript-ajax/the-essentials-of-zepto-js/)
+
+もうすぐv1.0がリリースされるモバイル専用軽量JavaScriptライブラリzepto.jsについて。  
+jQueryの軽量版が出るか、zepto.jsがデファクトを勝ち取るか。  
+zepto.jsを作ったのはprototype.jsを作った人。
+
+### [The single responsibility principle applied to CSS by CSS Wizardry](http://csswizardry.com/2012/04/the-single-responsibility-principle-applied-to-css/)
+
+シングルレスポンシビリティプリンシパルをCSSに当てはめる。  
+簡単にいうと、1つのオブジェクトは1つのことだけをするべきで、それを何よりもうまくこなすべき。という原則。  
+CSSであろうと、JavaScriptであろうと原則は同じ。
+
+- **[Backbone View-Model Binding by BackboneFU](http://backbonefu.com/2012/04/backbone-view-model-binding/)**
+backbone.jsにおけるViewとModelのバインディングの仕方について。
+- **[JavaScript Closures and the Module Pattern by Joe Zim's JavaScript Blog](http://www.joezimjs.com/javascript/javascript-closures-and-the-module-pattern/)**
+JavaScriptのClosuresとClosuresを使ったモジュールパターンについて。
+- **[A jQuery Plugin with Grunt & QUnit by The JavaScript Playground](http://javascriptplayground.com/blog/2012/04/a-jquery-plugin-with-grunt-qunit)**
+jQueryのプラグインをGruntとQUnitを使って作成する。
+
+## Other
+
+- **[Simplicity Isn’t Simple by FINCH](http://www.getfinch.com/2012/04/simplicity-isnt-simple/)**
+シンプルさにたどり着くまでの道のり。
+- **[iOS icon corner radii by Hicksdesign](http://hicksdesign.co.uk/journal/ios-icon-corner-radii)**
+iOSのアイコンの角丸の数値について。
+- **[Why you should care about CSS page performance by Boagworld](http://boagworld.com/dev/why-you-should-care-about-css-page-performance/)**
+CSSのパフォーマンス改善について。
+- **[Creating a website for multiple screens by BuildMobile](http://buildmobile.com/creating-a-website-for-multiple-screens/)**
+大きすぎず、小さすぎず、ぴったりすぎない、レスポンシブウェブデザインの制作について。
+- **[BDConf: Stephen Hay presents Responsive Design Workflow by Brad Frost Web](http://bradfrostweb.com/blog/mobile/bdconf-stephen-hay-presents-responsive-design-workflow/)**
+BDConfでのレスポンシブデザインワークフローについてのまとめ。
+- **[BDConf: Josh Clark presents The Seven Deadly Myths of Mobile by Brad Frost Web](http://bradfrostweb.com/blog/mobile/bdconf-josh-clark-presents-the-seven-deadly-myths-of-mobile/)**
+BDConfでのモバイルにおける7つの神話についてのまとめ。
+
+## That's it for this week!
+
+世間ではGWということで、紹介した記事のほとんどがあまりいい反応がありませんでした。。  
+休止すればよかったかなと思う反面、すでに25件ほどReadabilityに読むべく記事が溜まっている状況を考えると致し方ないです。
+
+サマリをつけてほしい、という記事がありましたら、気軽にお伝えくださいませ。

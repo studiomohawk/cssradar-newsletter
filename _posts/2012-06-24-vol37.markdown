@@ -1,0 +1,141 @@
+---
+layout: post
+title: "vol37"
+date: 2012-06-24 19:04:17
+---
+
+## UX / UI / IA /Design
+
+### [UX Design Defined via UXmatters](http://www.uxmatters.com/mt/archives/2012/06/ux-design-defined.php)
+
+UXデザインとは何か？
+
+IA、インタラクションデザイナ、UIデザイナ、ユーザビリティエンジニア、またはそれらのタスクのがオーバーラップしている部分をマネージメントすることがUXデザイン。  
+UXデザイナは上記4つの職種にすべて精通している必要があるかというとそうでもない。もちろん4つのフィールドに詳しければ詳しいほど優れたUXデザイナになるが、特にIAとインタラクションデザインのフィールドには詳しくあるべき。  
+
+かなり細かく説明をしているので、可能な限り原文を読んでほしい。
+
+### [Developing UX Agility: Letting Go of Perfection via UXmatters](http://www.uxmatters.com/mt/archives/2012/06/developing-ux-agility-letting-go-of-perfection.php)
+
+UXとAgileをどう両立するかについて。  
+
+- UXのプロセスもAgileになることで、失敗を早く、そして頻繁におかすことができる
+- デザインのイテレーションが行えることは利点
+- まずはもっとも単純でワークするものから始める
+- デザインやその他の提出物は長編の詩ではなく、俳句である
+- 完璧をはじめから求めるのではなく、完璧に近づけていくマインドシフトが大切
+
+### [A Beginner’s Guide to Wireframing via Webdesigntuts+](http://webdesign.tutsplus.com/tutorials/workflow-tutorials/a-beginners-guide-to-wireframing/)
+
+Webdesigntuts+による初心者のためのワイヤフレーム。  
+
+1. [I ♥ wireframes](http://wireframes.tumblr.com/)などからインスピレーションを得よう
+2. スケッチ、ワイヤフレーム、ビジュアル、コードのプロセスをデザインする
+3. ツールを選ぶ / Balsamiq、Omnigraffle、Axureなど
+4. グリッドを選ぶ
+5. レイアウトを四角を使って決める
+6. タイポグラフィを使って情報の階層構造を決める
+7. グレースケールを使ったビジュアル階層構造を作る
+8. 高細度なワイヤフレームを作る
+9. ワイヤフレームをビジュアルデザインに変換する
+
+### [Designing the Team Experience via UX Booth](http://www.uxbooth.com/blog/designing-the-team-experience/)
+
+人に何かを伝えたり、教えたり、一緒になって働く、ということをデザインする。
+
+- 全員の興味を保つ
+- 他者にコントロールをゆだねる
+- 他者の気持ちになって考える
+
+シンプルだけど大事な概念。
+
+#### [The Past and Future of Experience Design via Boxes and Arrows](http://boxesandarrows.com/view/the-past-and-future)
+
+ウェブだけに限らない、レストランや演劇の世界では当たり前の体験をデザインすることの意味について。
+
+## Performance
+
+[Debunking Responsive CSS Performance Myths via igvita.com](http://www.igvita.com/2012/06/14/debunking-responsive-css-performance-myths/)
+
+Scott Jehl氏が発表した[eCSSential](https://github.com/scottjehl/eCSSential)というレスポンシブウェブにおいてCSSがレンダリングをブロックするのを回避するJSライブラリに対しての反論。  
+ウェブキットの実装ではメディアクエリによるCSSのロードはブロックにならないとしている。
+ウェブキットのソースを示しての反論、そしてコメント欄でのScott Jehl氏とのやり取り、さらにStoyan Stefanov氏とのやり取りは非常に参考になる。
+
+## Demo / Snippet
+
+### [Key Principles of Maintainable JavaScript by Nettuts+](http://net.tutsplus.com/tutorials/javascript-ajax/principles-of-maintainable-javascript/)
+
+メンテナンスしやすいJavaScriptを書くために知っておきたい原則。
+
+- 名前空間
+- デザインパターン
+− ドキュメンテーション、コメント
+- ファイル/フォルダ設計
+- AMD
+
+どれも基本的なことばかりだけど、それぞれのトピックが小さな本になるくらいのトピック。ここではそれら表面をなでるだけ。大事な基本なのでぜひ自分で調べてそれぞれのトピックに詳しくなっておくとよいだろう。
+
+### [CSS WG Blog – How to unprefix -webkit-device-pixel-ratio](http://www.w3.org/blog/CSS/2012/06/14/unprefix-webkit-device-pixel-ratio/)
+
+-webkit-device-pixel-ratioをブラウザプリフィックスなしのresolutionに変更する方法。  
+
+    @media (-webkit-min-device-pixel-ratio: 1.5), /* Webkit */
+           (min-resolution: 1.5dppx)              /* The Future */
+    }
+
+`-webkit-min-device-pixel-ratio: 2`が`min-resolution: 192dpi`と同じでありつづけるかは分からないため`dppx`(dot per pixel)という単位を利用するほうがいい。
+
+#### [The open/closed principle applied to CSS via CSS Wizardry](http://csswizardry.com/2012/06/the-open-closed-principle-applied-to-css/)
+
+OOCSSにおけるベースオブジェクトのあり方について。可能な限りミニマムにすること。 
+
+#### [JS101: this via DailyJS](http://dailyjs.com/2012/06/18/js101-this/)
+
+DaiylyJSのJS101シリーズ。今回は"this"。もうわかってる人もそうでない人もぜひ。
+
+#### [Build a mobile template with Handlebars via .net magazine](http://www.netmagazine.com/tutorials/build-mobile-template-handlebars)
+
+handlebars.jsを使ってJavaScriptのテンプレートを作成する。ソースも配布されている。
+
+#### [Build a smart mobile navigation without hacks via .net magazine](http://www.netmagazine.com/tutorials/build-smart-mobile-navigation-without-hacks)
+
+:targetを利用したレスポンシブでプログレッシブエンハンスメントできるナビゲーションの作り方。
+
+#### [Programmatic JavaScript Templating with buildr via Joe Zim's JavaScript Blog](http://www.joezimjs.com/javascript/programmatic-javascript-templating-with-buildr/)
+
+#### [What is the Execution Context & Stack in JavaScript? via David Shariff](http://davidshariff.com/blog/what-is-the-execution-context-in-javascript/)
+
+JavaScriptにおけるExcution ContextとStackについて。シングルスレッドならではJavaScriptの処理について。
+
+#### [Feature Detection vs Browser Detection via Joe Zim's JavaScript Blog](http://www.joezimjs.com/javascript/feature-detection-vs-browser-detection/)
+
+Feature DetectionとBroweser Detectionの違い。やろうとしていることは似ててもアプローチが違うと解決も異なる。
+
+#### [JavaScript Scoping and Hoisting via Adequately Good by Ben Cherry](http://www.adequatelygood.com/2010/2/JavaScript-Scoping-and-Hoisting)
+
+JavaScriptのスコープとHoistingについての詳細。大事なことはvarを書くこと、そして関数内の上の方に記述すること。
+
+buildrというちょっと変わったJavaScriptテンプレートの使い方。
+
+## Slide / Video
+
+#### [5 Things Every Presenter Needs To Know About People on Vimeo](https://vimeo.com/44267609)
+
+Dr. Weinschenk氏によるプレゼンする際に知っておきたいこと5つ。元の本は100個ある。6分の動画。
+
+## Other
+
+### [Responsive Web Design Newsletter via Brad Frost Web ](http://bradfrostweb.com/responsive-web-design-newsletter/)
+
+Brad Frost氏によるレスポンシブウェブデザインについてのメールマガジン。  
+すでにVol.1が発行されている。
+
+### [Markdown: The Ins and Outs via Nettuts+](http://net.tutsplus.com/tutorials/tools-and-tips/markdown-the-ins-and-outs/)
+
+\#でh1、\#\#でh2、\-、\*でリスト、1. で番号付きリスト、\>はブロッククオート。  
+非常にシンプルなシンタックスでHTMLを表現できるmarkdownという形式はHTMLがフロントエンドとバックエンドが理解できる共通言語なら、ディレクタやコードを書かないデザイナとフロントエンドをつなぐ架け橋になる言語。  
+コンテンツの階層構造を表現することもできるのでコンテンツストラテジの世界でも便利なツールの1つ。最近は多くのツールでも標準化されているので覚えておいて損はしない。
+
+#### [A Rebase Workflow for Git via RandyFay.com](http://www.randyfay.com/node/91)
+
+GitにおけるRebaseを使ったワークフローについて。
