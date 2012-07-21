@@ -1,0 +1,116 @@
+---
+layout: post
+title: "vol.39"
+date: 2012-07-08 12:59:53
+---
+
+## UX / UI / IA /Design
+
+### [Designing For Android via Smashing Coding](http://coding.smashingmagazine.com/2011/06/30/designing-for-android/)
+
+iPhoneアプリのデザインについてはたくさんの記事があるが、Androidのほうはそうでもない。  
+60％ほどがAndroidユーザということを考えれば十分とは言えない。  
+この記事はAndroidアプリのデザインについて非常によくまとめてある記事なのでぜひ。  
+クロスデバイス対応のウェブアプリをデザインする場合にも参考になる点は多い。
+
+### [Responsive Typography: The Basics via Information Architects](http://informationarchitects.net/blog/responsive-typography-the-basics/)
+
+iAによるレスポンシブタイポグラフィについて。  
+タイプフェイスの選び方は日本語ではあまり参考にならないかもしれないが、レスポンシブウェブにおけるフォントサイズへのアプローチについてかなり細かく解説していてとても参考になる。  
+愛用のiA WriterというMac、iPad、iPhoneアプリを開発したケーススタディからの情報なのでとても貴重なアドバイスが多い。
+
+### [Design for Readability via UX Booth](http://www.uxbooth.com/blog/design-for-readability/)
+
+レスポンシブに限らないタイポグラフィの基礎について。  
+読みやすいテキストをどうデザインするか。紙のデザインとウェブデザインにおけるタイポグラフィの違い。そしてその違いからウェブでのリーダビリティを考える。 
+
+#### [Icons Guide · your guide to stock icons shops](http://www.iconsguide.com/)
+
+Icons Guide: ストックアイコンショップリスト。結構知らないものもある。便利。
+
+## Performance
+
+#### [How to make SSL fast via CloudFlare blog](http://blog.cloudflare.com/how-cloudflare-is-making-ssl-fast)
+
+タイトルはSSLをどう早くするか。だけど、それはCloudFlareの宣伝なのでSSLがどうして遅いのかの説明がとても分かりやすいのでおすすめ。
+
+## Demo / Snippet
+
+### [Understanding JavaScript Prototypes. via JavaScript, JavaScript…](http://javascriptweblog.wordpress.com/2010/06/07/understanding-javascript-prototypes/)
+
+JavaScriptのprototypeは強力な機能の割にはきちんと理解できない。難しいと思われるケースが多い。  
+Prototypeはほかのオブジェクトがプロパティを継承するオブジェクト。  
+と言ってしまうと余計に混乱しそうだが、記事中のスニペットを実際に[JSbin](http://jsbin.com/)などで表示させ、デベロッパツールでプロトタイプの値を見てみると理解が早くなる。
+
+### [Non-onload-blocking async JS via Stoyan's phpied.com](http://www.phpied.com/non-onload-blocking-async-js/)
+
+非同期JavaScriptと呼ばれる手法は`window.onload`イベントでブロックされてしまう。  
+大抵の場合は問題にはならないがだからと言って解決できない問題でもない、ということでStoyan Stefanov氏による回避方法。
+`iframe`を使ってとてもエレガントに解決している。
+
+[デモはこちらから](http://www.phpied.com/files/widgets/meebo.html)
+
+### [Getting Started with Node.js and Express 3 via Joe Zim's JavaScript Blog](http://www.joezimjs.com/javascript/getting-started-with-node-js-and-express-3/)
+
+Sinatoraライクなnode.jsのウェブフレームワークExpressのバージョン3について。  
+最近フロント側のJavaScriptのMVCフレームワークについて調べものをしている最中なので、バックエンド側もついでに。
+
+### [An Introduction to the CSS Flexbox Module via Nettuts+](http://net.tutsplus.com/tutorials/html-css-techniques/an-introduction-to-css-flexbox/)
+
+CSS Radarで取り上げるのももう3度目になるCSS Flexboxについて。  
+CSSにおけるレイアウトはfloat頼りになるのが現状だが、Flexboxの登場によりそれも変わる。  
+レイアウトに関する仕様はフォールバックしずらいのでプログレッシブエンハンスメントのアプローチで実装するしかないが、
+革命的な機能ではあるので、しっかり覚えておきたい。
+
+### [Native HTML5 Drag and Drop - HTML5 Rocks](http://www.html5rocks.com/en/tutorials/dnd/basics/)
+
+HTML5でDrag&Dropの実装。  
+jQuery UIでの実装の方が楽に見えるけど、ネイティブJavaScriptだけで出来るというのは非常に魅力的。 
+
+#### [JS101: Function via DailyJS](http://dailyjs.com/2012/07/02/function/)
+
+JavaScriptの基礎: Functionについて。Closuresの話も少し。
+
+#### [Cookbook via QUnit](http://qunitjs.com/cookbook/)
+
+QUnitの公式Cookbook。知らなかったので紹介。事例集みたいな感じで分かりやすい。
+
+## Slide / Video
+
+### [Fast user interfaces for the cross-device web - Google IO 2012](http://smustalks.appspot.com/io-12/#1)
+
+Google IOで発表されたクロスデバイスにおける早いUIについて。レスポンシブウェブデザインのTipsもたくさんで参考になる。
+
+#### [Developing Software for Multiple Mobile Devices](http://martinfowler.com/articles/multiMobile/#cover)
+
+複数プラットフォームのモバイルに対応する考え方についてのスライド。とてもよく出来ている。
+
+#### [Improved Developer Tooling and Yeoman](http://addyosmani.com/blog/improved-developer-tooling-and-yeoman/)
+
+Addy Osmani氏によるGrunt.jsをさらに便利にしたビルドツールYeomanについての紹介。まだリリースされてないけど楽しみ。
+
+## Tool
+
+#### [Barkeep - the friendly code review system](http://getbarkeep.org/)
+
+コードレビュー用のウェブツール。自分でインストールするタイプなので、フリーで使える。個人的に非常に便利。
+
+## Other
+
+#### [Using WAI ARIA Landmark Roles – updated via The Paciello Group Blog](http://www.paciellogroup.com/blog/2010/10/using-wai-aria-landmark-roles/)
+
+アクセシビリティに役立つWAI ARIAのランドマークロールについて。
+
+#### [Solve Problems. Don’t Build Ideas. via jmarbach.com](http://jmarbach.com/solve-problems-dont-build-ideas)
+
+アイデアを生み出すのではなく、問題を解決する。この記事ではスタートアップへのアドバイスだけどデザイン全般にも当てはまる部分は多い。
+
+## That's it for this week!
+
+7月11日に開催される第31回 HTML5とか勉強会、「JavaScript MVCフレームワーク」にてEmber.jsについて15分ほど + パネルディスカッションに参加させていただきます。  
+
+まさかの2回目。まさかのEmber.js。
+
+Ember.jsのエキスパートとは決して言えない私ですが、すこしでもEmber.jsについて詳しくなってもらえる様に数少ない特技を活用してちょっとしたサプライズを用意してます。
+
+当日までは秘密ですが、発表後は参加できなかった方にも公開しますので、11日までのお楽しみとさせてください。

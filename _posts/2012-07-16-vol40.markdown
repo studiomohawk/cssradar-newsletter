@@ -1,0 +1,120 @@
+---
+layout: post
+title: "vol.40"
+date: 2012-07-16 10:42:16
+---
+
+## UX / UI / IA / Design
+
+### [Overhauling a UI Without Upsetting Current Users via UX Magazine](http://uxmag.com/articles/overhauling-a-ui-without-upsetting-current-users)
+
+ユーザに嫌われないUIのリニューアルの仕方。言われてみれば当たり前だけど大事なこと。
+
+- 機能より形式(見た目)にフォーカスしない / どう動作するかは、どう見えるかよりも大事。
+- ユーザテストなどの結果を元に行う
+- なぜユーザはこの機能が欲しいと思うのか？ 最も一般的なタスクはなにか、どんな条件、コンテキストでこの機能が使われるか？ この機能のターゲットユーザーが誰なのか？ これらの質問を常にすること。
+- デザインフィードバック機能を使う
+- 変更を行わない、という結果についても考えること。
+
+### [The Psychology of Content Design via Webdesigntuts+](http://webdesign.tutsplus.com/articles/user-experience-articles/the-psychology-of-content-design/)
+
+ウェブデザインの中でもっとも大事な要素であるコンテンツを心理学アプローチでデザインする。 
+
+- マズローの欲求段階説 / 人間の欲求を下から「生理的欲求（physiological needs）」「安全の欲求（safety needs）」「愛と所属の欲求（love and belonging needs）」「承認の欲求（esteem needs）」「自己実現の欲求（self-actualization needs）」の5段階に配列した。下の欲求ほど優先順位が高く、それが満たされるとその上の欲求を実現しようとするとされる。
+
+- それ以外にも、競争、エンターテイメント要素などのアプローチがある。
+
+#### [Stop Building Apps and Start Building Behaviors via Nir and Far](http://www.nirandfar.com/2012/07/stop-building-apps-and-start-building-behaviors.html)
+
+アプリを作るのではなく、行動を生み出す。それがアプリが継続して利用されるコツ。
+
+#### [Using Neuroscience to Inform Your UX Strategy and Design via UXmatters](http://www.uxmatters.com/mt/archives/2012/07/using-neuroscience-to-inform-your-ux-strategy-and-design.php)
+
+UXと脳科学。学術的な話に終わらずきちんとケーススタディを紹介しているとことがいい。言われてみればわかることだけど、きちんと説明できるというのが大事だと思う。
+
+#### [The Elements Of The Mobile User Experience via Smashing Mobile](http://mobile.smashingmagazine.com/2012/07/12/elements-mobile-user-experience/)
+
+モバイルUXに必要な要素とそれぞれのガイドライン。長文だけどトピックが大きいだけに仕方なし。よくまとまっているのでリファレンスに。
+
+## Performance
+
+### [A Primer on Hybrid Apps for iOS via Cocoa Controls](http://www.cocoacontrols.com/posts/a-primer-on-hybrid-apps-for-ios)
+
+webViewアプリを作ることとはどういうことなのか。利点と欠点がよくまとまっているし、ワークアラウンドも紹介されている。 
+
+### [How We Improved Page Speed By Cleaning CSS, HTML and Images via Dyn Blog](http://dyn.com/how-we-improved-page-speed-by-cleaning-css-html-and-images/)
+
+ページロードスピードの改善方法。CSS、HTMLそして画像。基本的なことながらよくまとまっている。
+
+## Code
+
+### [Mobile Web in High Resolution](http://bradbirdsall.com/mobile-web-in-high-resolution)
+
+Retinaディスプレイなど高解像度のディスプレイに対応するピクセルパーフェクトなborderのテクニック。  
+実際には`box-shadow`のspread radiusを利用する。
+
+### [More efficient CSS3 transitions via .net magazine](http://www.netmagazine.com/tutorials/more-efficient-css3-transitions)
+
+目の錯覚を使ってCSS3のtransitionsをより効率的に記述する。ディズニーのアニメーション原則にもあるミスディレクション。  
+すべての要素が実際にアニメートしている必要はない。人間の目には動いているものの中に実際には止まっている要素があっても動いているように見える。
+
+[デモ](http://www.netmagazine.com/files/tutorials/demos/2012/07/more-efficient-css3-transitions/demo/demo.html)
+
+### [Managing JavaScript on Responsive Websites via Viget](http://viget.com/inspire/managing-javascript-on-responsive-websites#When:13:16:09Z)
+
+レスポンシブウェブデザインにおけるJavaScriptの扱い。無駄なJSを実行しないようにする。jRespondというミニライブラリについて。  
+
+[ten1seven/jRespond](https://github.com/ten1seven/jRespond)
+
+### [Preparing Yourself for Modern JavaScript Development via CodeThinked](http://www.codethinked.com/preparing-yourself-for-modern-javascript-development)
+
+JavaScript MVCフレームワークの前に知っておきたいいくつかの事。ModuleやNamespace、よく使われるJSデザインパターンについて。  
+このあたりのJavaScriptがきちんとできないとMVCフレームワークを使ってもスパゲッティコードを書く結果になるでしょう。
+
+### [iOS has a :hover problem via NCZOnline](http://www.nczonline.net/blog/2012/07/05/ios-has-a-hover-problem/)
+
+iOSに潜む:hover 問題について。ModernizrかJavaScriptを使った解決のみ提案されている。  
+レスポンシブウェブを実装した際の`:hover`スタイルが起こす問題がある。  
+`:hover`を利用して別の要素を隠したり、表示する際にダブルタップを行わないとリンクが動作しない。
+
+#### [JavaScript Green Threads](http://blog.avd.io/posts/js-green-threads)
+
+JavaScriptにおけるブロック。その限界を超えようとするブラウザ、そして予期せぬエラーについて。 
+
+#### [How to Create Custom Events in JavaScript via SitePoint](http://www.sitepoint.com/javascript-custom-events/#fbid=qH6F8FgkBau)
+
+名前そのまま。JSのCustomEventオブジェクトを使ってカスタムイベントの作り方。結構新しいブラウザにしか実装されてない。
+
+#### [Get Test-Infected With Selenium via Nettuts+](http://net.tutsplus.com/tutorials/tools-and-tips/get-test-infected-with-selenium-2/)
+
+テストはしなくちゃ、だけど面倒。というわけで自動化したい。という方にSelenium。FireFoxのアドオンではなく、Python版。
+
+#### [JS101: The Function Constructor via DailyJS](http://dailyjs.com/2012/07/09/function-2/)
+
+DailyJSのJavaScript 101。Functionコンストラクタについて。
+
+## Slide / Video
+
+#### [Responsive Web Design for Libraries: Get Beyond the Myth of the Mobile Web](https://speakerdeck.com/u/matthewreidsma/p/responsive-web-design-for-libraries-get-beyond-the-myth-of-the-mobile-web-1)
+
+なかなか面白い具合にまとまっているレスポンシブウェブデザイン。図書館向け、だそう。
+
+## Other
+
+### [The Principles of Agile Development via Nettuts+](http://net.tutsplus.com/articles/general/the-principles-of-agile-development/)
+
+アジャイル開発の原則について。キーポイントがよくまとめてあるのでおすすめ。
+
+## That's it for this week!
+
+7/22(日)に[サイバーエージェント/クリエイティブアカデミー　～アプリクリエイター採用＆共同開発 Specialイベント～](http://atnd.org/event/creativeacademy3?vos=cpatnsoccap0111026002)というイベントが開催されます。
+
+クリエイティブアカデミーというサイバーエージェントへの転職を考えたきっかけになったウェブ開発に関する数週間に及ぶ無料の講義の説明会が行われます。
+
+さらに先日行われたSwapSkillsでも登壇されたWDE主催の菊池さん、iPhoneアプリクリエータの松井さんによるセッションも無料で聴けます。
+
+私はついで気味ですが、珍しく技術以外の話をさせていただく予定です。
+
+私以外のサイバーエージェントのデベロッパも参加しますので、サイバーエージェントってどんな感じなのか興味がある方もぜひ。
+
+[詳しくはこちらから!](http://atnd.org/event/creativeacademy3?vos=cpatnsoccap0111026002)

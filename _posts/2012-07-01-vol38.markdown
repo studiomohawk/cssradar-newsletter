@@ -1,0 +1,147 @@
+---
+layout: post
+title: "vol.38"
+date: 2012-07-01 13:07:22
+---
+
+## UX / UI / IA /Design
+
+### [Who killed the inactive button state? via UX Booth](http://www.uxbooth.com/blog/interface-design/who-killed-the-inactive-button-state/)
+
+Inactive button state つまり、ボタンがグレーアウトして利用出来ないという状態を示す方法はユーザにとってどれほど意味があるのか。  
+
+クリック出来ない状態、モードが変更した理由をユーザに伝えることができない以上、使えない状態をユーザに示すことは意味がないことになるのではないか。  
+もっと大事なことはユーザが現在のモードで何ができるかを伝え、出来ることしか表示しないほうがよい。  
+
+非常に多くの事例を交えて現在進行形のデザイントレンドの理由を追及していく素晴らしい記事。
+
+### [5 Tips for Effective UX Leadership via UX Magazine](http://uxmag.com/articles/5-tips-for-effective-ux-leadership)
+
+UX デザイナーは必然的にリーダー的な存在になる。そんなUXデザイナーが知っておきたい5つのこと。　　
+
+1. リソースマネージメント
+2. 作ったものの裏にある戦略や自らが持つ専門性を伝えること
+3. 自主性、自律性、責任感を持つ
+4. 教え、そして学ぶこと
+5. 全体のプロセスを通して関連を保つこと
+
+基本的なことばかりだけど大事なこと。リーダーシップのあるUXerこそ今の混沌と時代を切り開く。
+
+### [Fluid Type via Trent Walton](http://trentwalton.com/2012/06/19/fluid-type/)
+
+レスポンシブウェブデザインにおけるFluid Type。このブログはぜひブラウザで読んでほしい。
+
+レスポンシブウェブデザインで無視されがちな  
+45〜75文字 / 行というリーダビリティの基本をきちんと守りましょう。  
+そしてフォントは大きく。  
+英語の話と思わずに日本語でも同じなのでぜひ参考にしてほしい。
+
+今週はさらに  
+[How To Maintain Readable Type In Responsive Design via Van SEO Design](http://www.vanseodesign.com/web-design/responsive-typography/)  
+Van SEO Designでもレスポンシブウェブデザインにおける読みやすいタイポグラフィについて紹介されていたのであわせてどうぞ。
+
+### [A Responsive Design Case Study via David Bushell](http://dbushell.com/2012/06/17/passenger-focus-responsive-web-design-case-study/)
+
+レスポンシブデザインのケーススタディ。最近はケーススタディが増えてきてとても参考になる。
+
+コンテント、スタイルガイド、レスポンシブグリッド、メディアクエリとブレークポイントについて、そしてブラウザサポートについて。  
+レスポンシブウェブデザインについて気になるポイントを一通り事例を通して紹介している。
+
+### [How Much Does a Responsive Web Design Cost? via Brad Frost Web](http://bradfrostweb.com/blog/web/how-much-does-a-responsive-web-design-cost/)
+
+レスポンシブウェブデザインにどのくらいコストがかかるか？ Brad Frost氏曰く、「レスポンシブウェブデザインにしないことで失う機会損失は大きい」。
+
+以下、コストに関して考慮するべきポイント
+
+- 理解を得る、促進するコスト
+- デザインプロセスの変更によるコスト
+- テスト、QAの工数は追加になる
+- テスト用のデバイス購入コスト
+- 異なるチャネル(デスクトップとモバイルなど)が同一である理解を得るコスト
+
+#### [Facilitating Great Design via A List Apart](http://www.alistapart.com/articles/facilitating-great-design/)
+
+よりよいデザインを生み出すために必要なファシリテイティングについて。  
+いいものを作り出すのに共通して言えることはやっぱりコミニュケーションスキルが大事。
+
+#### [The Definition of Content Strategy via Newfangled](http://www.newfangled.com/the_definition_of_content_strategy)
+
+コンテントストラテジとは何か。コンテントストラテジの意味について。
+
+## Performance
+
+#### [The bandwidth of a Boeing 747 and its impact on web browsing via CloudFlare blog](http://blog.cloudflare.com/the-bandwidth-of-a-boeing-747-and-its-impact)
+
+1TBのデータをサンフランシスコからロンドンに運ぶ場合、100Mbpsの速度なら飛行機の方がインターネットより早い。  
+実際にはBandwidthの話。
+
+## Demo / Snippet
+
+### [Getting Started With Scalable Vector Graphics (SVG) via Webdesigntuts+](http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/getting-started-with-scalable-vector-graphics-svg/)
+
+SVGのネタが最近増えてきているので、ここで基本をしっかり身につけておきたい。
+
+SVNにおける線の書き方。四角、丸などの基本を抑えて、イラレでSVGを書き出すまでの話。
+
+### [Wooga’s HTML5 Adventure via Wooga](http://www.wooga.com/2012/06/woogas-html5-adventure/)
+
+HTML5でゲームを作る。ケーススタディ。そしてゲームまるごとオープンソースにする心意気。
+
+### [Screen Scraping with Node.js via Nettuts+](http://net.tutsplus.com/tutorials/javascript-ajax/web-scraping-with-node-js/)
+
+Node.jsを使ってスクリーンスクレイプ。こういう基本的なチュートリアルはとても助かる。Phantom.jsもついでに使えるのもいい。
+
+#### [Introduction To JavaScript Unit Testing via Smashing Coding](http://coding.smashingmagazine.com/2012/06/27/introduction-to-javascript-unit-testing/)
+
+JavaScriptのUnit Testについて。Unit Test全般とQUnitを使った手法について紹介。
+
+#### [Using media queries to hide CSS3 from older browsers via 456 Berea Street](http://www.456bereastreet.com/archive/201206/using_media_queries_to_hide_css3_from_older_browsers/)
+
+@media only screenを使ってCSS3の指定をレガシーブラウザから隠す。上手に使うとクロスブラウザ設定が楽になりそう。 
+
+#### [JS101: Call, Apply, and Bind via DailyJS](http://dailyjs.com/2012/06/25/this-binding/)
+
+JavaScriptのcall、apply、そしてbindについて。メソッド内のthisの値は大事。
+
+#### [Carrying Out Tasks in the Background with HTML5 Web Workers via Developer Drive](http://www.developerdrive.com/2012/06/carrying-out-tasks-in-the-background-with-html5-web-workers/)
+
+HTML5のWeb Workerの使い方。基礎編なのでとても簡易的なデモ。分かりやすい。
+
+#### [Off Canvas Layouts CSS - Foundation 3 via ZURB.com](http://www.zurb.com/playground/off-canvas-layouts)
+
+ZurbのFoundation 3.0にはLuke Wroblewskiが提案したoff canvas layoutsも実装されるそう。
+
+## Slide / Video
+
+#### [Debugging secrets of a lazy developer – Ryan Seddon via Web Directions](http://www.webdirections.org/resources/debugging-secrets-of-a-lazy-developer-ryan-seddon/)
+
+以前紹介したRyan Seddon氏によるbunyipを使ったテスト手法についての動画。 
+
+#### [An Event Apart: Interacting Responsibly (and Responsively!) via LukeW](http://www.lukew.com/ff/entry.asp?1565)
+
+Scott JehlによるAn Event Apartの発表"Interacting Responsibly (and Responsively!)"のLukeのまとめ。
+
+## That's It for this week!
+
+**[SwapSkills Doubbble Vol.6](http://swapskills.info/doubbble/06.html)**
+
+今、求められている！ HTML5,CSS3,JavaScript,Canvas,WebGL
+オフラインでクリエイティブコンテンツを実現  
+というタイトルで7/14(土)に開催される、SwapSkillsのDoubbble Vol.6。  
+
+なんとあのSeb Lee-Delisle氏がスピーカとして登壇するというまたとない機会。  
+[CreativeJS](http://creativejs.com/)というトレーニングブランドの作成者であり、現在最もクリエイティブなJavaScriptを生み出す彼が日本に来る機会はこれで最初で最後かも。。  
+[本当にまたとない機会なのでぜひ](http://swapskills.info/doubbble/06.html)。
+
+**CSS Niteで登壇させていただきました**
+
+6/30に開催されたCSS Nite LP, Disk 23「表示速度最適化」にてモバイルWebパフォーマンス最適化というタイトルで登壇させていただきました。  
+相変わらずほかの登壇者の方々と比べると修行がたりない私ですが、ずっと出たいと思っていたので1つ目標達成しました。  
+参加いただいた方(そしてメルマガをみている方)、ありがとうございました。  
+登壇者の皆様、関係者の皆様お疲れさまでした。勉強になりました。
+
+
+
+
+
+
