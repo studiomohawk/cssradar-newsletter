@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "vol.37"
+title: "Vol.37"
 date: 2012-06-24 19:04:17
 ---
 
