@@ -1,0 +1,119 @@
+---
+layout: post
+title: "Vol.44"
+date: 2012-08-12 11:39:19
+---
+
+## UX / UI / IA / Design
+
+### [Design Tip: Never Use Black via Ian Storm Taylor](http://ianstormtaylor.com/design-tip-never-use-black/)
+
+本当にその色は「黒」である必要があるのか？影ですら黒ではない。000000に対するアドバイス。
+
+#### [An Event Apart: Responsive Design Workflow via LukeW](http://www.lukew.com/ff/entry.asp?1599)
+
+A Event ApartがワシントンD.C.で開催されたので、いつものようにLukeのまとめ。今回はレスポンシブデザインのワークフローについて。
+
+## Performance
+
+### [High-Performance, Garbage-Collector-Friendly Code via Build New Games](http://buildnewgames.com/garbage-collector-friendly-code/)
+
+JavaScriptにおけるガベージコレクションとメモリに優しいコードの書き方について。
+
+### [Velocity 2012: Understanding and Optimizing Web Performance Metrics](https://perf-metrics-velocity2012.appspot.com/#1)
+
+パフォーマンス最適化の指標について、ブラウザのレンダリングエンジン、パーサの動作などについて詳しく解説してある。 
+
+### [ソーシャルボタンはお友達さ(・ω via MOL](http://t32k.me/mol/log/social-button-bffs/)
+
+StoyanのSocial button BFFsの日本語訳。サンプルもちゃんとつくってあるので参考になるかと。  
+(多分)初めての日本語記事の紹介。
+
+#### [Faster Canvas Pixel Manipulation with Typed Arrays via Mozilla Hacks – the Web developer blog](https://hacks.mozilla.org/2011/12/faster-canvas-pixel-manipulation-with-typed-arrays/)
+
+Typed Arraysを使ったより高速なCanvasのピクセル操作について。ソースコードの解説は非常に丁寧で参考になる。
+
+## Code
+
+### [Backbone.js: Hacker's Guide Part 4 via DailyJS](http://dailyjs.com/2012/08/09/mvstar-5/)
+
+Backbone.jsの継承の実装について、そしてBackbone.syncについて。
+
+### [Writing Testable JavaScript via Adequately Good](http://www.adequatelygood.com/2010/7/Writing-Testable-JavaScript/)
+
+テストしやすいJavaScriptの書き方。SingletonsとかClosureベースでプライベートを作る方法はテストには向かない。
+
+### [JS101: Enumeration via DailyJS](http://dailyjs.com/2012/08/06/js101-loops/)
+
+JavaScriptの基礎、リスト系について。for-inとかES5のforEachとかforループなどの話。
+
+### [Everything is a property of an object in JavaScript via 11 heavens](http://11heavens.com/everything-is-a-property-of-an-object-in-javascript)
+
+JavaScriptではすべてがオブジェクトのプロパティである。図での説明もついててわかりやすい。
+
+### [A Pattern for JavaScript Events via Brighter Planet's Safety in Numbers](http://numbers.brighterplanet.com/2011/06/10/a-pattern-for-javascript-events/)
+
+JavaScriptで厄介な、でも重要なイベントに関するパターン。リファクタのステップ、ユニットテストのソースともに参考になる。
+
+### [Backbone built-in events: callback Cheat Sheet via karl westin](http://karlwestin.posterous.com/backbone-built-in-events-callback-cheat-sheet)
+
+Backbone.jsのビルトインイベントのコールバックチートシート。ちゃんと記事では解説もあるので、ぜひ。
+
+### [CSS Selector Listeners via Back Alley Coder](http://www.backalleycoder.com/2012/08/06/css-selector-listeners/)
+
+keyframeアニメーションを利用してDOMの状態をCSSセレクタを通じて取得するイベントについて。
+
+### [Why grunt? Why not something else? via Ben Alman](http://benalman.com/news/2012/08/why-grunt/)
+
+Grunt.jsの開発者、Ben AlmanによるGrunt.jsの現状。下に紹介した反論に対する彼の意見。ツール作者のツールに対して期待していることも知ることも大事。 
+
+### [Node.js, Ant, Grunt and other build tools via Miller Medeiros](http://blog.millermedeiros.com/node-js-ant-grunt-and-other-build-tools/)
+
+Grunt.jsやAntなどのビルドツールの欠点。流行のツールだからこそ、指摘された欠点は貴重かも。
+
+### [JavaScript Debug: A simple wrapper for console.log via Ben Alman](http://benalman.com/projects/javascript-debug-console-log/)
+
+大分古いけれどBen Almanのconsole.logラッパー。便利なので今更紹介。
+
+### [Getting HTML5 Ready - CORS via Remote Synthesis](http://www.remotesynthesis.com/post.cfm/getting-html5-ready-cors)
+
+CORS。Cross-Origin Resource Sharingについての解説。JavaScriptでのクロスドメイン問題に対するモダンブラウザで使える仕様。
+
+## Slide / Video
+
+### [10 Conference Videos for Front-End Developers via Impressive Webs](http://www.impressivewebs.com/10-conference-videos-for-front-end-developers/)
+
+フロントエンドデベロッパのための10のカンファレンスビデオ。
+
+- Breaking Good Habits (Harry Roberts)
+- The CSS3 Experience (Dan Cederholm)
+- Javascript Development Workflow of 2013 (Paul Irish)
+
+どれも文句なしに参考になるが、特に上3つはおすすめしたい。
+
+## Other
+
+### [What are questions? via 37signals](http://37signals.com/svn/posts/3225-what-are-questions)
+
+質問をすることとは回答を受け入れる準備ができたということ。質問ができなければ学ぶ事はできない。  
+ハーバードビジネススクールの教授、Clayton Christensen氏の台詞。
+
+- [The Innovator's Dilemma](http://amzn.com/0060521996)
+- [How Will You Measure Your Life?](http://amzn.com/0062102419)
+
+記事で紹介されていた氏の著書2冊。
+
+## That's it for this week!
+
+まずは大事な発表から。  
+Vol.52をもちまして、CSS Radar Newsletterを終了することにしました。
+こちらについてと今後につきまして[こちら](http://gist.io/3329402)にまとめましたので、興味がある方は一読くださいませ。
+Twitterでの記事の紹介も続けますし、[Seven](http://seven.studiomohawk.com/)の形でまとめ自体は継続しますので、ご安心(?)を。
+
+そして  
+[HTML5 Conference 2012](http://events.html5j.org/conference/2012/09/)にてCSS3 UIデザインパターンについて登壇させていただくことになりました!  
+書いている現時点ではまだセッションの空きはある模様ですが、メルマガが出る頃には埋まってるかも？  
+私がお話させていただくコマは定員が少ないこともあり、もう満席になってます。。恐ろしい。。
+
+9月8日の土曜、慶應義塾大学 日吉キャンパス 協生館にて開催されるので、
+興味がある方はぜひ。

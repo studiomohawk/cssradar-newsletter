@@ -1,0 +1,111 @@
+---
+layout: post
+title: "Vol.41"
+date: 2012-07-22  8:37:06
+---
+
+## UX / UI / IA / Design
+
+### [Lessons for devs from a responsive build via Broken Links](http://www.broken-links.com/2012/07/18/mobile-first-content-breakpoints-srp-case-study/)
+
+レスポンシブデザインを実装して分かったこと。  
+
+- モバイルファーストは方法論ではない。モバイルファーストのアプローチを採用するのであればプラン、構造だけではなく、制作もテストもモバイルファーストであるべき
+- ブレークポイントをデバイスによって確定するのに加えてコンテンツそのものによって確定するべき
+- テストにかかる時間はフロントエンド開発の50%、最低でも40%かけること
+
+#### [Why Do We Need Navigation At All? via I'd Rather Be Writing](http://idratherbewriting.com/2012/07/12/why-do-we-need-navigation-at-all/)
+
+ナビゲーションはなぜ必要なのか？
+
+- 情報を見つけ出す始めと終わりを明確にする
+- ウェブを誰もが理解できる物語のフォーマットにし、それの導き手がナビゲーション
+- 情報のヒエラルキーがユーザにとって最も手軽なヒントになる
+- ナビゲーションはユーザに深く学ぶモチベーションを与える
+
+## Performance
+
+### [Latency: The New Web Performance Bottleneck via igvita.com](http://www.igvita.com/2012/07/19/latency-the-new-web-performance-bottleneck/)
+
+レイテンシ: ウェブパフォーマンスボトルネック
+
+- bandwidthよりもレイテンシのほうがパフォーマンス観点でボトルネックになる
+- bandwidthを向上させるよりレイテンシを減らすほうが難しい。光ファイバーを利用しても光よりも早いスピードでデータを通信させることは不可能だから
+- モバイルウェブにおいてはレイテンシはより死活問題。100-1000ms RTTレンジ
+
+## Code
+
+### [Learning IE8](http://www.learningie8.com/)
+
+IE8、新しいベースブラウザについて学ぶ。
+
+IE8でどんなことができるのか、または出来ないのか。  
+長い1ページにコンパクトによくまとまっている。
+
+### [The Web Developer Toolbox: Modernizr via Mozilla Hacks](https://hacks.mozilla.org/2012/07/the-web-developer-toolbox-modernizr/)
+
+Modernizrを使い方。  
+Modernizrの基本、応用まで短い記事ながらよくまとまっている。
+
+### [JavaScript Game Code Organization via Build New Games](http://buildnewgames.com/js-game-code-org/)
+
+JavaScriptでゲームを作成する際のコード管理について
+
+- IIFEとネームスペース
+- AMDとRequireJS
+- コードの共有
+- データとコードの分離
+
+### [Judging CSS / Spotting Bad Code via CSS-Tricks](http://css-tricks.com/judging-css-spotting-bad-code/)
+
+Chris Coyier氏によるCSSのコードレビュー手法について。
+
+- 表示テスト / ブラウザ、レスポンシブなどのテスト
+- フォーマットテスト / どのフォーマットかというよりは一貫性を持っているか
+- セレクターテスト / 理解しやすいセレクタか、クラス名は分かりやすいか、繰り返しのコードはないか？
+- ファイルサイズテスト / ファイルサイズは最低限か？一貫性を保ったコードであれば必要以上に巨大になったりしない
+- エディティングテスト / サイトのどこかの部分を実際に編集してみる。サイト全体のフォントは変更しやすいかなど
+
+### [Shoot to kill; CSS selector intent via CSS Wizardry](http://csswizardry.com/2012/07/shoot-to-kill-css-selector-intent/)
+
+CSSのセレクタがどんな目的を持っているのかを考える。  
+ブラウザがセレクタを右から左に向かって評価することから、キーになるセレクタは右はしにあるセレクタであるとし、それらのキーセレクタがどんな目的を持つものかを考える。  
+セレクタがどこからどこまで適応されるか、されるべきなのか、あるいはされるつもりなのかを考えてセレクタを考える必要がある。
+
+#### [Getting Out of Binding Situations in JavaScript via A List Apart](http://www.alistapart.com/articles/getoutbindingsituations) 
+
+JavaScriptにおけるバインディングについて。  
+
+- JSの`this`とは何か
+- なぜバインディングを明示する必要があるか
+- `apply`を利用して`this`の値を変更する
+- prototype、Ext JSなどのフレームワークのバインディングの実装
+- Closuresを利用したバインディングの回避方法
+
+#### [Being a CSS @keyframe Power User via Jeremy Kahn's Dev Blog](http://jeremyckahn.github.com/blog/2012/07/15/being-a-css-at-keyframe-power-user/)
+
+CSSの@keyframeをマスターする際に知っておきたいこと。  
+prefixについて、easingを複数レイヤーに分割することでより自然なアニメーションを作れる。そして[Stylie](http://jeremyckahn.github.com/stylie/)というアニメーションツールについて。
+
+#### [Closures are not complicated via Nifty Snippets](http://blog.niftysnippets.org/2008/02/closures-are-not-complicated.html)
+
+Closuresは難しくない。  
+
+大事なことはJSにおいて大体すべてがオブジェクトであり、変数はスコープチェーンにより解決され、Functionのスコープはいつ実行されるかではなく、いつ定義されたかで確定するという点。
+
+## Slide / Video
+
+#### [Building Modern Web Applications with Backbone Boilerplate](https://dl.dropbox.com/u/79007/talks/Modern_Web_Applications/slides/index.html)
+
+Backbone Boilerplateを使ったモダンウェブアプリケーションの作り方。  
+中大規模サイト開発におけるJavaScriptのソースコード管理のパターンとそれらのグッドパーツとバッドパーツについてとBackbone Boilerplateの使い方について。
+
+#### [The UX of HTML5 via cxpartners](http://www.cxpartners.co.uk/cxblog/the-ux-of-html5/)
+
+HTML5にて追加されたformに関する新しい属性をUX観点で見つめ直す。  
+できるからといって、使ってもいいとは限らない。  
+ネイティブで表示されるままでは使いやすいとは言いがたい。
+
+#### [Seamless iframes: The future, today!](http://benvinegar.github.com/seamless-talk/#/)
+
+すこし未来の仕様であるiframeのseamless属性をJSとHTMLでエミュレート。より自由度が高く、安全なサードパーティJavaScriptを実装するために知っておきたいこと。プレゼンタはDisqusの人。

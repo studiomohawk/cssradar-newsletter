@@ -1,0 +1,117 @@
+---
+layout: post
+title: "Vol.43"
+date: 2012-08-05  8:25:29
+---
+
+## UX / UI / IA / Design
+
+### [Try and Try Again – Why Prototyping Matters via Big Spaceship](http://www.bigspaceship.com/2012/07/try-and-try-again-why-prototyping-matters/)
+
+プロトタイプがなぜ大事なのか。どんな手法でも構わないので、動くものを早く作る事が大事。　　
+プロトタイプのフローを制作に組み込んでいない理由はめんどくさいから、かもしれないが、プロトタイプを組み込まないともっとめんどくさいことになります。
+
+### [The Four Stages of Giving Up Photoshop via Cognition](http://cognition.happycog.com/article/the-four-stages-of-giving-up-photoshop)
+
+Photoshopを使わずにKeynoteでデザインする。嘘でしょ、というステージから、まあありかもと思ったプロセス。  
+まさかこのトピックがCognitionから出てくるとは。  
+以前Newsletterで取り上げたKeynoteでのデザインの記事も合わせてどうぞ。  
+[ESPI at work: The power of Keynote via Edenspiekermann](http://edenspiekermann.com/en/blog/espi-at-work-the-power-of-keynote)
+
+### [Product Management for the Web via A List Apart](http://www.alistapart.com/articles/product-management-for-the-web/)
+
+ウェブ開発のためのプロダクトマネジメント。なぜ必要なのか、何が求められるのか。  
+最近はウェブデザイナとよばれるよりもプロダクトデザイナとよばれるケースも増えてきて、ウェブはもはや単なるサイト制作ではなくより大きな体験をデザインするという意味でプロダクト制作と考えられ始めている。  
+そんな時代に合致したA List Apartのプロダクトマネジメント事始め。
+
+#### [A future friendly workflow via .net magazine](http://www.netmagazine.com/opinions/future-friendly-workflow)
+
+フューチャーフレンドリーなワークフローとはなにか。最近はワークフローにフォーカスがあたることが多いので、是非。
+
+## Performance
+
+
+## Code
+
+### [A new responsive measurement found in antiquity](http://chadlindemann.com/pages/blog.php?d=1&utm_source=buffer&buffer_share=27e9a)
+
+レスポンシブデザインのグリッド、マージン/パディング、フォントサイズに黄金律を使う。LESSを使った例。もちろん、SassでもStylusでもほぼ流用できる。  
+ある1つの変数。この場合は黄金律、を使ってサイト全体の割合を統一していくというアプローチこそレスポンシブデザインでもっとも大事なこと。
+
+### [Callback Hell](http://callbackhell.com/)
+
+JavaScriptでもnode.jsでもよくであるコールバック関数の入れ子をどう回避するべきかについて。まだ途中らしいけれど、すでにリファクタリングの参考になる。  
+ほかのデバロッパのリファクタリングの思考プロセスに触れられるのは非常に稀で勉強になる。
+
+### [Version control best practices - Git edition via Kevin Pelgrims](http://kevinpelgrims.com/blog/2012/07/26/version-control-best-practices-git-edition)
+
+Gitのベストプラクティス。もう少し具体的な例があってもとも思うけれど、短くよくまとまっている。
+
+### [Object Oriented Programming in JavaScript](http://mckoss.com/jscript/object.htm)
+
+JavaScriptにおけるオブジェクト指向プログラミングについて。2006年の記事ながらよくポイントがまとまっている。
+
+### [Functional Javascript](http://www.hunlock.com/blogs/Functional_Javascript)
+
+Functional JavaScriptとは。ラムダとは何か。難しいコンセプトにも思えるが意外とそうでもないというのがよくわかる記事。  
+スニペットがたくさんあるのでJSがわかれば英語がわからなくても参考になるはず。
+
+### [Front-end Unit Testing with JavaScript via Danny Croft](http://dannycroft.co.uk/front-end-unit-testing-with-javascript/)
+
+JavaScriptでユニットテストを始めよう。PhantomJSとCasperJSのセットアップと簡単なテストのデモ。
+
+### [10 Reasons Why Your Projects Should Use the Dojo Toolkit via Nettuts+](http://net.tutsplus.com/tutorials/javascript-ajax/10-reasons-why-your-projects-should-use-the-dojo-toolkit/)
+
+Dojo Toolkitを利用するべき10の理由。先進的なフレームワークとは思っていたけれど、非常に面白そう。  
+いろんな意味でjQueryから離れてみるというのはJSerとして成長する機会だと思うのでぜひ。(jQueryが優れているからこそ)
+
+### [Introduction to RequireJS via The JavaScript Playground](http://javascriptplayground.com/blog/2012/07/requirejs-amd-tutorial-introduction)
+
+RequireJSを単なるスクリプトローダと思う事なかれ、RequireJSはAMDとよばれるアプローチでスクリプトを呼び出せる非常に強力なツール。
+
+#### [Responsive Design’s Dirty Little Secret via Palantir.net](http://palantir.net/blog/responsive-design-s-dirty-little-secret)
+
+レスポンシブデザインにおけるパーセントベースのグリッドに潜む罠。そして2004年からある解決方法をプリプロセッサを活用して今っぽくする方法。
+
+#### [Journey Through The JavaScript MVC Jungle via Smashing Coding](http://coding.smashingmagazine.com/2012/07/27/journey-through-the-javascript-mvc-jungle/)
+
+Addy Osmani氏によるJavaScript MVCガイド。いろんな側面からMVCについて触れているので少し読みづらいが参考になる点は多い。
+
+#### [Master of the :nth-child / CSS3 pseudo classes and :nth-child ranges](http://nthmaster.com/)
+
+CSS3のnth-childとついでにnth-of-typeの使い方。両者の違いはもちろん、範囲の作り方などもある。ビジュアル付きでわかりやすいのでぜひ。
+
+#### [Rendering Views in Backbone.js Isn't Always Simple via Ian Storm Taylor](http://ianstormtaylor.com/rendering-views-in-backbonejs-isnt-always-simple/)
+
+Backbone.jsのViewsのレンダリングは思っているほどシンプルではない。サブビュー的な実装を行うときに気をつけておくべき点と解決方法。
+
+#### [Backbone.js: Hacker's Guide Part 3 via DailyJS](http://dailyjs.com/2012/08/02/mvstar-4/)
+
+Backbone.jsをソースコードレビューしながら解説するシリーズ第三弾。RouterとViewsについて。
+
+## Slide / Video
+
+### [Tools and Techniques for Faster Development](http://www.slideshare.net/jtaby/tools-and-techniques-for-faster-development)
+
+よりスピーディーに開発するために知っておきたいツールとテクニックについてのスライド。デバッグ系が主。 
+
+## That's it for this week!
+
+[Twitter@cssradar](http://twitter.com/#!/cssradar)やこのメールマガジンを読んでいただいている方々によく聴かれることが1つ。先週もお話した長谷川さんのAutomagicでも話したことですが。
+
+1. どうやって情報を集めているか
+2. どれくらいの分量なのか
+
+1については、単純にRSSとTwitter。RSSは現在238のサイトを登録していて、Twitterは291名。おそらく200くらいは情報収集用にフォローしているアカウントになるはずです。これらに加えて3〜4はメールマガジンを購読してます。それから[Hacker News](http://news.ycombinator.com/)を毎日チェックして、Pinboardのpopularと、タグベースでブックマークを追いかけています。
+
+2については上記を合わせると大体毎日10〜30くらいの記事を読んでいるかなと思います。時間にすると2時間〜3時間くらいなものです。  
+[Readability](http://www.readability.com/)というサービスを通じてほぼ全ての記事をiPhoneで読んでます。  
+スニペットが多い記事や、動画、スライドは家のMac Book Airで。  
+
+フロー系情報だけではなく技術書も読んだりします。
+  
+チュートリアル系のビデオサイトにもいくつか登録しているので、ビデオも見ますし、Podcastも聴いたりします。
+
+最近はCSSやHTML、ECMAScriptの仕様書も読み始めてます。
+
+あらためて書いてみるととんでもない分量だなと思ったりしました。。。

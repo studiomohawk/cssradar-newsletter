@@ -1,0 +1,129 @@
+---
+layout: post
+title: "Vol.42"
+date: 2012-07-29  0:38:29
+---
+
+## UX / UI / IA / Design
+
+### [A Style Guide Guide via elyse holladay](http://www.elyseholladay.com/2012/07/16/style-guide-guide.html)
+
+情報量と情報の質に関しては少し自信がある私でもびっくりするくらいの情報が詰まった記事。  
+モダンウェブデザインに欠かすことができないキーワードがちりばめられていて、かつ素晴らしいアドバイスに溢れた記事。
+
+### [Components via TJ Holowaychuk](http://tjholowaychuk.com/post/27984551477/components)
+
+JavaScriptのパッケージマネージャから見る、モダンウェブ開発への1つのアプローチ。コンポーネントという考え方について。
+
+ウェブ開発における再利用可能なコードはnpmのようなパッケージマネージメントによる依存関係の解消だけではなく、JavaScript、CSS、HTMLの3つの依存関係を考える必要がある。expressやjadeなど数多くのnodeパッケージを開発しているTJ Holowaychはこの3つを掛け合わせたパッケージをコンポーネントと名付けて、その特徴について解説。  
+まだまだ研究段階ではあるが[github](https://github.com/component)にて12のコンポーネントが公開されている。
+
+#### [10 simple ways to make wireframes more useful via .net magazine](http://www.netmagazine.com/features/10-simple-ways-make-wireframes-more-useful)
+
+ワイヤーフレームをより効果的にするための10の方法。結構細かい部分のTipsもあって参考になる。
+
+#### [Awakenings: An Android Design Process via Sebastiaan de With's blog](http://dewith.com/2012/an-android-design-process/)
+
+Androidにおけるデザインプロセス。シンプルながら素晴らしい見た目のアラームクロックdoubleTwist Alarmのケーススタディ。
+
+## Performance
+
+#### [When to base64 encode images (and when not to) via David Calhoun's Blog](http://davidbcalhoun.com/2011/when-to-base64-encode-images-and-when-not-to)
+
+DataURIで画像を表示させるべきか、否か。べき論というよりは考え方。参考までに。
+
+## Code
+
+### [Core Animation Concepts: Anticipation & Follow-Through via demosthenes.info](http://demosthenes.info/blog/555/Core-Animation-Concepts-Anticipation--FollowThrough)
+
+アニメーションの原則から2つ。AnticipationとFollow-ThroughをCSS3で実現する。  
+cubic-bezierの使い方1つで表現力は大きく変わる。
+
+### [Understanding Design Patterns in JavaScript via Nettuts+](http://net.tutsplus.com/tutorials/javascript-ajax/digging-into-design-patterns-in-javascript/)
+
+最近何かと頻出するキーワードの1つ、JavaScriptデザインパターン。  
+この記事ではデザインパターンとは何かから解説し、jQueryを使った比較的分かりやすいパターンの実装を紹介しているので、これまで難しくてあきらめてしまった人もおすすめの記事。
+
+### [JavaScript Programming Patterns via klauskomenda.com](http://www.klauskomenda.com/code/javascript-programming-patterns/)
+
+JavaScriptにおけるプラグラミングパターンについて。デザインパターンにも触れるがそれよりも根本的な部分について。JavaScriptのプログラムパターンが時を経てどう進化してきたかを解説している。
+
+### [A Gentle Introduction to Making HTML5 Canvas Interactive via simonsarris.com](http://simonsarris.com/blog/510-making-html5-canvas-useful)
+
+Game.jsの基本であるHTML5のCanvasをJavaScriptを使ってインタラクティブに動かすチュートリアル。  
+コードのほとんどにコメントが書いてある上に、記事でも詳しく解説している。初心者向けの素晴らしい記事。
+
+### [Backbone.js: Hacker's Guide via DailyJS](http://dailyjs.com/2012/07/19/mvstar-2/)
+
+Backbone.jsをソースコードリーディングしながら詳しく解説。Backbone.jsのデザイン原則などについても触れているし、実際にどうAPIを活用していくかについても説明されている。Backbone.jsの利用者にも、ソースコードリーディングのテキストとしても優れた記事。
+
+### [Memory Management via MDN](https://developer.mozilla.org/en/JavaScript/Memory_Management)
+
+JavaScriptにおけるメモリマネジメントについて。  
+明示的なガーベージコレクションのないJavaScriptだからといって常に適切にメモリが管理されているとは限らない。JavaScriptがどうメモリを管理し、そして解放しているのかを知ることはパフォーマンス改善を行う上で必須の知識。
+
+#### [Chain CSS animations together with JavaScript via .net magazine](http://www.netmagazine.com/tutorials/chain-css-animations-together-javascript)
+
+CSSアニメーションをJavaScriptと一緒に使って拡張する。animationendとかanimationstartの話。
+
+#### [Fixing browsers' broken monospace font handling](http://code.stephenmorley.org/html-and-css/fixing-browsers-broken-monospace-font-handling/)
+
+クロスブラウザでmonospaceフォントを正しいフォントサイズで表示するCSSスニペット。
+
+#### [Eric Meyer on the past, present and future of CSS via .net magazine](http://www.netmagazine.com/interviews/eric-meyer-past-present-and-future-css)
+
+CSS Samuraiの創設者の1人。CSSといえばEric Meyerとすら言われる彼のインタビュー。
+
+#### [Understanding bind and bindAll in Backbone.js via BigBinary Blog](http://blog.bigbinary.com/2011/08/18/understanding-bind-and-bindall-in-backbone.html)
+
+Backbone.jsにおけるunderscore.jsのbindとbindAllについて。JSのAppyとは何かから始まって両者の違いと注意点について紹介している。
+
+#### [A new approach of caching in web applications via FRESC](http://fre.sc/tech-blog/a-new-approach-of-caching-in-web-applications)
+
+jQueryプラグイン。AjaxのリクエストをlocalStorageを使ってキャッシュする。ソースを読んで勉強しよう。
+
+#### [Understanding JavaScript Function Invocation and “this” via Katz Got Your Tongue?](http://yehudakatz.com/2011/08/11/understanding-javascript-function-invocation-and-this/)
+
+Yahuda Katz氏によるJavaScriptのthis、callの解説。すべての関数をcallメソッドで呼び出すと考えるとシンプルになるかも。
+
+#### [Zombies! RUN! (Managing Page Transitions In Backbone Apps) via ThoughtStream.new :derick_bailey](http://lostechies.com/derickbailey/2011/09/15/zombies-run-managing-page-transitions-in-backbone-apps/)
+
+Backbone.jsでよく発生しがちなメモリリークの例、ゾンビイベント。もちろん対処方法も。
+
+#### [Node.js for True Beginners via Joe Zim's JavaScript Blog](http://www.joezimjs.com/javascript/node-js-for-true-beginners/)
+
+Node.jsをこれから始めたい人に。インストール、REPL、サーバについて。
+
+#### [Python for JavaScript Programmers](http://hg.toolness.com/python-for-js-programmers/raw-file/tip/PythonForJsProgrammers.html)
+
+JavaScript開発者のためのPython。飛躍するところもままある気がするけど、PythonをJavaScriptに例えて解説。
+
+#### [Partially Applied Functions In JavaScript via ThoughtStream.new :derick_bailey](http://lostechies.com/derickbailey/2012/07/20/partially-applied-functions-in-javascript/)
+
+JavaScriptでのFunctionalプログラミングについて。ここではPartial Function Applicationの話
+
+#### [Mastering the Application Cache Manifest for Offline Web Apps and Performance via Facebook Developers](https://developers.facebook.com/html5/blog/post/2012/07/16/mastering-the-application-cache-manifest-for-offline-web-apps-and-performance/)
+
+Application Cashe Manifestをマスターする。実装から注意点、ブラウザの対応状況まで細かく解説。
+
+## Slide / Video
+
+#### [Efficient JavaScript Vector Math via Google IO 2012](http://media.tojicode.com/sfjs-vectors/#1)
+
+JavaScriptのより効率的な物理エンジンの計算方法について。オブジェクトが早いか、Typed Arraysが早いか。リファクタ例付きなので参考になる。
+
+## Tools
+
+#### [JS Bin: Built For Sharing, Education And Real-Time Rendering via Smashing Coding](http://coding.smashingmagazine.com/2012/07/23/js-bin-built-for-sharing-education-and-real-time/)
+
+JS Binのリニューアルに伴う追加機能の作った本人であるRemyによる解説。
+
+## That's it for this week!
+
+長谷川恭久さん([@yhassy](http://twitter.com/yhassy))が運営している[Automagic](http://itunes.apple.com/jp/podcast/automagic-podcast/id74183614)というポッドキャストに念願叶って出演しました。(あろうことか50回記念に)
+
+終始、長谷川さんの質問にリードされ、あっという間に時間が経った。そんな感じの約40分でした。  
+
+私の対談の回はさておき、Automagicは長年続く素晴らしいコンテンツですので、登録しておくことをおすすめします。
+
+
