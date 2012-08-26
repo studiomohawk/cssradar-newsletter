@@ -1,0 +1,92 @@
+---
+layout: post
+title: "vol.45"
+date: 2012-08-19  9:23:26
+---
+
+## UX / UI / IA / Design
+
+### [10 Usability Basics To Consider Before Designing The UX via The Usabilla Blog](http://blog.usabilla.com/10-usability-basics-to-consider-before-designing-the-user-experience/)
+
+UXの前に考えるべき10のユーザビリティの基本。
+
+### [Made to Measure via Contents Magazine](http://contentsmagazine.com/articles/made-to-measure/)
+
+コンテンツデザイン: アートディレクション記事の先に先にあるテイラードデザインについて。コンテンツがすべてというなら必要だと思う。
+
+### [Journey to The Heart of UX Design: Debunking Myths via UX Booth](http://www.uxbooth.com/blog/journey-to-the-heart-of-ux-design-debunking-myths/)
+
+UXへの道のり。UXを車に例えて概念を上手に説明しつつ、UXを学ぶための参考サイトの紹介。
+
+### [Case Study: Perch Redesign via Folyo](http://blog.folyo.me/case-study-perch/)
+
+デザインを学ぶ上でもっとも効果的だと思われるケーススタディ。レアなだけに非常に参考になる。
+
+### [Determining breakpoints for a responsive design via .net magazine](http://www.netmagazine.com/tutorials/determining-breakpoints-responsive-design)
+
+レスポンシブウェブデザインにおけるブレークポイントの決定法。コンテンツに合わせて決める方法について。 
+
+### [Crafting the Experience of User Interface Messages via Webdesigntuts+](http://webdesign.tutsplus.com/articles/user-experience-articles/crafting-the-experience-of-user-interface-messages/)
+
+メッセージ系のUIから見るUXの作り方。404、ログイン後、フォームなどなど実例も豊富で参考になる。
+
+### [Stop Publishing Web Pages via Anil Dash](http://dashes.com/anil/2012/08/stop-publishing-web-pages.html)
+
+ウェブページを作るのをやめてストリームを作ろう。コンテンツの展開の仕方は雑誌モデルからタイムラインにシフトしつつある。
+
+#### [The Update via Contents Magazine](http://contentsmagazine.com/articles/the-update/)
+
+アップデート、チェンジログからストーリーが生まれる。「終わりの無い」メディアがストリームから誕生している。という話。
+
+## Performance
+
+### [Tutorial: How to make an offline HTML5 web app, FT style via FT Labs](http://labs.ft.com/2012/08/basic-offline-html5-web-app/)
+
+HTML5のオフラインアプリを作るために使うappcacheファイルに関する実装。実体験からの注意するべき点が参考になる。
+
+### [Increasing Application Performance with HTTP Cache Headers via Heroku Dev Center](https://devcenter.heroku.com/articles/increasing-application-performance-with-http-cache-headers)
+
+HTTP Cacheヘッダについて。設定や概念をふくめてとてもよくまとまった記事。なんとなくわかっていた部分が明確になった。
+
+## Code
+
+### [Metro UI CSS](http://www.metroui.org.ua/)
+
+WindowsのMetro UIをCSSで再現。好きか嫌いかは置いておいて、ソースコードは参考になるでしょう。 
+
+### [Detect Mobile Browsers via Open source mobile phone detection](http://detectmobilebrowsers.com/)
+
+モバイルブラウザ判定。UAでの判定は完璧じゃないけれど、必要なこともある。JSやPHP、node.js、Pythonなどなど様々な言語のソースが配布されている。
+
+### [Learning to Love the Boring Bits of CSS via A List Apart](http://www.alistapart.com/articles/love-the-boring-bits-of-css/)
+
+CSSの「面白くない」部分について。単位や関数、セレクタなど。  
+CSSの本来の能力を引き出すために必要な部分。
+
+### [Getting started with JavaScript unit testing via szafranek.net](http://szafranek.net/works/articles/javascript-unit-testing/)
+
+JavaScriptにおけるユニットテスト。なぜ必要なのか。そしてBuster.jsをつかったどうやるのか。注意点などにも触れている。
+
+### [Using Min/Max Width and Height in CSS via Impressive Webs](http://www.impressivewebs.com/min-max-width-height-css/)
+
+CSSの基本: min/max widthとheight。IE対応に気を取られてばかりだとぱっと出てこないプロパティ。
+
+#### [Backbone.js: Internals Summary via DailyJS](http://dailyjs.com/2012/08/16/mvstar-6/)
+
+DailyJSによるBackbone.jsシリーズのまとめ。追加でイベントについて、Underscore.jsについて、そしてViewsにおけるthis.$elについて書かれている。
+
+#### [Getting Bitwise with JavaScript via Bocoup](http://weblog.bocoup.com/getting-bitwise-with-javascript/)
+
+JavaScriptのbitwiseオペレータについて。話の中心はArduino UnoをJavaScriptで動かす話。
+
+## Other
+
+### [JSBooks via free javascript books](http://jsbooks.revolunet.com/)
+
+JavaScriptのフリーで読める素晴らしいリソース集。
+
+### [Quick and Easy Documentation Using Markdown via Webdesigntuts+](http://webdesign.tutsplus.com/tutorials/workflow-tutorials/quick-and-easy-documentation-using-markdown/)
+
+markdownを使った簡単なドキュメンテーション。なかなかいいアイデアが詰まっていて参考になる。
+
+
