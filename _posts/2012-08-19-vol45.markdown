@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "vol.45"
+title: "Vol.45"
 date: 2012-08-19  9:23:26
 ---
 

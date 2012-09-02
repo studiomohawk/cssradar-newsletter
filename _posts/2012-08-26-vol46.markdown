@@ -1,0 +1,112 @@
+---
+layout: post
+title: "Vol.46"
+date: 2012-08-26  9:07:12
+---
+
+## [Extreme specificity overriding a CSS ID with 256 chained Classes via The CSS Ninja](http://www.thecssninja.com/css/extreme-specificity)
+
+CSSでIDセレクタがクラスセレクタ256個で上書きされる現象がいくつかのブラウザおこるという。本来はおこるはずのない仕様なのになぜ。と話題になった件の詳しい解説。
+
+## [FastClick: native-like tapping for touch apps via FT Labs](http://labs.ft.com/2011/08/fastclick-native-like-tapping-for-touch-apps/)
+
+タップとはいうけれど、JavaScriptにはonTapイベントはない。その上Clickを使うと0.3秒ほどの遅延が発生。そんな問題を解決するfastclick.jsの解説。  
+Githubのリポジトリは[https://github.com/ftlabs/fastclick](https://github.com/ftlabs/fastclick)
+
+## UX / UI / IA / Design
+
+### [Designing Screens Using Cores and Paths via Boxes and Arrows](http://www.boxesandarrows.com/view/designing-screens)
+
+ページをデザインする上でまずはコアを考え、そしてそこに至までの道のりを考える。アウトプットの具体例まであって参考になる。
+
+### [Responsive Web Design Process via Yellow Pencil](http://responsiveprocess.com/)
+
+レスポンシブウェブデザインのプロセスについて。18のステップにわけて短く、カラフルなイラストとともに紹介。 
+
+### [What Makes a Design Seem 'Intuitive'?](http://www.uie.com/articles/design_intuitive/)
+
+インターフェイスはどうやったら直感的になるのか。Jared Spool氏による記事。
+
+#### [The Difference Between Information Architecture and UX Design via UX Booth](http://www.uxbooth.com/blog/the-difference-between-ia-and-ux-design/)
+
+IAとUXの違いとはなにか。UXがIAを内包する関係にはあるが、どちらも同じくらい大事。
+
+#### [“Crayola,” work by Dan Mall](http://danielmall.com/work/crayola/)
+
+Crayolaのサイトのリニューアルに関するケーススタディ。レスポンシブにも対応したとのことで参考になる。
+
+## Performance
+
+## Code
+
+### [The Cicada Principle and Why It Matters to Web Designers via DesignFestival](http://designfestival.com/the-cicada-principle-and-why-it-matters-to-web-designers/)
+
+最近個人的にもEric Meyer的にも注目し直しているCicada Principleを使ったランダムに見える背景の作り方。  
+ちなみにCicadaは蝉のこと。
+
+### [Node.js for Beginners via Nettuts+](http://net.tutsplus.com/tutorials/javascript-ajax/node-js-for-beginners/)
+
+初心者のためのNode.js。もちろん1記事だけで終わるトピックではないにせよ、よくまったまった記事。
+
+### [An Overview of Brackets' Code Architecture via Adobe Developer Connection](http://www.adobe.com/devnet/html5/articles/bracket-code-architecture.html)
+
+AdobeのHTML、CSS、JavaScriptでできているBracketsのコード構造について。  
+JavaScriptヘビーなアプリケーションなので、設計やアプローチなどはウェブでも十分に活かせる。
+
+### [JavaScript module loaders: necessary evil? via Ruben Verborgh](http://ruben.verborgh.org/blog/2012/08/13/javascript-module-loaders-necessary-evil/)
+
+JavaScriptのモジュールローダには賛否がつきまとうが、果たしてどんな利点があるのか。両者の視点を交えて紹介。
+
+### [Command Line Tutorials - Tips & Tricks](http://quickleft.com/blog/command-line-tutorials-tips-tricks)
+
+コマンドラインのティップス4つ。まだまだ使いこなせてないなーと思った便利なコマンド達。
+
+### [Command Line Tutorials - Sed & Awk](http://quickleft.com/blog/command-line-tutorials-sed-awk)
+
+コマンドラインのチュートリアル。SedとAwkについて。基礎編。
+
+### [Writing a Command Line Node Tool via The JavaScript Playground](http://javascriptplayground.com/blog/2012/08/writing-a-command-line-node-tool)
+
+node.jsのコマンドラインツールをgruntの助けを借りて作る。  
+node.jsを覚えるのにもっとも手軽な方法でもあると思うので、なにか作ってみたい。
+
+
+### [Tips for better fragment navigation via FT Labs](http://labs.ft.com/2011/02/tips-for-better-fragment-navigation/)
+
+hashbang(#!)を使ったナビゲーションの実装のコツ。History Apiがあるにせよ、知っておいた方がいいのでぜひ。
+
+### [Automatic Conditional Retina Images via Shaun Inman](http://shauninman.com/tmp/retina/)
+
+Shaun Inman氏によるサーバー + シングルラインのJSで実現するretina display画像の自動振り分け。
+
+### [You're Using jQuery.html() Wrong! via Joe Zim's JavaScript Blog](http://www.joezimjs.com/javascript/jquery-html-youre-doing-it-wrong/)
+
+`$("#main").empty().append(layout.el);` と 
+`$('#main').html(layout.el);` について。なかなか興味深い。
+
+#### [Backbone.js View Inheritance via Description of a Fiznool](http://fiznool.com/post/29347337512/backbone-js-view-inheritance)
+
+Backbone.jsにおけるViewの継承について。_superメソッドの紹介と継承にまつわるイベントの問題の解消。
+
+#### [JavaScript Events And Responding To The User via Smashing Coding](http://coding.smashingmagazine.com/2012/08/17/javascript-events-responding-user/)
+
+JavaScriptで意外と厄介者なイベント。IEのことは一端忘れて、イベントの基本について学ぶ。
+
+#### [Backbone.js Tips and Tricks](http://quickleft.com/blog/backbone-js-tips-and-tricks)
+
+Backbone.jsのトレーニングを提供しているQuickleftからティップス。  
+Viewを管理するためのプレゼンターパターンについて、syncメソッドを上書きする際のコツなど実践的なティップスの紹介。
+
+#### [Jasmine.Async: Making Asynchronous Testing With Jasmine Suck Less via ThoughtStream.new :derick_bailey](http://lostechies.com/derickbailey/2012/08/18/jasmine-async-making-asynchronous-testing-with-jasmine-suck-less/)
+
+JavaScript Unit Testのライブラリ、Jasmineの弱点である非同期テストを簡単にするJasmine.Ansyncについての紹介。
+
+## Other
+
+#### [Replying to App Store reviews via Matt Gemmell](http://mattgemmell.com/2012/06/30/replying-to-app-store-reviews/)
+
+AppleのApp Storeのレビューにみる人間性と対処法(覚悟して諦める)そしてよりベターなレビューのデザインの考察。
+
+#### [Demystifying Site Outages via Etsy News BlogEtsy News Blog](http://www.etsy.com/blog/news/2012/demystifying-site-outages/)
+
+ウェブサイトはどうして落ちるのか？ Etsyが経験した2度の体験を共有。貴重。
