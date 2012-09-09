@@ -1,0 +1,83 @@
+---
+layout: post
+title: "Vol.47"
+date: 2012-09-02
+---
+
+## [Javascript Tips for Non-Specialists via OmniTI](http://omniti.com/seeds/javascript-tips-for-non-specialists)
+
+JavaScriptで開発する上で知っておきたい基本のティップス。  
+
+こちらの記事を翻訳することにしましたので、しばしお待ちくださいませ。先方のサイトに掲載される予定です。 
+
+## UX / UI / IA / Design
+
+### [Complex Navigation Patterns for Responsive Design via Brad Frost Web](http://bradfrostweb.com/blog/web/complex-navigation-patterns-for-responsive-design/)
+
+Brad Frost氏によるレスポンシブデザインの(より複雑な)ナビゲーションのデザインパターン。
+
+### [Responsive Web Above The Fold via CSS-Tricks](http://css-tricks.com/responsive-web-above-the-fold/)
+
+ファーストビューは存在しない。というのは今は昔。mediaqueriesを使えばビューエリアの高さに応じて最適な表示をコントロールできる。具体例もあって非常に実践的な記事。
+
+### [Mobile Form Design Strategies via UX Booth](http://www.uxbooth.com/blog/mobile-form-design-strategies/)
+
+モバイルにおけるフォームデザイン戦略。ケーススタディを含めた非常に有用な記事。
+
+### [15 things we learned about interface design as developers via Home page of Milan Vrekic](http://milanvrekic.com/things-i-learned-about-interface-design)
+
+デベロッパが学んだ15のインターフェイスデザインの基礎。当たり前のことばかりだけど、実践してないケースが多い。 
+
+### [Using Fonts for Resolution Independent Assets via JoshEmerson.co.uk](http://joshemerson.co.uk/blog/asset-fonts/)
+
+アイコンフォントの作り方。SVGからFontForgeを使って作る方法法について。 
+
+### [Why It’s Important to Sketch Before You Wireframe via UX Movement](http://uxmovement.com/wireframes/why-its-important-to-sketch-before-you-wireframe/)
+
+ワイヤーフレームの前にスケッチをすることの重要性。私もiPadでざくっとしたスケッチを書いてワイヤーを書き始める事が多い。
+
+#### [DIY Process via Cognition](http://cognition.happycog.com/article/diy-process)
+
+開発プロセスはアジャイルだから、ウォーターフォールだからよいのではなく、プロジェクトに合わせた最適な形を見いだすことが大事。
+
+#### [You're Not Listening via Rands In Repose](http://www.randsinrepose.com/archives/2012/08/28/youre_not_listening.html)
+
+#### [The 11th Principle of Good Design via Wells Riley](http://blog.wells.ee/design-11)
+
+#### [Prototypes Are Vehicles of Shared Understanding via Johnny Holland](http://johnnyholland.org/2012/08/prototypes-are-vehicles-of-shared-understanding/)
+
+## Performance
+
+#### [Web Performance Power Tool: HTTP Archive (HAR) via igvita.com](http://www.igvita.com/2012/08/28/web-performance-power-tool-http-archive-har/)
+
+## Code
+
+### [Break Apart Your Backbone.js Render Methods via Ian Storm Taylor](http://ianstormtaylor.com/break-apart-your-backbonejs-render-methods/)
+
+Backbone.jsのrenderメソッドで無駄なレンダリングしていませんか？分割して統治せよはJavaScriptでは現役。
+
+### [How Ender Bundles Libraries for the Browser via](http://dailyjs.com/2012/08/23/ender-tutorial/)
+
+ender.jsはあまり話題にならないがJavaScriptのライブラリを自分で構成できるツール。そのenderの仕組みについて。
+
+#### [Backbone has made me a better programmer via Float Left](http://floatleft.com/notebook/backbone-has-made-me-a-better-programmer)
+
+MVCのMVだけをとってもベターなJSerになるきっかけが十分にある。Backbone.jsのパターンから学べる部分はたくさんある。
+
+#### [JS101: Equality via DailyJS](http://dailyjs.com/2012/08/27/equality/)
+
+#### [Some Web Development Tips via Can Duruk](http://duruk.net/some-web-development-tips/)
+
+#### [Learn from Haskell - Functional, Reusable JavaScript](http://seanhess.github.com/2012/02/20/functional_javascript.html)
+
+#### [Node.js: Style and structure](http://caolanmcmahon.com/posts/nodejs_style_and_structure/)
+
+#### [Using Charles Proxy to examine iOS apps via Cloud Four Blog](http://blog.cloudfour.com/using-charles-proxy-to-examine-ios-apps/)
+
+#### [Keeping it Sane: Backbone Views and Require.js via Jeremy Kahn's Dev Blog](http://jeremyckahn.github.com/blog/2012/08/18/keeping-it-sane-backbone-views-and-require-dot-js/)
+
+## Slide / Video
+
+#### [Mobile Designs. Strategic Solutions. Course Material via Mobile Design Pattern Gallery](http://mobiledesignpatterngallery.com/blog/?p=185)
+
+
