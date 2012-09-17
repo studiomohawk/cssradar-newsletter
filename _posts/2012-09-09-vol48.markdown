@@ -1,0 +1,84 @@
+---
+layout: post
+title: "Vol.48"
+date: 2012-09-09 10:53:07
+---
+
+## [10 Things To Know About Images In Web Design via The Usabilla Blog](http://blog.usabilla.com/10-things-to-know-about-images-in-web-design/)
+
+ウェブデザインにおいて知っておきたい画像についての10のこと。基礎的な事ばかりながら参考になる。
+
+## UX / UI / IA / Design
+
+### [UX Trends & The Problem with Stealing Bad Ideas](http://thenextweb.com/dd/2012/09/03/user-experience-trends-problem-stealing-bad-ideas/)
+
+UXのトレンドとアイデアや機能をコピーするだけでは問題が解決できない理由について。
+
+### [The best interface is no interface via The Cooper Journal](http://www.cooper.com/journal/2012/08/the-best-interface-is-no-interface.html/)
+
+"The best interface is no interface"と言われるが、一体どういう事なのか。事例をふまえてUIの基礎からの解説。
+
+#### [About those long line lengths via Stuff & Nonsense, And All That Malarkey](http://www.stuffandnonsense.co.uk/blog/about/about_those_long_line_lengths)
+
+Andy Clarke氏のStuff & Nonsenseがリニューアルし、行幅が長く、文字が小さいというFBに対する返答。
+
+#### [The First Design Hardly Ever Wins. The Iterative Approach to UX Design via DesignModo](http://designmodo.com/iterative-ux-design/)
+
+#### [When Content and Design Collide via ZURB](http://www.zurb.com/article/1063/when-content-and-design-collide)
+
+## Performance
+
+## Code
+
+### [Make disaster-proof HTML5 forms via .net magazine](http://www.netmagazine.com/tutorials/make-disaster-proof-html5-forms)
+
+WebStorageを使って「安全」なフォームを作る。長文が消えたりしても復帰できるようにする。
+
+### [The Creation of a CSS3 Clickable, Rotating Menu via InsertHTML](http://www.inserthtml.com/2012/09/rotating-menu/)
+
+CSS3だけでクリックできて、クルッと回る、何に使うかはよくわからないけどよく出来たデモ。
+
+### [One Module or Two via Snook.ca](http://snook.ca/archives/html_and_css/one-module-or-two)
+
+CSSにおけるモジュールについて。2つのモジュールに類似点がある場合、1つのモジュールに相違点がある場合のアプローチ。
+
+### [CSS :target for Off-Screen Designs via CSS-Tricks](http://css-tricks.com/css-target-for-off-screen-designs/)
+
+:target セレクタを使ったCSSのみで実装するOff-Screenレイアウトパターン。
+
+### [Introduction to XMLHttpRequest Level 2 via Dev.Opera](http://dev.opera.com/articles/view/xhr2/)
+
+XMLHttpRequest Level2、いうところのAjax関連のVersion2に関する仕様について詳しく解説。
+
+#### [High DPI Canvas via HTML5 Rocks](http://www.html5rocks.com/en/tutorials/canvas/hidpi/)
+
+高い彩度のディスプレイに対するCanvasのアプローチ。ChromeとSafari6の実装の違いと対策について。
+
+#### [Keeping JS Sane via Rob Ashton](http://codebetter.com/robashton/2012/09/03/keeping-js-sane/)
+
+JavaScriptの開発アプローチ。JSHint/JSLintを利用しようから、ユニットテスト、依存関係の解消方法についてよくまとまっている。
+
+#### [Asynchronous JavaScript Programming. The Power Of $.Deferred for HTML5 Application via HTML5 Rocks](http://www.html5rocks.com/en/tutorials/async/deferred/)
+
+#### [Iterating over arrays and objects in JavaScript](http://www.2ality.com/2011/04/iterating-over-arrays-and-objects-in.html)
+
+#### [Advanced Uploading Techniques — Part 1 via CreativeJS](http://creativejs.com/tutorials/advanced-uploading-techniques-part-1/)
+
+## Mobile
+
+### [Max Ogden Blogotronz](http://maxogden.com/fast-webview-applications)
+
+モバイルウェブ開発を行うに当たって知っておきたい色々。数は多くないが、よくまとまっている。 
+
+## That's it for this week
+
+9/8にHTML5 Conference 2012にてCSS3で作るUIデザインパターンについて登壇させていただきました。  
+
+参加いただいた皆様、ustなどで見ていただいた皆様、そしてスタッフ、ボランティアの皆様、ありがとうございました。
+スピーカーの皆様、お疲れさまでした。
+
+当日のスライドを以下に公開します。
+[http://cl.ly/JIDf](http://cl.ly/JIDf)
+
+当日お話できなかった、便利なウェブツールを十数個紹介してますので、
+そちらだけでも見ていただければ。
