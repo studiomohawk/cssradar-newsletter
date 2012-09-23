@@ -1,0 +1,100 @@
+---
+layout: post
+title: "Vol.49"
+date: 2012-09-17 12:31:35
+---
+
+## [Keys to a Fast Web App via High Performance Web Sites](http://www.stevesouders.com/blog/2012/09/06/keys-to-a-fast-web-app/)
+
+“早い”ウェブアプリへの道。Steve Souders氏によるまとめ
+
+## [Namespaces are Old School via Miller Medeiros](http://blog.millermedeiros.com/namespaces-are-old-school/)
+
+JavaScriptで名前空間を使った手法はもう古い？どうして名前空間が利用されたのかとそしてどうしてAMDを利用するべきかについての記事。
+
+## [SOLID CSS via Miller Medeiros](http://blog.millermedeiros.com/solid-css/)
+
+SOLIDオブジェクト指向をCSSに適応して考える。翻訳の了承を得たので来週には日本語化される予定。
+
+## UX / UI / IA / Design
+
+### [What Skeuomorphism Is (And Isn’t) via SachaGreif.com](http://sachagreif.com/what-skeuomorphism-is-and-isnt/)
+
+Skeuomorphism(異なる素材による模造を行う手法)とは何か。Appleがアプリデザインに多様する手法についての解説。 
+
+### [Five steps to gettin’ flexy in responsive web design via .net magazine](http://m.netmagazine.com/features/five-steps-gettin-flexy-responsive-web-design)
+
+レスポンシブウェブデザインへの5つのステップ。フレキシブルなレイアウトやタイポグラフィーについて。
+
+### [UX Unicorns and Other Fanciful Creatures via UX Booth](http://www.uxbooth.com/blog/ux-unicorns-and-other-fanciful-creatures/)
+
+UXデザインの役割とUXデザイナの役割について言語学的なアプローチで考えてみる。
+
+### [Reframing “UX Design” via peterme.com](http://www.peterme.com/2012/09/04/reframing-ux-design/)
+
+UXデザインは実際にどの領域をカバーするのか。そしてそこからUXデザイナとは映画監督、あるいはオーケストラの指揮者のような役割に近いのではないかという話。
+
+### [The Power Of Visual Context In Web Design via The Usabilla Blog](http://blog.usabilla.com/the-power-of-visual-context-in-web-design/)
+
+写真ではないビジュアル(アイコンなど)がウェブデザインにどう影響するのかについて。
+
+## Performance
+
+### [Clearing Browser Data via High Performance Web Sites](http://www.stevesouders.com/blog/2012/09/10/clearing-browser-data/)
+
+ブラウザのデータ(cookie、localStorage、application cache )をブラウザ毎にクリアする方法とユーザがそれらのデータを削除した場合に何が起こるかについて。
+
+## Code
+
+### [stack menu](http://neilcarpenter.com/demos/stack-menu/)
+
+Chrome iOSアプリのタブが重なり合うUIをブラウザで再現。このページはそのデモ。スマフォで閲覧するか、Viewportを狭めてどうぞ。
+
+### [Using CSS3 transitions: A comprehensive guide via Adobe Developer Connection](http://www.adobe.com/devnet/html5/articles/using-css3-transitions-a-comprehensive-guide.html)
+
+CSS3 transitionについてのAdobeの記事。シンタックスはもちろん、どうやってトランジションを開始するのかについてや、利用のコツを具体的に解説。
+
+### [JavaScript Objects, Prototypes and a Tweet](http://eduvoyage.com/javascript-prototypal-inheritance.html)
+
+JavaScriptのオブジェクト、プロトタイプ、継承をTweetを例に解説。 
+
+#### [Timing and Synchronization in JavaScript via Dev.Opera](http://dev.opera.com/articles/view/timing-and-synchronization-in-javascript/)
+
+#### [Scalable JavaScript Applications via Joe Zim's JavaScript Blog](http://www.joezimjs.com/javascript/scalable-javascript-applications/)
+
+#### [Say Yo to Yeoman via Nettuts+](http://net.tutsplus.com/tutorials/tools-and-tips/say-yo-to-yeoman/)
+
+#### [Jasmine-Part 1: Unit Testing Javascript via A developer life](http://a-developer-life.blogspot.co.uk/2011/05/jasmine-part-1-unit-testing-javascript.html) / [Part 2](http://a-developer-life.blogspot.jp/2011/06/jasmine-part-2-spies-and-mocks.html)
+
+## Mobile
+
+### [A Guide To iOS SDK For Web Designers via Smashing Mobile](http://mobile.smashingmagazine.com/2012/09/10/ios-sdk-for-designers/)
+
+ウェブデザイナのためのiOS SDKガイド。何事も経験。時間を作って実際にやってみよう。
+
+#### [Android Virtual Device Creation](http://mobile.tutsplus.com/tutorials/android/android-virtual-device-creation/)
+
+## Tool
+
+### [Beginner Guide to Page and Script Debugging with Chrome via CodeProject](http://www.codeproject.com/Articles/273129/Beginner-Guide-to-Page-and-Script-Debugging-with-C)
+
+Chromeのデベロッパツールの使い方詳細。サイト自体は見づらいけれど、全般に及ぶ解説はリファレンスにも便利。
+
+### [Plain Text Primer: nvALT 101](http://bettermess.com/plain-text-primer-nvalt-101/)
+
+nvALTというMac OSで利用できるプレーンテキストエディタの紹介。絶賛愛用中。 
+
+## That's it for this week
+
+まだ少し先の話ですが、サイバーエージェントにてFrontrend powered by CyberAgent Vol.3を10/21(日)開催します。  
+
+石本光司、谷拓樹、佐藤歩そして私の4名が登壇。  
+私はさておき著名人ばかりです。
+
+もう満席になってしまっているのですが、一応詳しくは[こちらに](http://atnd.org/events/32232)。
+
+さて
+
+メルマガもVol.49となりました。ということは今号の後は2回の発行で終了させていただきます。
+
+次の12ヶ月は翻訳にフォーカスしつつ、本家である[CSS Radar](http://css.studiomohawk.com)もリニューアルして1ヶ月に1度くらいは内容の修正、あるいは新しいトピックの追加を行う予定で、以前お知らせした通り[Seven](http://seven.studiomohawk.com/)がメルマガのあとをつぎます。
