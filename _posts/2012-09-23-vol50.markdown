@@ -1,0 +1,80 @@
+---
+layout: post
+title: "Vol.50"
+date: 2012-09-23 16:10:04
+---
+
+## [SOLID CSS via en.ja](http://enja.studiomohawk.com/2012/09/17/solidcss/)
+
+Miller H. Borges Medeiros氏の了承を得て、大規模CSS開発へのアプローチ,
+SOLID CSSの記事を翻訳。CSSはあっという間に4000行とかになるので、是非。
+
+## UX / UI / IA / Design
+
+### [Build a Color Scheme: The Fundamentals via Codrops](http://tympanus.net/codrops/2012/09/17/build-a-color-scheme-the-fundamentals/)
+
+カラースキームの作り方、基本編。とても基本的な部分だけの紹介。 
+
+### [Build Your Perfect Interface with UI Design Patterns via DesignFestival](http://designfestival.com/build-your-perfect-interface-with-ui-design-patterns/)
+
+UIデザインパターンを使ってデザインプロセスに自信とスピードを追加しよう。
+
+### [In defense of chrome via Ghost in the Pixel](http://www.ghostinthepixel.com/)
+
+表層のデザインを可能な限りなくそう、というようなムーブメントがあるけれど、クローム(ブラウザではなく、見た目)がユーザのタスクの完遂に役に立つこともある。
+
+#### [Exploring the Problem Space Through Prototyping](http://www.uie.com/articles/four_phases_prototyping/)
+
+プロトタイプは問題を理解する為のツール。モックアップは問題解決を提案するツール。まずはプロトタイプから始めよう。
+
+## Performance
+
+### [Browser innovation and the 14 rules for faster loading websites: Revisiting Steve’s work (part 2)](http://www.webperformancetoday.com/2012/09/13/browser-innovation-performance-rules-faster-loading-websites-2/)
+
+Steve Souders氏が提唱したウェブパフォーマンスを向上させるためのアドバイスはいまでも有効なのかテストしてみた結果。  
+[パート1はこちら](http://www.webperformancetoday.com/2012/05/29/browser-innovation-14-web-performance-rules-faster-loading-websites/)(全3回予定)
+
+#### [Application Cache: Douchebag](https://speakerdeck.com/u/jaffathecake/p/application-cache-douchebag)
+
+## Code
+
+### [HTML5 Web Storage - Cookies Are So 1994! via New Relic blog](http://blog.newrelic.com/2012/09/18/html5-web-storage-cookies-are-so-1994/)
+
+HTML5のWebStorageについて。Cookieとの差違、WebStorageの利点、PHPを使ったサンプルと細かい部分までよくまとまった記事。
+
+### [Encapsulation Breaking via DailyJS](http://dailyjs.com/2012/09/17/encapsulation-breaking/)
+
+JavaScriptでのカプセル化の実装について。アンダースコアを付与する例、メソッドスティールを使った例を紹介。 
+
+### [Getting Started Managing Client Side Scripts with Require.js via I Am Not Myself](http://iamnotmyself.com/2012/09/07/getting-started-managing-client-side-scripts-with-require-js/)
+
+Require.jsを使ったクライアントサイドのJavaScriptのモジュール管理について。基本的な部分を短く上手にまとめてある。
+
+#### [Resizing images before upload using HTML5 canvas via rubydesigner.com](http://www.rubydesigner.com/blog/resizing-images-before-upload-using-html5-canvas)
+
+Canvas + FileAPIを使ってアップロードする前に画像をリサイズするテクニック。ソースコードも共有しているので参考になる。  
+[ソースコードはこちら](https://github.com/josefrichter/resize/blob/master/public/preprocess.js)
+
+#### [Introducing ECMAScript 5.1 via Dev.Opera](http://dev.opera.com/articles/view/introducing-ecmascript-5-1/)
+
+ECMAScript 5.1のまとめ。意外と使えるブラウザがおおいES5について。全体的に簡潔にまとまっていていい。
+
+#### [Closures](http://stewd.io/javascript/02-2-closure.html)
+
+#### [Understanding the this reference in Javascript](http://santosh-log.heroku.com/2012/09/15/understanding-the-this-reference-in-javascript/)
+
+#### [Functional Programming in JavaScript via DailyJS](http://dailyjs.com/2012/09/14/functional-programming/)
+
+#### [Express 3 Tutorial: Contact Forms with CSRF via DailyJS](http://dailyjs.com/2012/09/13/express-3-csrf-tutorial/)
+
+#### [Backbone Marionette: Better Backbone Apps via Joe Zim's JavaScript Blog](http://www.joezimjs.com/javascript/backbone-marionette-better-backbone-apps/)
+
+#### [An Introduction to Structured Data Markup via Webdesigntuts+](http://webdesign.tutsplus.com/articles/general/an-introduction-to-structured-data-markup/)
+
+#### [Understanding Backbone.js and the Server via Nettuts+](http://net.tutsplus.com/tutorials/javascript-ajax/understanding-backbone-js-and-the-server/)
+
+## Mobile
+
+## Tool
+
+#### [Cross Browser Testing with bunyip via The JavaScript Playground](http://javascriptplayground.com/blog/2012/09/cross-browser-testing-with-bunyip)
