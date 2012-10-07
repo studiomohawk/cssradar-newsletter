@@ -1,0 +1,83 @@
+---
+layout: post
+title: "Vol.51"
+date: 2012-09-30 20:35:25
+---
+
+## [Sketchnotes for: “Responsive Design Vs Separate Mobile Sites” via Krystal Higgins](http://www.kryshiggins.com/sketchnotes-for-responsive-design-vs-separate-mobile-sites/)
+
+Brad Frost氏によるレスポンシブデザイン vs モバイル専用サイトについての講演のスケッチノート。
+
+## [CSS3 vs jQuery Animations via Dev.Opera](http://dev.opera.com/articles/view/css3-vs-jquery-animations/)
+
+Dev.OperaによるCSS3とjQueryアニメーションの違いについて。後半のパフォーマンス解析の部分は解析手法も結果も参考になる。
+
+## [Websockets 101 via Armin Ronacher's Thoughts and Writings](http://lucumr.pocoo.org/2012/9/24/websockets-101/)
+
+Websoketsについて知りたいことが大枠書いてあるので、リファレンスにどうぞ。
+
+## UX / UI / IA / Design
+
+### [The Web Aesthetic via A List Apart](http://www.alistapart.com/articles/the-web-aesthetic/)
+
+A List ApartよりClearleftのデザイナ、Paul Robert Lloyd氏のレスポンシブデザインにおけるデザインについての話。
+
+### [Designing With Code: Making HTML & CSS part of the design process](http://www.teehanlax.com/blog/designing-with-code/)
+
+Teehan+LaxでもHTML+CSSを使ったデザインプロセスの導入。その理由と実行したことのまとめ。
+
+### [Design Principles Behind Firefox OS UX | Mozilla UX](https://blog.mozilla.org/ux/2012/09/mozcamp-warsaw-design-principles-behind-firefox-os-ux/)
+
+Firefox OSのUXにおけるデザイン原則。どういう原則があるのか、というよりはその原則をどう表現しているのかが書かれているので参考になる。
+
+### [One Small Step via Cognition](http://cognition.happycog.com/article/one-small-step)
+
+新しいアイデアは共有しなければ意味が無いし、伝わらなければ意味が無い。アイデアを伝えるためにコンセプトを形にすることが大事。
+
+#### [You Already Know How To Use It via Smashing UX Design](http://uxdesign.smashingmagazine.com/2012/09/25/you-already-know-how-to-use-it/)
+
+#### [Andy Clarke at Smashing Conference via Brad Frost Web](http://bradfrostweb.com/blog/notes/andy-clarke-at-smashing-conference/)
+
+## Performance
+
+#### [WebKit Page Cache I – The Basics via Surfin' Safari](http://www.webkit.org/blog/427/webkit-page-cache-i-the-basics/)
+
+#### [WebKit Page Cache II – The unload Event via Surfin' Safari](http://www.webkit.org/blog/516/webkit-page-cache-ii-the-unload-event/)
+
+#### [Async Scripts – Cached? via High Performance Web Sites](http://www.stevesouders.com/blog/2012/09/24/async-scripts-cached/)
+
+## Code
+
+### [SOLID JavaScript: The Single Responsibility Principle](http://freshbrewedcode.com/derekgreer/2011/12/08/solid-javascript-single-responsibility-principle/)
+
+SOLID CSSを紹介したので、SOLID JavaScriptも。こちらの記事は単一責任の原則について。残り4つも例示がしっかりあるのでぜひ。
+
+### [Learnable Programming](http://worrydream.com/LearnableProgramming/)
+
+Bret Victor氏によるラーナブルなプログラミングについて。プログラミングを覚えやすいものにするために必要なこと。プログラミングを学ぶ立場でも教える立場でも有用な記事。
+
+### [Assets Loading in HTML5 Game Development](http://www.onextrapixel.com/2012/09/24/assets-loading-in-html5-game-development/)
+
+HTML5ゲームに欠かせないアセットローディングの方法について。
+
+### [Reading Other People's Code via Mahdi Yusuf](http://www.mahdiyusuf.com/post/32154944661/reading-other-peoples-code)
+
+人のソースコードを読むということについて。そしてRainmanというgitベースのソースコードリーダの紹介も少し(未完成)。 
+
+### [JavaScript NaN type is crazy via Robert Quinlivan](http://coderwall.com/p/sekogw)
+
+JavaScriptにおけるNaNタイプの落とし穴。NaN(Not a Number)はtypeof すると number として認識される。正しいNaNの確認方法についても触れられている。
+
+#### [Partial Application in JavaScript via Ben Alman](http://benalman.com/news/2012/09/partial-application-in-javascript/)
+
+#### [Backbone Marionette: Better Backbone Apps via Joe Zim's JavaScript Blog](http://www.joezimjs.com/javascript/backbone-marionette-better-backbone-apps/)
+
+#### [DOM Enlightenment - Exploring the relationship between JavaScript and the modern HTML DOM](http://domenlightenment.com/)
+
+## Tool
+
+### [Clearless by clearleft](http://clearleft.github.com/clearless/)
+
+clearleftがLESSのMixin集 Clearless を公開。ツール自体もよくできているが、後半戦の利用方法とベストプラクティスは必読。
+
+#### [Frictionless AMD with Jam via Nettuts+](http://net.tutsplus.com/tutorials/javascript-ajax/frictionless-amd-with-jam/)
