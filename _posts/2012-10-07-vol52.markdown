@@ -1,0 +1,109 @@
+---
+layout: post
+title: "Vol.52"
+date: 2012-10-07  9:15:02
+---
+
+## [The Code Side Of Color via Smashing Coding](http://coding.smashingmagazine.com/2012/10/04/the-code-side-of-color/)
+
+ウェブデザインにおける色。16進法の謎について。知っておくと何かと便利。
+
+## [Fixing A Broken User Experience via Smashing UX Design](http://uxdesign.smashingmagazine.com/2012/09/27/fixing-broken-user-experience/)
+
+例ではいくつものサイトを運営している場合となっているけど、規模が小さくても同じ事なのではないかと。UXを統一するための戦略。 
+
+## [Mo’ Pixels Mo’ Problems via A List Apart](http://www.alistapart.com/articles/mo-pixels-mo-problems/)
+
+様々なデバイスがRetina化していく現在に知っておきたい対応のパターン。
+
+## UX / UI / IA / Design
+
+### [Social Login Buttons Aren’t Worth It via MailChimp Email Marketing Blog](https://blog.mailchimp.com/social-login-buttons-arent-worth-it/)
+
+MailChimpのログインページにおけるユーザのログインミス率の減らし方。なるほど。当たり前だけど、出来てない
+
+### [The Flat Design Era via LayerVault Blog](http://layervault.tumblr.com/post/32267022219/flat-interface-design)
+
+クローム(ブラウザではない)を最低限にした「フラット」なデザインの時代。何が大事なのかのコアを理解するのには様々な意見を聞いてみるべき。
+
+#### [How To Benefit From Failure In Web Design via The Usabilla Blog](http://blog.usabilla.com/how-to-benefit-from-failure/)
+
+## Performance
+
+### [“(pre)Maturely Optimize…” revisited via getiblog](http://blog.getify.com/pre-maturely-optimize-revisited/)
+
+JavaScriptのパフォーマンス改善についてのアドバイス。よいパターンを知っておくこと。現実はリファクタの時間があまりあるプロジェクトはないから。 
+
+### [iOS6 html hardware acceleration changes and how to fix them via indiegamr](http://indiegamr.com/ios6-html-hardware-acceleration-changes-and-how-to-fix-them/)
+
+iOS6からpreserve-3dではハードウェアアクセレレーションがオンにならない。その代わりに利用できるプロパティについてとオマケ。
+
+## Code
+
+### [Modeling Physics in Javascript: Gravity and Drag via Burak Kanber's Blog](http://burakkanber.com/blog/modeling-physics-javascript-gravity-and-drag/)
+
+JavaScriptで実践する物理。重力と抵抗。物理の部分はさっぱりだけど、JSの方は参考になる。
+
+### [Unobtrusive JavaScript](http://blog.socialcast.com/unobtrusive-javascript-2/)
+
+jQuery時代の邪魔にならないJavaScriptの書き方。Event Delegationを軸にしたイベント管理手法について。 
+
+### [Don't Initialize All the Things in jQuery.ready() via Web Dev .NET](http://www.elijahmanor.com/2012/10/dont-initialize-all-things-in.html)
+
+なにもかもを$.ready()に入れてしまってはいけない。コンテキストに併せたイベントバインディングを行う利点とその方法。 
+
+### [A fresh look at JavaScript Mixins via JavaScript, JavaScript…](http://javascriptweblog.wordpress.com/2011/05/31/a-fresh-look-at-javascript-mixins/)
+
+JavaScriptでMixinsを実現する。クラスベースではなくファンクショナルでアプローチした例。
+
+### [jquery.plugin.template.js](http://c4urself.github.com/jQuery-Plugin-Template/)
+
+jQueryのプラグインテンプレート。なかなかいいアイデアがあって参考になる。
+
+### [JavaScript Fundamentals: Functions via Joe Zim's JavaScript Blog](http://www.joezimjs.com/javascript/javascript-fundamentals-functions/)
+
+JavaScriptの基礎: 関数について。JavaScriptで最も大事な部分なのでぜひ。callやappyの例もわかりやすい。
+
+### [Extending Objects in jQuery via Chris Missal's Blog](http://lostechies.com/chrismissal/2012/09/27/extending-objects-in-jquery/)
+
+jQueryの$.extendの使い方。基本だけど意外と知らないかも。実際にやってみるとメソッドの振る舞いは理解できるはず。
+
+#### [Backbone.EventBinder: Better Event Management For Your Backbone Apps via ThoughtStream.new :derick_bailey](http://lostechies.com/derickbailey/2012/10/01/backbone-eventbinder-better-event-management-for-your-backbone-apps/)
+
+#### [Using Grunt and Jasmine with AMD via Float Left](http://floatleft.com/notebook/using-grunt-and-jasmine-with-amd)
+
+#### [How to Modify the Browser History in Complex HTML5 & JavaScript Applications via SitePoint](http://www.sitepoint.com/javascript-history-pushstate/)
+
+#### [Javascript - Event order](http://www.quirksmode.org/js/events_order.html)
+
+#### [JavaScript for Node Part 1: Enumeration via DailyJS](http://dailyjs.com/2012/10/01/js-for-node/)
+
+#### [JavaScript: __proto__](http://www.2ality.com/2012/10/proto.html)
+
+#### [Testing your JavaScript with Jasmine and Grunt via Float Left](http://floatleft.com/notebook/testing-your-javascript-with-jasmine-and-grunt)
+
+## Tool
+
+#### [Installing Weinre on Mac OS X via Joe Lambert](http://blog.joelambert.co.uk/2012/05/17/installing-weinre-on-mac-os-x/)
+
+## That's it for this week
+
+予定通りCSS Radar Newsletterは今号を持って最終号となりました。  
+1年間1度も休まず毎週きちんと発行できたのは今この文章を読んでくださっている皆様のおかげです。  
+本当にありがとうございました。
+
+CSS Radar Newsletterが終わっても、[Twitter@cssradar](http://twitter.com/#!/cssradar)は変わらず続けていきますし、
+[Seven](http://seven.studiomohawk.com/)を再開し、時系列のまとめではないですが、トピックベースのまとめを行っていきます。  
+また[Pinboard](https://pinboard.in/u:studiomohawk)で@cssradarで共有した記事などはまとめて見ることができます。 
+Pinboardには一応Subscribeという機能もありますし、RSSもあるのでいちいち見に行くのが面倒な場合は活用ください。
+
+次の1年間プロジェクトは[en.ja](http://enja.studiomohawk.com/)にフォーカスしていきます。  
+翻訳です。  
+リクエストも[随時募集](https://github.com/studiomohawk/en.ja/issues/new)していますが、きちんと原作者から了承を得ない限りは翻訳に取りかかりませんので、ご了承くださいませ。
+
+またNewsletterのバックナンバー置き場のサイトについて  
+[https://github.com/studiomohawk/cssradar-newsletter](https://github.com/studiomohawk/cssradar-newsletter)  
+こちらにレポジトリがありますので、興味があれば。
+
+Jekyllで作られていますが、若干ソースは古いのでそこはあんまり参考にならないと思います。。  
+それでは、改めて、今号まで読んでいただいた皆様、本当にありがとうございました!
